@@ -1,0 +1,48 @@
+idqn N=80 run 0: rule=boltz:2.0 lat=15.03 mS=0.00% mB=0.00% off=0.483  [eps-greedy: 18.27 ms]  QS=[-0.995 -1.349 -1.297 -1.035] QB=[-2.2   -2.865 -2.827 -2.719]
+idqn N=80 run 1: rule=boltz:2.0 lat=15.03 mS=0.00% mB=0.00% off=0.497  [eps-greedy: 18.27 ms]  QS=[-1.001 -1.391 -1.464 -1.512] QB=[-2.206 -2.522 -2.703 -2.629]
+idqn N=80 run 2: rule=boltz:2.0 lat=15.04 mS=0.00% mB=0.00% off=0.499  [eps-greedy: 18.27 ms]  QS=[-1.002 -1.589 -1.406 -1.558] QB=[-2.205 -2.638 -2.473 -2.649]
+idqn N=80 run 3: rule=boltz:1.0 lat=15.04 mS=0.00% mB=0.00% off=0.475  [eps-greedy: 18.27 ms]  QS=[-1.    -1.595 -1.512 -1.564] QB=[-2.201 -2.476 -2.58  -2.598]
+idqn N=80 run 4: rule=boltz:2.0 lat=15.05 mS=0.00% mB=0.00% off=0.499  [eps-greedy: 18.27 ms]  QS=[-1.001 -1.412 -1.444 -1.414] QB=[-2.201 -2.658 -2.39  -2.696]
+== idqn N=80: mean lat 15.04 (runs 15.03-15.05) mS 0.00% mB 0.00% off 0.491 offS 0.000 offB 0.700 p95 22.00 fair 0.952  (111s)
+idqn N=160 run 0: rule=boltz:0.25 lat=17.63 mS=0.00% mB=0.00% off=0.137  [eps-greedy: 18.23 ms]  QS=[-0.995 -1.944 -2.218 -2.559] QB=[-2.201 -2.596 -3.033 -3.554]
+idqn N=160 run 1: rule=boltz:1.0 lat=17.14 mS=0.00% mB=0.00% off=0.264  [eps-greedy: 18.23 ms]  QS=[-0.985 -2.624 -2.663 -3.586] QB=[-2.18  -3.347 -3.706 -4.683]
+idqn N=160 run 2: rule=boltz:0.5 lat=17.22 mS=0.00% mB=0.00% off=0.177  [eps-greedy: 18.23 ms]  QS=[-0.993 -2.07  -2.976 -2.293] QB=[-2.194 -2.975 -4.133 -3.294]
+idqn N=160 run 3: rule=boltz:2.0 lat=19.24 mS=0.00% mB=0.00% off=0.456  [eps-greedy: 49.95 ms]  QS=[-0.999 -1.825 -2.772 -3.399] QB=[-2.202 -2.192 -3.481 -4.297]
+idqn N=160 run 4: rule=boltz:0.25 lat=17.76 mS=0.00% mB=0.00% off=0.097  [eps-greedy: 18.23 ms]  QS=[-0.999 -2.531 -3.281 -1.92 ] QB=[-2.195 -3.452 -3.924 -2.663]
+== idqn N=160: mean lat 17.80 (runs 17.14-19.24) mS 0.00% mB 0.00% off 0.226 offS 0.000 offB 0.324 p95 23.43 fair 0.627  (214s)
+idqn N=240 run 0: rule=eps:0.02 lat=18.38 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.38 ms]  QS=[-1.    -0.049 -0.274 -0.074] QB=[-2.2   -0.139 -0.794  0.14 ]
+idqn N=240 run 1: rule=eps:0.02 lat=18.38 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.38 ms]  QS=[-1.    -0.323 -0.309  0.487] QB=[-2.2   -0.247 -0.703  0.456]
+idqn N=240 run 2: rule=eps:0.02 lat=18.38 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.38 ms]  QS=[-1.     0.34  -0.014  0.277] QB=[-2.2    0.48  -0.379  0.287]
+idqn N=240 run 3: rule=eps:0.02 lat=18.38 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.38 ms]  QS=[-1.    -0.872 -0.095 -0.559] QB=[-2.2   -0.85  -0.374 -0.576]
+idqn N=240 run 4: rule=eps:0.02 lat=18.38 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.38 ms]  QS=[-1.     0.635  0.167  0.31 ] QB=[-2.2    0.777  0.275  0.5  ]
+== idqn N=240: mean lat 18.38 (runs 18.38-18.38) mS 0.00% mB 0.00% off 0.000 offS 0.000 offB 0.000 p95 22.00 fair nan  (304s)
+idqn N=320 run 0: rule=eps:0.02 lat=18.35 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.35 ms]  QS=[-1.    -0.112 -0.403 -0.064] QB=[-2.2   -0.181 -0.889  0.153]
+idqn N=320 run 1: rule=eps:0.02 lat=18.35 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.35 ms]  QS=[-1.    -0.286 -0.325  0.518] QB=[-2.2   -0.226 -0.696  0.466]
+idqn N=320 run 2: rule=eps:0.02 lat=18.35 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.35 ms]  QS=[-1.     0.329 -0.009  0.298] QB=[-2.2    0.473 -0.348  0.346]
+idqn N=320 run 3: rule=eps:0.02 lat=18.35 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.35 ms]  QS=[-1.    -0.895 -0.162 -0.642] QB=[-2.2   -0.898 -0.427 -0.672]
+idqn N=320 run 4: rule=eps:0.02 lat=18.35 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.35 ms]  QS=[-1.     0.735  0.128  0.283] QB=[-2.2    0.89   0.241  0.468]
+== idqn N=320: mean lat 18.35 (runs 18.35-18.35) mS 0.00% mB 0.00% off 0.000 offS 0.000 offB 0.000 p95 22.00 fair nan  (398s)
+vdn N=80 run 0: rule=boltz:2.0 lat=15.11 mS=0.00% mB=0.00% off=0.431  [eps-greedy: 18.27 ms]  QS=[-0.928 -0.605 -0.673 -0.321] QB=[-2.089 -3.323 -3.726 -3.04 ]
+vdn N=80 run 1: rule=boltz:2.0 lat=15.08 mS=0.00% mB=0.00% off=0.422  [eps-greedy: 18.27 ms]  QS=[-0.89  -1.272 -1.291 -1.179] QB=[-2.11  -3.527 -3.466 -3.428]
+vdn N=80 run 2: rule=boltz:2.0 lat=15.10 mS=0.00% mB=0.00% off=0.435  [eps-greedy: 18.27 ms]  QS=[-0.879 -1.446 -1.312 -1.489] QB=[-2.147 -3.279 -3.164 -3.661]
+vdn N=80 run 3: rule=boltz:2.0 lat=15.05 mS=0.00% mB=0.00% off=0.449  [eps-greedy: 18.27 ms]  QS=[-0.931 -1.439 -1.182 -1.017] QB=[-2.075 -3.207 -3.086 -3.041]
+vdn N=80 run 4: rule=boltz:2.0 lat=15.16 mS=0.00% mB=0.00% off=0.392  [eps-greedy: 18.27 ms]  QS=[-0.735 -1.766 -2.126 -1.827] QB=[-2.179 -3.734 -4.065 -3.916]
+== vdn N=80: mean lat 15.10 (runs 15.05-15.16) mS 0.00% mB 0.00% off 0.426 offS 0.000 offB 0.608 p95 22.00 fair 0.941  (111s)
+vdn N=160 run 0: rule=boltz:2.0 lat=17.38 mS=0.00% mB=0.00% off=0.090  [eps-greedy: 18.23 ms]  QS=[-1.455 -5.263 -4.74  -4.154] QB=[-1.539 -8.689 -7.525 -6.822]
+vdn N=160 run 1: rule=boltz:2.0 lat=17.61 mS=0.00% mB=0.00% off=0.063  [eps-greedy: 18.23 ms]  QS=[-1.369 -6.535 -7.083 -6.185] QB=[-1.518 -8.279 -8.558 -8.165]
+vdn N=160 run 2: rule=boltz:2.0 lat=17.61 mS=0.00% mB=0.00% off=0.063  [eps-greedy: 18.23 ms]  QS=[-1.415 -6.982 -6.89  -6.639] QB=[-1.577 -8.704 -8.408 -8.158]
+vdn N=160 run 3: rule=boltz:2.0 lat=17.29 mS=0.00% mB=0.00% off=0.097  [eps-greedy: 18.23 ms]  QS=[-1.333 -6.124 -5.841 -5.725] QB=[-1.59  -7.58  -7.588 -7.117]
+vdn N=160 run 4: rule=boltz:2.0 lat=17.55 mS=0.00% mB=0.00% off=0.070  [eps-greedy: 18.23 ms]  QS=[-1.451 -6.884 -6.558 -7.397] QB=[-1.586 -8.121 -7.772 -8.77 ]
+== vdn N=160: mean lat 17.49 (runs 17.29-17.61) mS 0.00% mB 0.00% off 0.077 offS 0.000 offB 0.110 p95 22.00 fair 0.840  (214s)
+vdn N=240 run 0: rule=eps:0.02 lat=18.38 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.38 ms]  QS=[-1.    -0.04  -0.29  -0.127] QB=[-2.2   -0.138 -0.835  0.126]
+vdn N=240 run 1: rule=eps:0.02 lat=18.38 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.38 ms]  QS=[-1.    -0.382 -0.28   0.503] QB=[-2.2   -0.252 -0.716  0.477]
+vdn N=240 run 2: rule=eps:0.02 lat=18.38 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.38 ms]  QS=[-1.     0.305 -0.062  0.221] QB=[-2.2    0.478 -0.377  0.279]
+vdn N=240 run 3: rule=eps:0.02 lat=18.38 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.38 ms]  QS=[-1.    -0.79  -0.052 -0.481] QB=[-2.2   -0.773 -0.42  -0.539]
+vdn N=240 run 4: rule=eps:0.02 lat=18.38 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.38 ms]  QS=[-1.     0.682  0.106  0.268] QB=[-2.2    0.799  0.278  0.518]
+== vdn N=240: mean lat 18.38 (runs 18.38-18.38) mS 0.00% mB 0.00% off 0.000 offS 0.000 offB 0.000 p95 22.00 fair nan  (302s)
+vdn N=320 run 0: rule=eps:0.02 lat=18.35 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.35 ms]  QS=[-1.    -0.1   -0.405 -0.129] QB=[-2.2   -0.181 -0.924  0.126]
+vdn N=320 run 1: rule=eps:0.02 lat=18.35 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.35 ms]  QS=[-1.    -0.385 -0.259  0.566] QB=[-2.2   -0.244 -0.698  0.481]
+vdn N=320 run 2: rule=eps:0.02 lat=18.35 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.35 ms]  QS=[-1.     0.345 -0.054  0.24 ] QB=[-2.2    0.469 -0.35   0.342]
+vdn N=320 run 3: rule=eps:0.02 lat=18.35 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.35 ms]  QS=[-1.028 -0.883 -0.174 -0.591] QB=[-2.224 -0.814 -0.51  -0.649]
+vdn N=320 run 4: rule=eps:0.02 lat=18.35 mS=0.00% mB=0.00% off=0.000  [eps-greedy: 18.35 ms]  QS=[-1.     0.817 -0.027  0.292] QB=[-2.2    0.941  0.178  0.507]
+== vdn N=320: mean lat 18.35 (runs 18.35-18.35) mS 0.00% mB 0.00% off 0.000 offS 0.000 offB 0.000 p95 22.00 fair nan  (407s)

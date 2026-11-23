@@ -1,0 +1,59 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=12mm,paperheight=160mm]{geometry}
+
+
+
+\usepackage{amsmath,amssymb}
+\usepackage{tabularx,array}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.06}
+\newcommand{\lnum}[1]{\textbf{#1}}
+\newcolumntype{N}{>{\raggedleft\arraybackslash}p{6mm}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\begin{document}
+
+\begin{center}
+{\large\bfseries Algorithm 1. GIPA Decision Operator for Vehicle $i$ at Slot $t$}
+\end{center}
+\vspace{-3pt}
+
+{\small
+\textbf{Input:}
+intrinsic action scores $\mathbf q_i(t)=\{q_{i,a}(t)\}_{a\in\mathcal A}$;
+the prior from Stage 0: either the heuristic prior $\bar{\mathbf c}=\{\bar c_a\}_{a\in\mathcal A}$ of (11),
+or the planned distribution $\phi_{k}$ of (14) with class-average scores $\bar q_{k,a}$;
+coverage set $\mathcal R_i(t)$; residual dwell times $T_{i,a}^{\mathrm{res}}(t)$;
+task class $k=k_i(t)$ and deadline $\delta_{k}$;
+parameters $\gamma,\tau,\beta,\nu,\theta_0,\gamma_\theta,K,\eta,\lambda_{k}$.\\
+\textbf{Output:} selected action $a_i(t)\in\mathcal A$.\\
+\textbf{Communication:} none between vehicles; no instantaneous fleet-load broadcast; no reward or feedback.
+}
+
+\vspace{4pt}
+\small
+\begin{tabularx}{\textwidth}{N Y}
+\lnum{1} & Construct the predicted-feasible action set $\mathcal F_i(t)$ with guard band $\gamma$ using (8). \\
+\lnum{2} & \textbf{if} $\mathcal F_i(t)=\varnothing$ \textbf{then} execute locally, record an unavoidable predicted miss and \textbf{return} $0$. \\
+\lnum{3} & \textbf{if} heuristic prior \textbf{then} \\
+\lnum{4} & \quad $\widetilde q_{i,a}(t)\gets q_{i,a}(t)-\eta\bar c_a$ by (15); $\mathbf p_i^{(0)}(t)\gets$ masked softmax of (17); $u_i\gets$ uniform on $\mathcal F_i(t)$. \\
+\lnum{5} & \textbf{else} \hfill (planned prior) \\
+\lnum{6} & \quad $\widetilde q_{i,a}(t)\gets q_{i,a}(t)-\bar q_{k,a}$ by (16); $\mathbf p_i^{(0)}(t)\gets u_i\gets\phi_{k}$ restricted to $\mathcal F_i(t)$ and renormalised, by (18). \\
+\lnum{7} & \textbf{end if} \\
+\lnum{8} & \textbf{for} $r=1,\ldots,K$ \textbf{do} \\
+\lnum{9} & \quad $\theta_r\gets\theta_0\gamma_\theta^{\,r}$ by (19); $m_{\mathcal F,i}(t)$ by (20); $g_{i,a}^{(r)}(t)$, $\forall a\in\mathcal F_i(t)$, by (21). \\
+\lnum{10} & \quad Reweight and diffuse towards $u_i$: $\mathbf p_i^{(r)}(t)$ by (22); $p_{i,a}^{(r)}(t)=0$ for $a\notin\mathcal F_i(t)$. \\
+\lnum{11} & \textbf{end for} \hfill (with the planned prior and identical tasks, $\mathbf p_i^{(K)}(t)=\mathbf p_i^{(0)}(t)$) \\
+\lnum{12} & Sample $a_i(t)\sim\mathbf p_i^{(K)}(t)$ by (23) and execute locally ($a_i(t)=0$) or offload the complete task to RSU $a_i(t)$. \\
+\lnum{13} & Discard $\mathbf p_i^{(K)}(t)$; no probability state is carried to the next task. \\
+\end{tabularx}
+
+\vspace{3pt}
+\footnotesize
+\textbf{Complexity:} $O(K|\mathcal A|)$ time and $O(|\mathcal A|)$ memory per decision, excluding latency prediction.
+\textbf{Guarantee:} every feasible action keeps probability at least $\lambda_{k}u_{i,a}$ (Proposition 5); the floor prevents collapse but does not cap RSU load, which is controlled by the prior.
+
+\end{document}

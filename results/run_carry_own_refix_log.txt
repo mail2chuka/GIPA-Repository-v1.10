@@ -1,0 +1,376 @@
+== 11:20:43 python /home/claude/gipa_revision/experiments/exp_planner.py --out /home/claude/gipa_revision/results/carry_own/res_planner.json
+===== Regime A
+N= 80 gipa     lat= 15.17 p95= 22.3 missS=  0.0% missB= 0.00% offS=0.00 offB=0.78 maxRSU= 17.9
+N= 80 local    lat= 84.33 p95=116.0 missS=  0.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N= 80 plan_z0  lat= 15.17 p95= 22.7 missS=  0.0% missB= 0.00% offS=0.00 offB=0.74 maxRSU= 17.0  (x_S=0.000, x_B=0.247)
+N= 80 plan_z2  lat= 15.17 p95= 22.7 missS=  0.0% missB= 0.00% offS=0.00 offB=0.74 maxRSU= 17.0  (x_S=0.000, x_B=0.247)
+N=160 gipa     lat= 18.57 p95= 24.6 missS=  0.0% missB= 0.00% offS=0.00 offB=0.69 maxRSU= 30.0
+N=160 local    lat= 83.98 p95=116.0 missS=  0.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=160 plan_z0  lat= 17.85 p95= 28.3 missS=  0.0% missB= 0.00% offS=0.00 offB=0.42 maxRSU= 19.1  (x_S=0.000, x_B=0.140)
+N=160 plan_z2  lat= 17.85 p95= 28.3 missS=  0.0% missB= 0.00% offS=0.00 offB=0.42 maxRSU= 19.1  (x_S=0.000, x_B=0.140)
+N=240 gipa     lat= 84.01 p95=116.0 missS=  0.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=240 local    lat= 84.01 p95=116.0 missS=  0.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=240 plan_z0  lat= 19.38 p95= 32.4 missS=  0.0% missB= 0.00% offS=0.00 offB=0.30 maxRSU= 20.4  (x_S=0.000, x_B=0.099)
+N=240 plan_z2  lat= 19.38 p95= 32.4 missS=  0.0% missB= 0.00% offS=0.00 offB=0.30 maxRSU= 20.4  (x_S=0.000, x_B=0.099)
+N=320 gipa     lat= 83.80 p95=116.0 missS=  0.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=320 local    lat= 83.80 p95=116.0 missS=  0.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=320 plan_z0  lat= 20.38 p95= 34.9 missS=  0.0% missB= 0.00% offS=0.00 offB=0.24 maxRSU= 21.7  (x_S=0.000, x_B=0.076)
+N=320 plan_z2  lat= 20.38 p95= 34.9 missS=  0.0% missB= 0.00% offS=0.00 offB=0.24 maxRSU= 21.7  (x_S=0.000, x_B=0.076)
+===== Regime B
+N= 80 gipa     lat= 17.73 p95= 30.6 missS=100.0% missB= 0.00% offS=0.00 offB=0.79 maxRSU= 18.1
+N= 80 local    lat=354.81 p95=500.0 missS=100.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N= 80 plan_z0  lat= 21.67 p95= 39.9 missS= 55.5% missB= 0.00% offS=1.00 offB=0.50 maxRSU= 20.9  (x_S=0.000, x_B=0.127)
+N= 80 plan_z2  infeasible
+N=160 gipa     lat= 22.10 p95= 30.3 missS=100.0% missB= 0.00% offS=0.00 offB=0.78 maxRSU= 33.6
+N=160 local    lat=353.19 p95=500.0 missS=100.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=160 plan_z0  infeasible
+N=160 plan_z2  infeasible
+N=240 gipa     lat=353.32 p95=500.0 missS=100.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=240 local    lat=353.32 p95=500.0 missS=100.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=240 plan_z0  infeasible
+N=240 plan_z2  infeasible
+N=320 gipa     lat=352.38 p95=500.0 missS=100.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=320 local    lat=352.38 p95=500.0 missS=100.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=320 plan_z0  infeasible
+N=320 plan_z2  infeasible
+===== Misspecification sweep (Regime A)
+true N=160 plan for 0.50N: lat= 19.08 p95= 25.2 missS=  0.0% missB= 0.00% offS=0.00 offB=0.74 maxRSU= 32.1
+true N=160 plan for 0.75N: lat= 17.76 p95= 25.8 missS=  0.0% missB= 0.00% offS=0.00 offB=0.53 maxRSU= 23.5
+true N=160 plan for 1.00N: lat= 17.85 p95= 28.3 missS=  0.0% missB= 0.00% offS=0.00 offB=0.42 maxRSU= 19.1
+true N=160 plan for 1.25N: lat= 18.26 p95= 30.6 missS=  0.0% missB= 0.00% offS=0.00 offB=0.35 maxRSU= 16.2
+true N=160 plan for 1.50N: lat= 18.68 p95= 32.2 missS=  0.0% missB= 0.00% offS=0.00 offB=0.31 maxRSU= 14.3
+true N=240 plan for 0.50N: lat= 19.78 p95= 27.0 missS=  0.0% missB= 0.00% offS=0.00 offB=0.53 maxRSU= 34.3
+true N=240 plan for 0.75N: lat= 19.09 p95= 29.6 missS=  0.0% missB= 0.00% offS=0.00 offB=0.38 maxRSU= 25.3
+true N=240 plan for 1.00N: lat= 19.38 p95= 32.4 missS=  0.0% missB= 0.00% offS=0.00 offB=0.30 maxRSU= 20.4
+true N=240 plan for 1.25N: lat= 19.85 p95= 34.4 missS=  0.0% missB= 0.00% offS=0.00 offB=0.25 maxRSU= 17.4
+true N=240 plan for 1.50N: lat= 20.36 p95= 35.8 missS=  0.0% missB= 0.00% offS=0.00 offB=0.22 maxRSU= 15.0
+wrote /home/claude/gipa_revision/results/carry_own/res_planner.json
+== 11:21:03 python /home/claude/gipa_revision/experiments/exp_calibration.py --out /home/claude/gipa_revision/results/carry_own/res_calibration.json
+A. Eq. (5) with class-independent compute vs affine model: max |difference| = 2.8e-14 -> PASS
+B. Regime A, N = 80
+   local            lat  84.33 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  34.72 p95  41.5 miss S/B  99.1/50.4% off S/B 1.00/1.00 maxRSU  61.9
+   msoft|agnostic   lat  17.11 p95  22.1 miss S/B   0.0/ 0.0% off S/B 0.00/1.00 maxRSU  22.4
+   msoft|class      lat  19.03 p95  24.6 miss S/B  17.0/ 0.0% off S/B 1.00/1.00 maxRSU  31.2
+   gipa|agnostic    lat  16.02 p95  22.3 miss S/B   0.0/ 0.0% off S/B 0.00/0.78 maxRSU  17.9
+   gipa|class       lat  16.91 p95  22.5 miss S/B   0.5/ 0.0% off S/B 0.83/0.78 maxRSU  25.1
+   plan|agnostic    lat  15.93 p95  22.7 miss S/B   0.0/ 0.0% off S/B 0.00/0.74 maxRSU  17.0
+   plan|class       lat  15.90 p95  24.1 miss S/B   0.0/ 0.0% off S/B 0.05/0.63 maxRSU  15.2
+   plan_z2|class    lat  15.90 p95  24.1 miss S/B   0.0/ 0.0% off S/B 0.05/0.63 maxRSU  15.2
+B. Regime A, N = 160
+   local            lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  25.13 p95  31.3 miss S/B  51.1/10.6% off S/B 0.51/0.51 maxRSU  30.5
+   msoft|agnostic   lat  25.57 p95  35.3 miss S/B   0.0/ 1.5% off S/B 0.00/1.00 maxRSU  42.5
+   msoft|class      lat  25.57 p95  35.3 miss S/B   0.0/ 1.5% off S/B 0.00/1.00 maxRSU  42.5
+   gipa|agnostic    lat  19.90 p95  27.1 miss S/B   0.0/ 0.0% off S/B 0.00/0.69 maxRSU  30.0
+   gipa|class       lat  19.90 p95  27.1 miss S/B   0.0/ 0.0% off S/B 0.00/0.69 maxRSU  30.0
+   plan|agnostic    lat  18.35 p95  28.3 miss S/B   0.0/ 0.0% off S/B 0.00/0.42 maxRSU  19.1
+   plan|class       lat  18.51 p95  30.0 miss S/B   0.0/ 0.0% off S/B 0.00/0.37 maxRSU  16.9
+   plan_z2|class    lat  18.51 p95  30.0 miss S/B   0.0/ 0.0% off S/B 0.00/0.37 maxRSU  16.9
+B. Regime A, N = 240
+   local            lat  84.01 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  31.59 p95  39.2 miss S/B  51.1/51.1% off S/B 0.51/0.51 maxRSU  44.7
+   msoft|agnostic   lat  84.01 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   msoft|class      lat  84.01 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic    lat  84.01 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class       lat  84.01 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|agnostic    lat  19.76 p95  32.4 miss S/B   0.0/ 0.0% off S/B 0.00/0.30 maxRSU  20.4
+   plan|class       lat  20.04 p95  34.0 miss S/B   0.0/ 0.0% off S/B 0.00/0.26 maxRSU  17.8
+   plan_z2|class    lat  20.04 p95  34.0 miss S/B   0.0/ 0.0% off S/B 0.00/0.26 maxRSU  17.8
+B. Regime A, N = 320
+   local            lat  83.80 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  37.97 p95  47.0 miss S/B  51.1/51.1% off S/B 0.51/0.51 maxRSU  59.0
+   msoft|agnostic   lat  83.80 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   msoft|class      lat  83.80 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic    lat  83.80 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class       lat  83.80 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|agnostic    lat  20.70 p95  34.9 miss S/B   0.0/ 0.0% off S/B 0.00/0.24 maxRSU  21.7
+   plan|class       lat  21.00 p95  36.1 miss S/B   0.0/ 0.0% off S/B 0.00/0.21 maxRSU  18.9
+   plan_z2|class    lat  21.00 p95  36.1 miss S/B   0.0/ 0.0% off S/B 0.00/0.21 maxRSU  18.9
+B. Regime B, N = 80
+   local            lat 354.81 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  34.75 p95  41.5 miss S/B  99.0/50.5% off S/B 1.00/1.00 maxRSU  61.9
+   msoft|agnostic   lat  18.31 p95  22.1 miss S/B 100.0/ 0.0% off S/B 0.00/1.00 maxRSU  22.4
+   msoft|class      lat  19.03 p95  24.6 miss S/B  17.0/ 0.0% off S/B 1.00/1.00 maxRSU  31.2
+   gipa|agnostic    lat  18.60 p95  30.6 miss S/B 100.0/ 0.0% off S/B 0.00/0.79 maxRSU  18.1
+   gipa|class       lat  18.62 p95  30.6 miss S/B   2.5/ 0.0% off S/B 1.00/0.79 maxRSU  26.8
+   plan|agnostic    lat  20.04 p95  39.9 miss S/B   0.0/ 0.0% off S/B 1.00/0.50 maxRSU  20.9
+   plan|class       lat  18.61 p95  30.4 miss S/B   2.9/ 0.0% off S/B 1.00/0.80 maxRSU  27.0
+   plan_z2|class    lat  18.61 p95  30.4 miss S/B   2.9/ 0.0% off S/B 1.00/0.80 maxRSU  27.0
+B. Regime B, N = 160
+   local            lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  63.04 p95  74.8 miss S/B 100.0/99.9% off S/B 1.00/1.00 maxRSU 122.7
+   msoft|agnostic   lat  26.77 p95  35.3 miss S/B 100.0/ 1.5% off S/B 0.00/1.00 maxRSU  42.5
+   msoft|class      lat  26.77 p95  35.3 miss S/B 100.0/ 1.5% off S/B 0.00/1.00 maxRSU  42.5
+   gipa|agnostic    lat  23.80 p95  30.9 miss S/B 100.0/ 0.0% off S/B 0.00/0.78 maxRSU  33.6
+   gipa|class       lat  23.82 p95  30.9 miss S/B 100.0/ 0.0% off S/B 0.00/0.78 maxRSU  33.7
+   plan|agnostic    infeasible plan
+   plan|class       lat  24.50 p95  40.0 miss S/B  39.3/ 0.0% off S/B 1.00/0.36 maxRSU  34.2
+   plan_z2|class    infeasible plan
+B. Regime B, N = 240
+   local            lat 353.32 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  34.91 p95  43.1 miss S/B 100.0/51.1% off S/B 0.51/0.51 maxRSU  44.7
+   msoft|agnostic   lat 353.32 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   msoft|class      lat 353.32 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic    lat 353.32 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class       lat 353.32 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|agnostic    infeasible plan
+   plan|class       infeasible plan
+   plan_z2|class    infeasible plan
+B. Regime B, N = 320
+   local            lat 352.38 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  41.29 p95  50.9 miss S/B 100.0/51.1% off S/B 0.51/0.51 maxRSU  59.0
+   msoft|agnostic   lat 352.38 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   msoft|class      lat 352.38 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic    lat 352.38 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class       lat 352.38 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|agnostic    infeasible plan
+   plan|class       infeasible plan
+   plan_z2|class    infeasible plan
+C. Regime A, F = 10.00 GHz (mean compute 1.84 ms/task)
+   local              lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat  55.88 p95  70.8 miss S/B  51.1/51.1% off S/B 0.51/0.51 maxRSU  30.5
+   msoft_prior|class  lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic      lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class         lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|class         lat  22.77 p95  38.1 miss S/B   0.0/ 0.0% off S/B 0.00/0.14 maxRSU   7.0
+C. Regime A, F = 18.40 GHz (mean compute 1.00 ms/task)
+   local              lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat  35.86 p95  45.1 miss S/B  51.1/51.1% off S/B 0.51/0.51 maxRSU  30.5
+   msoft_prior|class  lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic      lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class         lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|class         lat  20.76 p95  35.3 miss S/B   0.0/ 0.0% off S/B 0.00/0.23 maxRSU  10.9
+C. Regime A, F = 33.45 GHz (mean compute 0.55 ms/task)
+   local              lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat  25.13 p95  31.3 miss S/B  51.1/10.6% off S/B 0.51/0.51 maxRSU  30.5
+   msoft_prior|class  lat  18.96 p95  27.6 miss S/B   0.0/ 0.0% off S/B 0.00/0.20 maxRSU   9.7
+   gipa|agnostic      lat  19.90 p95  27.1 miss S/B   0.0/ 0.0% off S/B 0.00/0.69 maxRSU  30.0
+   gipa|class         lat  19.90 p95  27.1 miss S/B   0.0/ 0.0% off S/B 0.00/0.69 maxRSU  30.0
+   plan|class         lat  18.51 p95  30.0 miss S/B   0.0/ 0.0% off S/B 0.00/0.37 maxRSU  16.9
+C. Regime A, F = 60.00 GHz (mean compute 0.31 ms/task)
+   local              lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat  19.33 p95  23.9 miss S/B  20.1/ 0.0% off S/B 0.51/0.51 maxRSU  30.5
+   msoft_prior|class  lat  20.03 p95  25.5 miss S/B  31.4/ 0.0% off S/B 0.94/1.00 maxRSU  58.6
+   gipa|agnostic      lat  16.44 p95  22.2 miss S/B   0.0/ 0.0% off S/B 0.00/0.78 maxRSU  33.6
+   gipa|class         lat  17.59 p95  22.6 miss S/B   1.1/ 0.0% off S/B 0.82/0.78 maxRSU  47.7
+   plan|class         lat  16.17 p95  24.7 miss S/B   0.0/ 0.0% off S/B 0.00/0.59 maxRSU  25.9
+C. Regime B, F = 10.00 GHz (mean compute 1.84 ms/task)
+   local              lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat 196.26 p95 232.1 miss S/B 100.0/100.0% off S/B 1.00/1.00 maxRSU 122.2
+   msoft_prior|class  lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic      lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class         lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|class         infeasible plan
+C. Regime B, F = 18.40 GHz (mean compute 1.00 ms/task)
+   local              lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat 110.01 p95 130.2 miss S/B 100.0/100.0% off S/B 1.00/1.00 maxRSU 122.9
+   msoft_prior|class  lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic      lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class         lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|class         infeasible plan
+C. Regime B, F = 33.45 GHz (mean compute 0.55 ms/task)
+   local              lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat  63.04 p95  74.8 miss S/B 100.0/99.9% off S/B 1.00/1.00 maxRSU 122.7
+   msoft_prior|class  lat  25.76 p95  33.7 miss S/B 100.0/ 0.4% off S/B 0.00/0.94 maxRSU  40.1
+   gipa|agnostic      lat  23.80 p95  30.9 miss S/B 100.0/ 0.0% off S/B 0.00/0.78 maxRSU  33.6
+   gipa|class         lat  23.82 p95  30.9 miss S/B 100.0/ 0.0% off S/B 0.00/0.78 maxRSU  33.7
+   plan|class         lat  24.50 p95  40.0 miss S/B  39.3/ 0.0% off S/B 1.00/0.36 maxRSU  34.2
+C. Regime B, F = 60.00 GHz (mean compute 0.31 ms/task)
+   local              lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat  37.76 p95  44.9 miss S/B 100.0/50.1% off S/B 1.00/1.00 maxRSU 122.5
+   msoft_prior|class  lat  20.24 p95  25.7 miss S/B  39.2/ 0.0% off S/B 1.00/1.00 maxRSU  59.6
+   gipa|agnostic      lat  19.03 p95  30.3 miss S/B 100.0/ 0.0% off S/B 0.00/0.79 maxRSU  33.9
+   gipa|class         lat  19.42 p95  30.3 miss S/B   4.7/ 0.0% off S/B 1.00/0.79 maxRSU  51.0
+   plan|class         lat  19.44 p95  33.2 miss S/B   2.4/ 0.0% off S/B 1.00/0.72 maxRSU  48.4
+wrote /home/claude/gipa_revision/results/carry_own/res_calibration.json
+== 11:23:45 python /home/claude/gipa_revision/experiments/exp_capacity.py --out /home/claude/gipa_revision/results/carry_own/res_capacity.json
+Regime A, N = 80  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel  80.0 | soft lat  49.96 missS 100.0% missB 100.0% | AC lat  23.21 missS   0.0% missB  11.6% rej  78.7% maxAdm  17.0
+  indep        overload(sel)  98.4%  maxSel  31.2 | soft lat  21.00 missS  99.0% missB   0.0% | AC lat  17.08 missS   0.0% missB   0.0% rej  36.3% maxAdm  17.0
+  rbr          overload(sel)  49.9%  maxSel  61.9 | soft lat  39.17 missS 100.0% missB  50.4% | AC lat  20.09 missS   0.0% missB   2.0% rej  68.2% maxAdm  17.0
+  price        overload(sel)   1.3%  maxSel  22.5 | soft lat  15.73 missS   0.1% missB   0.0% | AC lat  15.72 missS   0.0% missB   0.0% rej   0.3% maxAdm  22.4
+  msoft        overload(sel)   0.0%  maxSel  22.4 | soft lat  15.72 missS   0.0% missB   0.0% | AC lat  15.72 missS   0.0% missB   0.0% rej   0.0% maxAdm  22.4
+  msoft_prior  overload(sel)   0.0%  maxSel  22.5 | soft lat  15.72 missS   0.0% missB   0.0% | AC lat  15.72 missS   0.0% missB   0.0% rej   0.0% maxAdm  22.5
+  entreg       overload(sel)   0.0%  maxSel  22.1 | soft lat  15.64 missS   0.0% missB   0.0% | AC lat  15.64 missS   0.0% missB   0.0% rej   0.0% maxAdm  22.1
+  ql           overload(sel)   0.0%  maxSel   0.9 | soft lat  74.34 missS   0.0% missB  98.0% | AC lat  74.34 missS   0.0% missB  98.0% rej   0.0% maxAdm   0.9
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat  84.33 missS   0.0% missB 100.0% | AC lat  84.33 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel  17.9 | soft lat  15.17 missS   0.0% missB   0.0% | AC lat  15.17 missS   0.0% missB   0.0% rej   0.0% maxAdm  17.9
+  plan         overload(sel)   0.0%  maxSel  17.0 | soft lat  15.17 missS   0.0% missB   0.0% | AC lat  15.17 missS   0.0% missB   0.0% rej   0.0% maxAdm  17.0
+Regime A, N = 160  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel 160.0 | soft lat  93.94 missS 100.0% missB 100.0% | AC lat  34.18 missS   0.0% missB  49.7% rej  89.3% maxAdm  17.1
+  indep        overload(sel) 100.0%  maxSel  59.6 | soft lat  35.64 missS 100.0% missB  18.4% | AC lat  20.13 missS   0.0% missB   2.2% rej  68.1% maxAdm  17.1
+  rbr          overload(sel)  51.1%  maxSel  30.5 | soft lat  27.20 missS  51.1% missB   9.3% | AC lat  26.23 missS   0.0% missB  23.5% rej  83.9% maxAdm  17.1
+  price        overload(sel)  36.4%  maxSel  42.4 | soft lat  23.20 missS   6.4% missB   0.0% | AC lat  20.20 missS   0.0% missB   0.0% rej   0.8% maxAdm  32.4
+  msoft        overload(sel)   0.0%  maxSel  42.5 | soft lat  22.79 missS   0.0% missB   0.0% | AC lat  22.79 missS   0.0% missB   0.0% rej   0.0% maxAdm  42.5
+  msoft_prior  overload(sel)   0.0%  maxSel   9.6 | soft lat  18.85 missS   0.0% missB   0.0% | AC lat  18.85 missS   0.0% missB   0.0% rej   0.0% maxAdm   9.6
+  entreg       overload(sel)   0.0%  maxSel  11.2 | soft lat  18.25 missS   0.0% missB   0.0% | AC lat  18.25 missS   0.0% missB   0.0% rej   0.0% maxAdm  11.2
+  ql           overload(sel)   0.0%  maxSel   1.6 | soft lat  73.72 missS   0.0% missB  97.8% | AC lat  73.72 missS   0.0% missB  97.8% rej   0.0% maxAdm   1.6
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat  83.98 missS   0.0% missB 100.0% | AC lat  83.98 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel  30.0 | soft lat  18.57 missS   0.0% missB   0.0% | AC lat  18.57 missS   0.0% missB   0.0% rej   0.0% maxAdm  30.0
+  plan         overload(sel)   0.0%  maxSel  19.1 | soft lat  17.85 missS   0.0% missB   0.0% | AC lat  17.85 missS   0.0% missB   0.0% rej   0.0% maxAdm  19.1
+Regime A, N = 240  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel 240.0 | soft lat 137.94 missS 100.0% missB 100.0% | AC lat  44.92 missS   0.0% missB  73.1% rej  92.9% maxAdm  17.1
+  indep        overload(sel) 100.0%  maxSel  87.6 | soft lat  50.31 missS 100.0% missB  99.8% | AC lat  23.02 missS   0.0% missB  11.0% rej  78.6% maxAdm  17.3
+  rbr          overload(sel)  51.1%  maxSel  44.7 | soft lat  34.69 missS  51.1% missB  51.1% | AC lat  33.35 missS   0.0% missB  48.3% rej  89.3% maxAdm  17.1
+  price        overload(sel)  28.6%  maxSel  62.3 | soft lat  29.96 missS   0.0% missB  32.2% | AC lat  29.08 missS   0.0% missB   0.0% rej   2.3% maxAdm  58.6
+  msoft        overload(sel)   0.0%  maxSel   0.0 | soft lat  84.01 missS   0.0% missB 100.0% | AC lat  84.01 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  msoft_prior  overload(sel)   0.0%  maxSel   0.0 | soft lat  84.01 missS   0.0% missB 100.0% | AC lat  84.01 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  entreg       overload(sel)   0.0%  maxSel   0.0 | soft lat  84.01 missS   0.0% missB 100.0% | AC lat  84.01 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  ql           overload(sel)   0.0%  maxSel   2.1 | soft lat  73.72 missS   0.0% missB  97.8% | AC lat  73.72 missS   0.0% missB  97.8% rej   0.0% maxAdm   2.1
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat  84.01 missS   0.0% missB 100.0% | AC lat  84.01 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel   0.0 | soft lat  84.01 missS   0.0% missB 100.0% | AC lat  84.01 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  plan         overload(sel)   0.0%  maxSel  20.4 | soft lat  19.38 missS   0.0% missB   0.0% | AC lat  19.38 missS   0.0% missB   0.0% rej   0.0% maxAdm  20.4
+Regime A, N = 320  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel 320.0 | soft lat 181.93 missS 100.0% missB 100.0% | AC lat  52.55 missS   0.0% missB  84.2% rej  94.7% maxAdm  17.1
+  indep        overload(sel) 100.0%  maxSel 115.4 | soft lat  64.96 missS 100.0% missB 100.0% | AC lat  26.32 missS   0.0% missB  23.8% rej  84.0% maxAdm  17.2
+  rbr          overload(sel)  51.1%  maxSel  59.0 | soft lat  42.17 missS  51.1% missB  51.1% | AC lat  39.73 missS   0.0% missB  64.8% rej  91.9% maxAdm  17.1
+  price        overload(sel)  96.6%  maxSel  79.6 | soft lat  35.78 missS   0.0% missB  94.9% | AC lat  28.42 missS   0.0% missB   0.0% rej  18.6% maxAdm  59.0
+  msoft        overload(sel)   0.0%  maxSel   0.0 | soft lat  83.80 missS   0.0% missB 100.0% | AC lat  83.80 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  msoft_prior  overload(sel)   0.0%  maxSel   0.0 | soft lat  83.80 missS   0.0% missB 100.0% | AC lat  83.80 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  entreg       overload(sel)   0.0%  maxSel   0.0 | soft lat  83.80 missS   0.0% missB 100.0% | AC lat  83.80 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  ql           overload(sel)   0.0%  maxSel   2.7 | soft lat  73.56 missS   0.0% missB  97.8% | AC lat  73.56 missS   0.0% missB  97.8% rej   0.0% maxAdm   2.7
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat  83.80 missS   0.0% missB 100.0% | AC lat  83.80 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel   0.0 | soft lat  83.80 missS   0.0% missB 100.0% | AC lat  83.80 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  plan         overload(sel)   0.0%  maxSel  21.7 | soft lat  20.38 missS   0.0% missB   0.0% | AC lat  20.38 missS   0.0% missB   0.0% rej   0.0% maxAdm  21.7
+Regime B, N = 80  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel  80.0 | soft lat  49.96 missS 100.0% missB 100.0% | AC lat 126.74 missS  78.7% missB  78.4% rej  78.7% maxAdm  17.0
+  indep        overload(sel)  98.4%  maxSel  31.2 | soft lat  21.00 missS  99.0% missB   0.0% | AC lat  20.97 missS  36.2% missB  14.6% rej  36.3% maxAdm  17.0
+  rbr          overload(sel)  49.8%  maxSel  61.9 | soft lat  39.20 missS 100.0% missB  50.5% | AC lat  59.70 missS  68.4% missB  63.5% rej  68.2% maxAdm  17.0
+  price        overload(sel)   0.0%  maxSel  22.4 | soft lat  16.91 missS 100.0% missB   0.0% | AC lat  16.91 missS 100.0% missB   0.0% rej   0.0% maxAdm  22.4
+  msoft        overload(sel)   0.0%  maxSel  22.4 | soft lat  16.91 missS 100.0% missB   0.0% | AC lat  16.91 missS 100.0% missB   0.0% rej   0.0% maxAdm  22.4
+  msoft_prior  overload(sel)   0.0%  maxSel  22.4 | soft lat  16.91 missS 100.0% missB   0.0% | AC lat  16.91 missS 100.0% missB   0.0% rej   0.0% maxAdm  22.4
+  entreg       overload(sel)   0.0%  maxSel  22.5 | soft lat  16.91 missS 100.0% missB   0.0% | AC lat  16.91 missS 100.0% missB   0.0% rej   0.0% maxAdm  22.5
+  ql           overload(sel)  17.7%  maxSel  13.1 | soft lat 336.52 missS  97.7% missB  98.6% | AC lat 337.02 missS  58.7% missB  98.6% rej  13.2% maxAdm   9.7
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat 354.81 missS 100.0% missB 100.0% | AC lat 354.81 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel  18.1 | soft lat  17.73 missS 100.0% missB   0.0% | AC lat  17.73 missS 100.0% missB   0.0% rej   0.0% maxAdm  18.1
+  plan         overload(sel)  47.8%  maxSel  20.9 | soft lat  21.67 missS  55.5% missB   0.0% | AC lat  21.91 missS  10.8% missB   4.0% rej  10.7% maxAdm  17.0
+Regime B, N = 160  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel 160.0 | soft lat  93.94 missS 100.0% missB 100.0% | AC lat 226.51 missS  89.5% missB  89.3% rej  89.3% maxAdm  17.1
+  indep        overload(sel) 100.0%  maxSel  59.6 | soft lat  35.64 missS 100.0% missB  18.4% | AC lat  60.30 missS  68.1% missB  63.6% rej  68.1% maxAdm  17.1
+  rbr          overload(sel)  49.9%  maxSel 122.7 | soft lat  72.18 missS 100.0% missB 100.0% | AC lat 167.94 missS  84.0% missB  83.9% rej  84.0% maxAdm  17.2
+  price        overload(sel)   0.0%  maxSel  42.2 | soft lat  23.93 missS 100.0% missB   0.0% | AC lat  23.93 missS 100.0% missB   0.0% rej   0.0% maxAdm  42.2
+  msoft        overload(sel)   0.0%  maxSel  42.5 | soft lat  24.00 missS 100.0% missB   0.0% | AC lat  24.00 missS 100.0% missB   0.0% rej   0.0% maxAdm  42.5
+  msoft_prior  overload(sel)   0.0%  maxSel  39.5 | soft lat  23.13 missS 100.0% missB   0.0% | AC lat  23.13 missS 100.0% missB   0.0% rej   0.0% maxAdm  39.5
+  entreg       overload(sel)   0.0%  maxSel  36.4 | soft lat  22.37 missS 100.0% missB   0.0% | AC lat  22.37 missS 100.0% missB   0.0% rej   0.0% maxAdm  36.4
+  ql           overload(sel)  16.6%  maxSel  24.7 | soft lat 336.30 missS  98.7% missB  98.5% | AC lat 336.13 missS  81.2% missB  98.6% rej  31.0% maxAdm   9.3
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat 353.19 missS 100.0% missB 100.0% | AC lat 353.19 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel  33.6 | soft lat  22.10 missS 100.0% missB   0.0% | AC lat  22.10 missS 100.0% missB   0.0% rej   0.0% maxAdm  33.6
+  plan         infeasible plan
+Regime B, N = 240  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel 240.0 | soft lat 137.94 missS 100.0% missB 100.0% | AC lat 266.85 missS  92.9% missB  92.9% rej  92.9% maxAdm  17.1
+  indep        overload(sel) 100.0%  maxSel  87.6 | soft lat  50.31 missS 100.0% missB  99.8% | AC lat 125.76 missS  78.8% missB  78.3% rej  78.6% maxAdm  17.3
+  rbr          overload(sel)  51.1%  maxSel  44.7 | soft lat  38.01 missS 100.0% missB  51.1% | AC lat 220.99 missS  89.4% missB  89.2% rej  89.2% maxAdm  17.2
+  price        overload(sel)  20.5%  maxSel  57.1 | soft lat  29.62 missS 100.0% missB  23.4% | AC lat  27.41 missS 100.0% missB   0.0% rej   0.9% maxAdm  47.9
+  msoft        overload(sel)   0.0%  maxSel   0.0 | soft lat 353.32 missS 100.0% missB 100.0% | AC lat 353.32 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  msoft_prior  overload(sel)   0.0%  maxSel   0.0 | soft lat 353.32 missS 100.0% missB 100.0% | AC lat 353.32 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  entreg       overload(sel)   0.0%  maxSel   0.0 | soft lat 353.32 missS 100.0% missB 100.0% | AC lat 353.32 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  ql           overload(sel)  16.8%  maxSel  37.2 | soft lat 338.61 missS  98.8% missB  98.8% | AC lat 336.87 missS  86.9% missB  98.7% rej  37.1% maxAdm   9.6
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat 353.32 missS 100.0% missB 100.0% | AC lat 353.32 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel   0.0 | soft lat 353.32 missS 100.0% missB 100.0% | AC lat 353.32 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  plan         infeasible plan
+Regime B, N = 320  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel 320.0 | soft lat 181.93 missS 100.0% missB 100.0% | AC lat 287.47 missS  94.6% missB  94.7% rej  94.7% maxAdm  17.1
+  indep        overload(sel) 100.0%  maxSel 115.4 | soft lat  64.96 missS 100.0% missB 100.0% | AC lat 172.23 missS  84.1% missB  83.9% rej  84.0% maxAdm  17.2
+  rbr          overload(sel)  51.1%  maxSel  59.0 | soft lat  45.49 missS 100.0% missB  51.1% | AC lat 250.46 missS  92.1% missB  91.9% rej  91.9% maxAdm  17.2
+  price        overload(sel)  98.0%  maxSel  81.5 | soft lat  38.16 missS 100.0% missB  98.4% | AC lat  31.13 missS 100.0% missB   4.3% rej  20.4% maxAdm  59.0
+  msoft        overload(sel)   0.0%  maxSel   0.0 | soft lat 352.38 missS 100.0% missB 100.0% | AC lat 352.38 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  msoft_prior  overload(sel)   0.0%  maxSel   0.0 | soft lat 352.38 missS 100.0% missB 100.0% | AC lat 352.38 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  entreg       overload(sel)   0.0%  maxSel   0.0 | soft lat 352.38 missS 100.0% missB 100.0% | AC lat 352.38 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  ql           overload(sel)  16.4%  maxSel  49.0 | soft lat 339.63 missS  98.7% missB  98.8% | AC lat 336.01 missS  90.2% missB  98.7% rej  39.2% maxAdm   9.7
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat 352.38 missS 100.0% missB 100.0% | AC lat 352.38 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel   0.0 | soft lat 352.38 missS 100.0% missB 100.0% | AC lat 352.38 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  plan         infeasible plan
+wrote /home/claude/gipa_revision/results/carry_own/res_capacity.json
+== 11:26:11 python /home/claude/gipa_revision/experiments/exp_asym.py --out /home/claude/gipa_revision/results/carry_own/res_asym.json
+0. symmetric reproduction: max |diff| 330 ms (FAILED); planner vs grid: max relative gap inf (FAILED)
+1. sym|A|affine       N= 80 lat: GIPA u/c  15.17/ 15.17 noDiff c  15.72 plan  15.17 LA  15.63 local  84.33 greedy  49.96 RBR  39.17 | herd GIPA u/c 1.00/1.00 noDiff 1.00 plan 1.01 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|affine       N=160 lat: GIPA u/c  18.57/ 18.57 noDiff c  83.98 plan  17.85 LA  18.53 local  83.98 greedy  93.94 RBR  27.20 | herd GIPA u/c 1.01/1.01 noDiff 0.00 plan 1.00 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|affine       N=240 lat: GIPA u/c  84.01/ 84.01 noDiff c  84.01 plan  19.38 LA  19.56 local  84.01 greedy 137.94 RBR  34.69 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.00 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|affine       N=320 lat: GIPA u/c  83.80/ 83.80 noDiff c  83.80 plan  20.39 LA  20.31 local  83.80 greedy 181.93 RBR  42.17 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.00 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|ps           N= 80 lat: GIPA u/c  16.91/ 16.91 noDiff c  19.02 plan  15.90 LA  17.06 local  84.33 greedy  44.03 RBR  34.72 | herd GIPA u/c 1.00/1.00 noDiff 1.00 plan 1.00 | miss S GIPA u/c   0.5/  0.5%
+1. sym|A|ps           N=160 lat: GIPA u/c  19.89/ 19.89 noDiff c  83.98 plan  18.52 LA  18.84 local  83.98 greedy  81.77 RBR  25.13 | herd GIPA u/c 1.01/1.01 noDiff 0.00 plan 1.01 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|ps           N=240 lat: GIPA u/c  84.01/ 84.01 noDiff c  84.01 plan  20.03 LA  19.98 local  84.01 greedy 119.70 RBR  31.59 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.00 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|ps           N=320 lat: GIPA u/c  83.80/ 83.80 noDiff c  83.80 plan  21.00 LA  21.07 local  83.80 greedy 157.28 RBR  37.97 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.00 | miss S GIPA u/c   0.0/  0.0%
+1. sym|B|affine       N= 80 lat: GIPA u/c  17.96/ 17.96 noDiff c  16.91 plan  22.73 LA  20.85 local 354.81 greedy  49.96 RBR  39.20 | herd GIPA u/c 1.00/1.00 noDiff 1.00 plan 1.49 | miss S GIPA u/c 100.0/100.0%
+1. sym|B|affine       N=160 lat: GIPA u/c  22.25/ 22.25 noDiff c  23.45 plan    n/a LA  30.68 local 353.19 greedy  93.94 RBR  72.18 | herd GIPA u/c 1.01/1.01 noDiff 1.00 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|affine       N=240 lat: GIPA u/c 353.32/353.32 noDiff c 353.32 plan    n/a LA  62.82 local 353.32 greedy 137.94 RBR  38.01 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|affine       N=320 lat: GIPA u/c 352.38/352.38 noDiff c 352.38 plan    n/a LA 439.03 local 352.38 greedy 181.93 RBR  45.49 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|ps           N= 80 lat: GIPA u/c  18.81/ 18.81 noDiff c  19.03 plan  18.61 LA  18.92 local 354.81 greedy  44.03 RBR  34.75 | herd GIPA u/c 1.00/1.00 noDiff 1.00 plan 1.00 | miss S GIPA u/c   2.2/  2.2%
+1. sym|B|ps           N=160 lat: GIPA u/c  23.91/ 23.91 noDiff c  26.20 plan  37.94 LA  35.29 local 353.19 greedy  81.77 RBR  63.04 | herd GIPA u/c 1.01/1.01 noDiff 1.00 plan 1.16 | miss S GIPA u/c 100.0/100.0%
+1. sym|B|ps           N=240 lat: GIPA u/c 353.32/353.32 noDiff c 353.32 plan    n/a LA 143.44 local 353.32 greedy 119.70 RBR  34.91 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|ps           N=320 lat: GIPA u/c 352.38/352.38 noDiff c 352.38 plan    n/a LA 368.97 local 352.38 greedy 157.28 RBR  41.29 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|A|affine     N= 80 lat: GIPA u/c  14.12/ 15.01 noDiff c  21.90 plan  13.96 LA  14.25 local  84.33 greedy  34.97 RBR  31.51 | herd GIPA u/c 0.96/1.20 noDiff 2.39 plan 1.09 | miss S GIPA u/c   0.0/ 17.0%
+1. fast1|A|affine     N=160 lat: GIPA u/c  17.50/ 17.50 noDiff c  83.56 plan  16.94 LA  18.04 local  83.98 greedy  65.76 RBR  57.81 | herd GIPA u/c 0.81/0.81 noDiff 2.34 plan 1.08 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|affine     N=240 lat: GIPA u/c  23.17/ 20.59 noDiff c  84.01 plan  18.56 LA  19.04 local  84.01 greedy  96.56 RBR  85.61 | herd GIPA u/c 2.40/0.80 noDiff    n/a plan 1.07 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|affine     N=320 lat: GIPA u/c  83.80/ 83.80 noDiff c  83.80 plan  19.64 LA  19.76 local  83.80 greedy 127.35 RBR 117.36 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.07 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|ps         N= 80 lat: GIPA u/c  15.26/ 15.26 noDiff c  29.75 plan  14.81 LA  15.77 local  84.33 greedy  30.82 RBR  27.97 | herd GIPA u/c 1.06/1.05 noDiff 2.32 plan 1.06 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|ps         N=160 lat: GIPA u/c  18.68/ 18.68 noDiff c  83.46 plan  17.65 LA  18.35 local  83.98 greedy  57.24 RBR  50.54 | herd GIPA u/c 0.81/0.81 noDiff 2.35 plan 1.08 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|ps         N=240 lat: GIPA u/c  24.93/ 22.38 noDiff c  84.01 plan  19.24 LA  19.36 local  84.01 greedy  83.79 RBR  74.50 | herd GIPA u/c 2.40/0.80 noDiff    n/a plan 1.07 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|ps         N=320 lat: GIPA u/c  83.80/ 83.80 noDiff c  83.80 plan  20.29 LA  20.27 local  83.80 greedy 110.10 RBR 101.90 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.06 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|B|affine     N= 80 lat: GIPA u/c  17.03/ 20.12 noDiff c  34.87 plan  20.55 LA  18.37 local 354.81 greedy  34.97 RBR  31.51 | herd GIPA u/c 0.96/1.48 noDiff 2.40 plan 0.85 | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|affine     N=160 lat: GIPA u/c  20.68/ 20.68 noDiff c  37.81 plan    n/a LA  28.16 local 353.19 greedy  65.76 RBR  57.81 | herd GIPA u/c 0.97/0.97 noDiff 2.40 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|affine     N=240 lat: GIPA u/c  35.79/ 24.43 noDiff c 353.29 plan    n/a LA  39.75 local 353.32 greedy  96.56 RBR  84.12 | herd GIPA u/c 2.40/0.80 noDiff 1.60 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|affine     N=320 lat: GIPA u/c 352.38/352.38 noDiff c 352.38 plan    n/a LA 115.28 local 352.38 greedy 127.35 RBR 117.36 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|ps         N= 80 lat: GIPA u/c  17.17/ 17.18 noDiff c  29.75 plan  16.56 LA  16.91 local 354.81 greedy  30.82 RBR  27.97 | herd GIPA u/c 1.05/1.04 noDiff 2.32 plan 1.04 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|B|ps         N=160 lat: GIPA u/c  22.12/ 22.12 noDiff c  43.60 plan  28.22 LA  26.91 local 353.19 greedy  57.24 RBR  50.54 | herd GIPA u/c 0.97/0.97 noDiff 2.39 plan 1.43 | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|ps         N=240 lat: GIPA u/c  37.54/ 26.23 noDiff c 353.29 plan    n/a LA  69.43 local 353.32 greedy  83.79 RBR  73.22 | herd GIPA u/c 2.40/0.80 noDiff 1.60 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|ps         N=320 lat: GIPA u/c 352.38/352.38 noDiff c 352.38 plan    n/a LA 213.06 local 352.38 greedy 110.10 RBR 101.90 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+wrote /home/claude/gipa_revision/results/carry_own/res_asym.json
+== 11:33:41 python /home/claude/gipa_revision/experiments/exp_la.py --out /home/claude/gipa_revision/results/carry_own/res_la.json
+1. update-rule self-check: passed
+2. tuning grid: 576 settings x 10 tuning seeds
+   A|affine|25      lri: binary a=0.1 | lrep: binary a=0.1 | pursuit: snorm a=0.1 | best: pursuit snorm a=0.1
+   A|affine|500     lri: binary a=0.01 | lrep: binary a=0.05 | pursuit: binary a=0.01 | best: lri binary a=0.01
+   A|ps|25          lri: binary a=0.1 | lrep: binary a=0.1 | pursuit: binary a=0.05 | best: lri binary a=0.1
+   A|ps|500         lri: binary a=0.01 | lrep: binary a=0.01 | pursuit: binary a=0.01 | best: lri binary a=0.01
+   B|affine|25      lri: snorm a=0.01 | lrep: snorm a=0.01 | pursuit: snorm a=0.01 | best: lri snorm a=0.01
+   B|affine|500     lri: snorm a=0.01 | lrep: snorm a=0.01 | pursuit: snorm a=0.01 | best: lrep snorm a=0.01
+   B|ps|25          lri: binary a=0.01 | lrep: binary a=0.01 | pursuit: snorm a=0.01 | best: lri binary a=0.01
+   B|ps|500         lri: snorm a=0.01 | lrep: snorm a=0.01 | pursuit: snorm a=0.01 | best: lrep snorm a=0.01
+3. A|affine|25      N= 80  best LA  15.60 (miss S/B   2.0/ 0.0%)  GIPA  15.17 (  0.0%)  plan  15.17  local  84.33  LA-GIPA +0.43 [+0.36, +0.51]
+3. A|affine|25      N=160  best LA  19.91 (miss S/B   2.2/ 0.1%)  GIPA  18.57 (  0.0%)  plan  17.85  local  83.98  LA-GIPA +1.34 [+1.29, +1.38]
+3. A|affine|25      N=240  best LA  23.20 (miss S/B   1.7/ 8.0%)  GIPA  84.01 (  0.0%)  plan  19.38  local  84.01  LA-GIPA -60.81 [-61.57, -60.10]
+3. A|affine|25      N=320  best LA  26.80 (miss S/B   1.1/19.3%)  GIPA  83.80 (  0.0%)  plan  20.38  local  83.80  LA-GIPA -57.00 [-57.67, -56.34]
+3. A|affine|500     N= 80  best LA  15.38 (miss S/B   1.1/ 0.0%)  GIPA  15.17 (  0.0%)  plan  15.17  local  84.33  LA-GIPA +0.20 [+0.18, +0.23]
+3. A|affine|500     N=160  best LA  18.24 (miss S/B   1.6/ 0.0%)  GIPA  18.57 (  0.0%)  plan  17.85  local  83.98  LA-GIPA -0.33 [-0.40, -0.27]
+3. A|affine|500     N=240  best LA  19.38 (miss S/B   1.5/ 0.2%)  GIPA  84.01 (  0.0%)  plan  19.38  local  84.01  LA-GIPA -64.63 [-65.43, -63.88]
+3. A|affine|500     N=320  best LA  20.26 (miss S/B   1.5/ 0.9%)  GIPA  83.80 (  0.0%)  plan  20.38  local  83.80  LA-GIPA -63.54 [-64.24, -62.86]
+3. A|ps|25          N= 80  best LA  16.97 (miss S/B   0.1/ 0.0%)  GIPA  16.91 (  0.5%)  plan  15.90  local  84.33  LA-GIPA +0.06 [+0.03, +0.10]
+3. A|ps|25          N=160  best LA  19.03 (miss S/B   0.7/ 0.2%)  GIPA  19.90 (  0.0%)  plan  18.51  local  83.98  LA-GIPA -0.86 [-0.97, -0.75]
+3. A|ps|25          N=240  best LA  20.24 (miss S/B   1.3/ 0.9%)  GIPA  84.01 (  0.0%)  plan  20.04  local  84.01  LA-GIPA -63.77 [-64.56, -63.03]
+3. A|ps|25          N=320  best LA  21.18 (miss S/B   2.9/ 2.0%)  GIPA  83.80 (  0.0%)  plan  21.00  local  83.80  LA-GIPA -62.62 [-63.30, -61.95]
+3. A|ps|500         N= 80  best LA  16.76 (miss S/B   0.2/ 0.0%)  GIPA  16.91 (  0.5%)  plan  15.90  local  84.33  LA-GIPA -0.16 [-0.19, -0.12]
+3. A|ps|500         N=160  best LA  18.79 (miss S/B   0.3/ 0.0%)  GIPA  19.90 (  0.0%)  plan  18.51  local  83.98  LA-GIPA -1.11 [-1.21, -1.01]
+3. A|ps|500         N=240  best LA  19.91 (miss S/B   0.3/ 0.5%)  GIPA  84.01 (  0.0%)  plan  20.04  local  84.01  LA-GIPA -64.10 [-64.88, -63.35]
+3. A|ps|500         N=320  best LA  20.87 (miss S/B   0.3/ 1.8%)  GIPA  83.80 (  0.0%)  plan  21.00  local  83.80  LA-GIPA -62.93 [-63.61, -62.26]
+3. B|affine|25      N= 80  best LA  20.75 (miss S/B  92.7/ 1.3%)  GIPA  17.73 (100.0%)  plan    nan  local 354.81  LA-GIPA +3.02 [+2.91, +3.12]
+3. B|affine|25      N=160  best LA  30.81 (miss S/B 100.0/ 2.1%)  GIPA  22.10 (100.0%)  plan    nan  local 353.19  LA-GIPA +8.71 [+8.46, +8.97]
+3. B|affine|25      N=240  best LA  40.40 (miss S/B 100.0/62.3%)  GIPA 353.32 (100.0%)  plan    nan  local 353.32  LA-GIPA -312.93 [-317.34, -308.73]
+3. B|affine|25      N=320  best LA  50.12 (miss S/B 100.0/75.5%)  GIPA 352.38 (100.0%)  plan    nan  local 352.38  LA-GIPA -302.25 [-306.26, -298.34]
+3. B|affine|500     N= 80  best LA  20.67 (miss S/B  97.4/ 0.1%)  GIPA  17.73 (100.0%)  plan    nan  local 354.81  LA-GIPA +2.94 [+2.83, +3.05]
+3. B|affine|500     N=160  best LA  30.93 (miss S/B 100.0/ 2.1%)  GIPA  22.10 (100.0%)  plan    nan  local 353.19  LA-GIPA +8.83 [+8.58, +9.07]
+3. B|affine|500     N=240  best LA  38.07 (miss S/B 100.0/39.7%)  GIPA 353.32 (100.0%)  plan    nan  local 353.32  LA-GIPA -315.25 [-319.65, -311.06]
+3. B|affine|500     N=320  best LA  45.68 (miss S/B 100.0/68.3%)  GIPA 352.38 (100.0%)  plan    nan  local 352.38  LA-GIPA -306.69 [-310.72, -302.76]
+3. B|ps|25          N= 80  best LA  18.90 (miss S/B   2.0/ 1.5%)  GIPA  18.62 (  2.5%)  plan  18.61  local 354.81  LA-GIPA +0.27 [+0.25, +0.30]
+3. B|ps|25          N=160  best LA  26.72 (miss S/B  99.1/ 2.6%)  GIPA  23.82 (100.0%)  plan    nan  local 353.19  LA-GIPA +2.90 [+2.79, +3.02]
+3. B|ps|25          N=240  best LA  33.52 (miss S/B 100.0/39.0%)  GIPA 353.32 (100.0%)  plan    nan  local 353.32  LA-GIPA -319.81 [-323.97, -315.84]
+3. B|ps|25          N=320  best LA  40.50 (miss S/B 100.0/72.0%)  GIPA 352.38 (100.0%)  plan    nan  local 352.38  LA-GIPA -311.88 [-315.58, -308.26]
+3. B|ps|500         N= 80  best LA  18.71 (miss S/B   7.8/ 0.1%)  GIPA  18.62 (  2.5%)  plan  18.61  local 354.81  LA-GIPA +0.08 [+0.06, +0.11]
+3. B|ps|500         N=160  best LA  27.20 (miss S/B  99.3/ 1.9%)  GIPA  23.82 (100.0%)  plan    nan  local 353.19  LA-GIPA +3.39 [+3.28, +3.49]
+3. B|ps|500         N=240  best LA  32.79 (miss S/B 100.0/28.5%)  GIPA 353.32 (100.0%)  plan    nan  local 353.32  LA-GIPA -320.53 [-324.70, -316.55]
+3. B|ps|500         N=320  best LA  38.40 (miss S/B 100.0/66.5%)  GIPA 352.38 (100.0%)  plan    nan  local 352.38  LA-GIPA -313.98 [-317.73, -310.32]
+   prior-inclusive mask, A affine warm 500, N=80: lat 15.32, off 0.619
+   prior-inclusive mask, A affine warm 500, N=160: lat 18.29, off 0.454
+   prior-inclusive mask, A affine warm 500, N=240: lat 747.29, off 0.000
+   prior-inclusive mask, A affine warm 500, N=320: lat 745.24, off 0.000
+4. la_lri      N=80: trans 17.56/16.3% steady 15.43/0.7% rec 363 | N=240: trans 29.96/26.8% steady 19.45/0.8% rec 387 | N=80: trans 15.79/0.0% steady 15.19/0.0% rec 103
+4. la_lrep     N=80: trans 16.86/10.5% steady 15.57/0.0% rec 93 | N=240: trans 26.35/15.2% steady 19.48/0.1% rec 96 | N=80: trans 15.54/0.0% steady 15.59/0.0% rec 172
+4. la_pursuit  N=80: trans 17.32/14.3% steady 15.69/0.2% rec 302 | N=240: trans 28.65/23.5% steady 19.51/0.4% rec 318 | N=80: trans 15.85/0.1% steady 15.79/0.0% rec 199
+4. gipa_fresh  N=80: trans 15.17/0.0% steady 15.17/0.0% rec 0 | N=240: trans 52.72/56.0% steady 646.18/69.8% rec None | N=80: trans 15.72/0.0% steady 15.17/0.0% rec 43
+4. gipa_stale  N=80: trans 15.17/0.0% steady 15.17/0.0% rec 0 | N=240: trans 23.84/0.3% steady 23.89/0.4% rec 0 | N=80: trans 15.17/0.0% steady 15.17/0.0% rec 0
+4. plan_fresh  N=80: trans 15.17/0.0% steady 15.17/0.0% rec 0 | N=240: trans 19.29/0.0% steady 19.38/0.0% rec 1 | N=80: trans 15.19/0.0% steady 15.17/0.0% rec 0
+4. plan_stale  N=80: trans 15.17/0.0% steady 15.17/0.0% rec 0 | N=240: trans 23.01/0.1% steady 22.98/0.1% rec 0 | N=80: trans 15.17/0.0% steady 15.17/0.0% rec 0
+4. local       N=80: trans 52.78/56.1% steady 648.84/70.1% rec None | N=240: trans 286.34/60.5% steady 879.81/69.8% rec None | N=80: trans 1455.28/70.1% steady 2051.34/70.1% rec None
+wrote /home/claude/gipa_revision/results/carry_own/res_la.json
+== 11:40:22 done

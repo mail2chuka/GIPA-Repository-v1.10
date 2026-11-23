@@ -1,0 +1,17 @@
+== 19:13:41 job 2
+exists homog_idle_N320_r0.json
+exists homog_idle_N320_r1.json
+exists homog_idle_N320_r2.json
+exists homog_idle_N320_r3.json
+exists homog_idle_N320_r4.json
+exists homog_own_N80_r0.json
+exists homog_own_N80_r1.json
+exists homog_own_N80_r2.json
+exists homog_own_N80_r3.json
+exists homog_own_N80_r4.json
+exists homog_own_N160_r0.json
+exists homog_own_N160_r1.json
+exists homog_own_N160_r2.json
+homog own N=160 run 3: lat 17.403  miss 0.019%  off 0.366  plateau False  train 232s  total 234s
+homog own N=160 run 4: lat 17.891  miss 0.029%  off 0.429  plateau False  train 253s  total 255s
+== 19:21:50 done

@@ -1,0 +1,14 @@
+{
+  "version": "1.10",
+  "repository": "https://github.com/mail2chuka/GIPA-Repository-v1.10",
+  "source_archive": "ITS-2026-08-0579_R1_Supplementary_Data_1-7.zip",
+  "source_archive_sha256": "2cd71785b6d5dd0498e0570ec5387423e58baceacb6e0570f067cf7947ea21c7",
+  "source_file_count": 575,
+  "excluded_manuscript_drafting_files": [
+    "docs/GIPA_Appendices_A_to_H_FINAL.md",
+    "docs/FIGURES_CONCEPT.md",
+    "docs/FIGURES_REVISION.md"
+  ],
+  "experimental_code_and_results": "Copied unchanged from the source archive.",
+  "historical_files": "pre_fix, old_tune, training logs and earlier figures are retained for provenance; see README for the primary result paths."
+}

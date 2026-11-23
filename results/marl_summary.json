@@ -1,0 +1,63 @@
+{
+ "idqn": {
+  "lat160": 17.8,
+  "range160": [
+   17.14,
+   19.24
+  ],
+  "fair160": 0.63,
+  "miss160": [
+   0.0,
+   0.0
+  ],
+  "off160": 0.226,
+  "eps_greedy_lat160": 24.58,
+  "rules160": [
+   "boltz:0.25",
+   "boltz:1.0",
+   "boltz:0.5",
+   "boltz:2.0",
+   "boltz:0.25"
+  ],
+  "lat80": 15.04,
+  "lat_dmask": {
+   "240": 18.21,
+   "320": 18.19
+  },
+  "safety_miss_dmask": {
+   "240": 0.0,
+   "320": 0.0
+  }
+ },
+ "vdn": {
+  "lat160": 17.49,
+  "range160": [
+   17.29,
+   17.61
+  ],
+  "fair160": 0.84,
+  "miss160": [
+   0.0,
+   0.0
+  ],
+  "off160": 0.077,
+  "eps_greedy_lat160": 18.23,
+  "rules160": [
+   "boltz:2.0",
+   "boltz:2.0",
+   "boltz:2.0",
+   "boltz:2.0",
+   "boltz:2.0"
+  ],
+  "lat80": 15.1,
+  "lat_dmask": {
+   "240": 18.02,
+   "320": 18.11
+  },
+  "safety_miss_dmask": {
+   "240": 0.09,
+   "320": 0.02
+  }
+ },
+ "sentence": "At N = 160 the tuned execution rule gives 17.80 ms for independent DQN (training runs 17.14–19.24 ms) and 17.49 ms for VDN (17.29–17.61 ms); with ε-greedy execution they give 24.58 and 18.23 ms. At N = 80 they give 15.04 and 15.10 ms, and with the deadline-only mask at N = 240 and 320 independent DQN gives 18.21 and 18.19 ms and VDN 18.02 and 18.11 ms."
+}

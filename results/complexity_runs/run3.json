@@ -1,0 +1,642 @@
+{
+ "hardware": {
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "logical_cores": 2,
+  "python": "3.13.17",
+  "numpy": "2.5.3",
+  "system": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "full": {
+   "processor": {
+    "model": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "vendor": "GenuineIntel",
+    "reported_mhz": 2100.0,
+    "cache_reported": "266240 KB",
+    "instruction_sets": [
+     "sse4_2",
+     "avx",
+     "avx2",
+     "fma",
+     "avx512f"
+    ],
+    "logical_cpus": 2,
+    "physical_cores": 2,
+    "sockets": 1
+   },
+   "virtualised": true,
+   "hypervisor_vendor": "KVM",
+   "memory_gib": 7.8,
+   "os": "Ubuntu 24.04.5 LTS",
+   "kernel": "6.18.44-fc-v185",
+   "architecture": "x86_64",
+   "libc": "glibc 2.39",
+   "python": {
+    "implementation": "CPython",
+    "version": "3.13.17",
+    "compiler": "Clang 23.1.3 ",
+    "build": "main Oct 21 2026 17:48:31"
+   },
+   "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+   },
+   "blas": {
+    "name": "scipy-openblas",
+    "version": "0.3.34.106.0",
+    "configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64"
+   },
+   "thread_env": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+   },
+   "argv": [
+    "experiments/exp_complexity.py",
+    "--out",
+    "results/complexity_runs/run3.json"
+   ]
+  }
+ },
+ "gipa_scalar_check": true,
+ "mappo_actor_parameters": 5380,
+ "fleet": {
+  "80": {
+   "gipa": {
+    "median_us": 140.04899998099063,
+    "p95_us": 229.2053999951804,
+    "n": 1250,
+    "per_decision_us": 1.7506124997623829
+   },
+   "msoft": {
+    "median_us": 31.544000023586705,
+    "p95_us": 57.4203500036674,
+    "n": 1250,
+    "per_decision_us": 0.3943000002948338
+   },
+   "msoft_prior": {
+    "median_us": 47.49600000764076,
+    "p95_us": 71.70054999789954,
+    "n": 1250,
+    "per_decision_us": 0.5937000000955095
+   },
+   "indep": {
+    "median_us": 31.256499994469777,
+    "p95_us": 47.99724997042176,
+    "n": 1250,
+    "per_decision_us": 0.3907062499308722
+   },
+   "greedy": {
+    "median_us": 0.9440000212634914,
+    "p95_us": 0.9930000146596285,
+    "n": 1250,
+    "per_decision_us": 0.011800000265793642
+   },
+   "local": {
+    "median_us": 0.24900003836592077,
+    "p95_us": 0.29655001583250845,
+    "n": 1250,
+    "per_decision_us": 0.0031125004795740097
+   },
+   "price": {
+    "median_us": 938.6579999954847,
+    "p95_us": 1102.9170499824659,
+    "n": 1250,
+    "per_decision_us": 11.733224999943559
+   },
+   "rbr": {
+    "median_us": 28.1315000165705,
+    "p95_us": 51.00969999602966,
+    "n": 1250,
+    "per_decision_us": 0.35164375020713123
+   },
+   "ql": {
+    "median_us": 13.07299999098177,
+    "p95_us": 19.428749996563965,
+    "n": 1250,
+    "per_decision_us": 0.16341249988727213
+   },
+   "plan": {
+    "median_us": 8.421000018188352,
+    "p95_us": 11.467949988741562,
+    "n": 1250,
+    "per_decision_us": 0.1052625002273544
+   },
+   "la_lri": {
+    "median_us": 21.72550000523188,
+    "p95_us": 41.99295003104453,
+    "n": 1250,
+    "per_decision_us": 0.2715687500653985
+   },
+   "mappo": {
+    "median_us": 97.98650000902853,
+    "p95_us": 156.27209999706793,
+    "n": 1250,
+    "per_decision_us": 1.2248312501128567
+   }
+  },
+  "160": {
+   "gipa": {
+    "median_us": 191.4179999857879,
+    "p95_us": 249.9730000408817,
+    "n": 625,
+    "per_decision_us": 1.1963624999111744
+   },
+   "msoft": {
+    "median_us": 44.80699999476201,
+    "p95_us": 69.26859997520295,
+    "n": 625,
+    "per_decision_us": 0.28004374996726256
+   },
+   "msoft_prior": {
+    "median_us": 46.85599998310863,
+    "p95_us": 70.77260002006368,
+    "n": 625,
+    "per_decision_us": 0.29284999989442895
+   },
+   "indep": {
+    "median_us": 45.027999988178635,
+    "p95_us": 69.47959998342411,
+    "n": 625,
+    "per_decision_us": 0.28142499992611647
+   },
+   "greedy": {
+    "median_us": 1.6409999830102606,
+    "p95_us": 1.720000000204891,
+    "n": 625,
+    "per_decision_us": 0.010256249893814129
+   },
+   "local": {
+    "median_us": 0.30300003572847345,
+    "p95_us": 0.352599977304635,
+    "n": 625,
+    "per_decision_us": 0.001893750223302959
+   },
+   "price": {
+    "median_us": 1288.1389999961357,
+    "p95_us": 1883.1825999996,
+    "n": 625,
+    "per_decision_us": 8.050868749975848
+   },
+   "rbr": {
+    "median_us": 38.95800000464078,
+    "p95_us": 63.34619999961426,
+    "n": 625,
+    "per_decision_us": 0.24348750002900488
+   },
+   "ql": {
+    "median_us": 15.305999966130912,
+    "p95_us": 23.080000005393227,
+    "n": 625,
+    "per_decision_us": 0.0956624997883182
+   },
+   "plan": {
+    "median_us": 12.191999985589064,
+    "p95_us": 15.957400000843338,
+    "n": 625,
+    "per_decision_us": 0.07619999990993165
+   },
+   "la_lri": {
+    "median_us": 28.96199998758675,
+    "p95_us": 42.75579998420653,
+    "n": 625,
+    "per_decision_us": 0.1810124999224172
+   },
+   "mappo": {
+    "median_us": 171.71499996493367,
+    "p95_us": 223.89560000419803,
+    "n": 625,
+    "per_decision_us": 1.0732187497808354
+   }
+  },
+  "240": {
+   "gipa": {
+    "median_us": 232.26599995496144,
+    "p95_us": 303.61059997403567,
+    "n": 417,
+    "per_decision_us": 0.9677749998123394
+   },
+   "msoft": {
+    "median_us": 59.275999944929936,
+    "p95_us": 99.4211999568506,
+    "n": 417,
+    "per_decision_us": 0.24698333310387474
+   },
+   "msoft_prior": {
+    "median_us": 60.46300001116833,
+    "p95_us": 87.4841999916498,
+    "n": 417,
+    "per_decision_us": 0.25192916671320137
+   },
+   "indep": {
+    "median_us": 56.835000009414216,
+    "p95_us": 83.09679998319552,
+    "n": 417,
+    "per_decision_us": 0.2368125000392259
+   },
+   "greedy": {
+    "median_us": 2.3009999949863413,
+    "p95_us": 2.40979999261981,
+    "n": 417,
+    "per_decision_us": 0.009587499979109756
+   },
+   "local": {
+    "median_us": 0.2940000172202417,
+    "p95_us": 0.3289999881417316,
+    "n": 417,
+    "per_decision_us": 0.0012250000717510072
+   },
+   "price": {
+    "median_us": 1699.88100003593,
+    "p95_us": 2398.750999975618,
+    "n": 417,
+    "per_decision_us": 7.082837500149708
+   },
+   "rbr": {
+    "median_us": 71.99399999535672,
+    "p95_us": 112.3772000369172,
+    "n": 417,
+    "per_decision_us": 0.29997499998065297
+   },
+   "ql": {
+    "median_us": 17.285000012634555,
+    "p95_us": 25.38219999905777,
+    "n": 417,
+    "per_decision_us": 0.07202083338597731
+   },
+   "plan": {
+    "median_us": 15.226000016355101,
+    "p95_us": 23.836600018967147,
+    "n": 417,
+    "per_decision_us": 0.06344166673481293
+   },
+   "la_lri": {
+    "median_us": 57.235999975091545,
+    "p95_us": 95.1919999806705,
+    "n": 417,
+    "per_decision_us": 0.2384833332295481
+   },
+   "mappo": {
+    "median_us": 260.31999999531763,
+    "p95_us": 405.546999991202,
+    "n": 417,
+    "per_decision_us": 1.0846666666471567
+   }
+  },
+  "320": {
+   "gipa": {
+    "median_us": 302.90300003343873,
+    "p95_us": 454.89680001082877,
+    "n": 313,
+    "per_decision_us": 0.946571875104496
+   },
+   "msoft": {
+    "median_us": 72.34299999936411,
+    "p95_us": 100.5108000072141,
+    "n": 313,
+    "per_decision_us": 0.22607187499801285
+   },
+   "msoft_prior": {
+    "median_us": 73.65999999819905,
+    "p95_us": 98.32340000457404,
+    "n": 313,
+    "per_decision_us": 0.23018749999437205
+   },
+   "indep": {
+    "median_us": 67.0610000383931,
+    "p95_us": 93.77939999239969,
+    "n": 313,
+    "per_decision_us": 0.20956562511997845
+   },
+   "greedy": {
+    "median_us": 2.7750000413107045,
+    "p95_us": 2.9677999918931164,
+    "n": 313,
+    "per_decision_us": 0.008671875129095952
+   },
+   "local": {
+    "median_us": 0.2940000172202417,
+    "p95_us": 0.3339999921081471,
+    "n": 313,
+    "per_decision_us": 0.0009187500538132554
+   },
+   "price": {
+    "median_us": 2031.1139999762418,
+    "p95_us": 2442.5248000056854,
+    "n": 313,
+    "per_decision_us": 6.3472312499257555
+   },
+   "rbr": {
+    "median_us": 61.03500004428497,
+    "p95_us": 92.42439997478867,
+    "n": 313,
+    "per_decision_us": 0.19073437513839053
+   },
+   "ql": {
+    "median_us": 18.44399997708024,
+    "p95_us": 29.205600026216377,
+    "n": 313,
+    "per_decision_us": 0.057637499928375746
+   },
+   "plan": {
+    "median_us": 19.475000044621993,
+    "p95_us": 32.48980002581444,
+    "n": 313,
+    "per_decision_us": 0.06085937513944373
+   },
+   "la_lri": {
+    "median_us": 40.38600002331805,
+    "p95_us": 60.899400034486426,
+    "n": 313,
+    "per_decision_us": 0.1262062500728689
+   },
+   "mappo": {
+    "median_us": 327.17999999931635,
+    "p95_us": 465.34000000519876,
+    "n": 313,
+    "per_decision_us": 1.0224374999978636
+   }
+  }
+ },
+ "single_vehicle": {
+  "gipa_numpy": {
+   "median_us": 89.09999996831175,
+   "p95_us": 159.1043499786337,
+   "n": 100000
+  },
+  "gipa_scalar": {
+   "median_us": 29.45200003523496,
+   "p95_us": 52.21510003821093,
+   "n": 100000
+  },
+  "msoft_prior": {
+   "median_us": 17.16600002055202,
+   "p95_us": 39.77405001478472,
+   "n": 100000
+  },
+  "greedy": {
+   "median_us": 0.2779999590529769,
+   "p95_us": 0.3560000436664268,
+   "n": 100000
+  },
+  "plan": {
+   "median_us": 4.903999979433138,
+   "p95_us": 7.899000024735869,
+   "n": 100000
+  },
+  "la_lri": {
+   "median_us": 15.2289999846289,
+   "p95_us": 28.308049968472904,
+   "n": 100000
+  },
+  "ql": {
+   "median_us": 9.566000017002807,
+   "p95_us": 15.170999975566701,
+   "n": 100000
+  },
+  "mappo": {
+   "median_us": 31.281999952170736,
+   "p95_us": 57.10609998743619,
+   "n": 100000
+  }
+ },
+ "offline": {
+  "80": {
+   "prior_heur": {
+    "median_us": 1.2340000239419169,
+    "p95_us": 1.3389999935498054,
+    "n": 10000,
+    "per_slot_at_refresh_Tp_us": 0.061700001197095844
+   },
+   "sc_prior": {
+    "median_us": 68328.65199999105,
+    "p95_us": 73054.00384996118,
+    "n": 20,
+    "per_slot_at_refresh_Tp_us": 3416.4325999995526
+   },
+   "plan_affine": {
+    "median_us": 37575.640999989446,
+    "p95_us": 41773.53800001811,
+    "n": 20,
+    "per_slot_at_refresh_Tp_us": 1878.7820499994723
+   },
+   "plan_ps": {
+    "median_us": 34713.03400002057,
+    "p95_us": 38247.01745002983,
+    "n": 20,
+    "per_slot_at_refresh_Tp_us": 1735.6517000010285
+   },
+   "ewma_update_slot": {
+    "median_us": 4.4339999760723,
+    "p95_us": 8.695299990790772,
+    "n": 1250
+   }
+  },
+  "160": {
+   "prior_heur": {
+    "median_us": 1.3370000147006067,
+    "p95_us": 1.7340500221507675,
+    "n": 10000,
+    "per_slot_at_refresh_Tp_us": 0.06685000073503033
+   },
+   "sc_prior": {
+    "median_us": 2490.4939999998987,
+    "p95_us": 3191.445350020672,
+    "n": 20,
+    "per_slot_at_refresh_Tp_us": 124.52469999999494
+   },
+   "plan_affine": {
+    "median_us": 23138.363000015263,
+    "p95_us": 24531.11969996087,
+    "n": 20,
+    "per_slot_at_refresh_Tp_us": 1156.918150000763
+   },
+   "plan_ps": {
+    "median_us": 28377.434499986975,
+    "p95_us": 29873.90920003179,
+    "n": 20,
+    "per_slot_at_refresh_Tp_us": 1418.8717249993488
+   },
+   "ewma_update_slot": {
+    "median_us": 5.471999998007959,
+    "p95_us": 6.137200000466685,
+    "n": 625
+   }
+  },
+  "240": {
+   "prior_heur": {
+    "median_us": 1.315000019985746,
+    "p95_us": 1.473999986956187,
+    "n": 10000,
+    "per_slot_at_refresh_Tp_us": 0.0657500009992873
+   },
+   "sc_prior": {
+    "median_us": 6174.214499992559,
+    "p95_us": 6403.738049974095,
+    "n": 20,
+    "per_slot_at_refresh_Tp_us": 308.7107249996279
+   },
+   "plan_affine": {
+    "median_us": 20243.5669999943,
+    "p95_us": 20630.29865005035,
+    "n": 20,
+    "per_slot_at_refresh_Tp_us": 1012.1783499997149
+   },
+   "plan_ps": {
+    "median_us": 23673.529000006965,
+    "p95_us": 33597.61775001857,
+    "n": 20,
+    "per_slot_at_refresh_Tp_us": 1183.6764500003483
+   },
+   "ewma_update_slot": {
+    "median_us": 9.501000022282824,
+    "p95_us": 16.628600030799134,
+    "n": 417
+   }
+  },
+  "320": {
+   "prior_heur": {
+    "median_us": 1.9429999724707159,
+    "p95_us": 2.3270500037142474,
+    "n": 10000,
+    "per_slot_at_refresh_Tp_us": 0.0971499986235358
+   },
+   "sc_prior": {
+    "median_us": 8682.911499988677,
+    "p95_us": 10934.017000033691,
+    "n": 20,
+    "per_slot_at_refresh_Tp_us": 434.14557499943385
+   },
+   "plan_affine": {
+    "median_us": 28950.03750001024,
+    "p95_us": 30067.754849972065,
+    "n": 20,
+    "per_slot_at_refresh_Tp_us": 1447.501875000512
+   },
+   "plan_ps": {
+    "median_us": 22324.228000002222,
+    "p95_us": 23431.10734999812,
+    "n": 20,
+    "per_slot_at_refresh_Tp_us": 1116.211400000111
+   },
+   "ewma_update_slot": {
+    "median_us": 7.018999951924343,
+    "p95_us": 7.350800001404421,
+    "n": 313
+   }
+  }
+ },
+ "training": {
+  "ql_run_s": 2.764017572,
+  "mappo_s_per_iter": 0.24495868559999961,
+  "mappo_run_s_400_iters": 97.98347423999985,
+  "la_episode_545_slots_s": 0.027042203000007703,
+  "la_warmup_operating_time_s": 10.0
+ },
+ "communication": {
+  "assumptions": {
+   "T_slot_s": 0.02,
+   "T_p_slots": 20,
+   "M": 3,
+   "bytes_per_value": 4,
+   "N_for_price": 160
+  },
+  "rows": {
+   "gipa": {
+    "Bps": 90.0,
+    "formula": "M RSUs x M float32 every T_p slots (optional refresh; 0 with a fixed prior)"
+   },
+   "plan": {
+    "Bps": 60.0,
+    "formula": "M RSUs x (x_S, x_B) float32 every T_p slots (0 if fixed)"
+   },
+   "msoft / msoft_prior / entreg": {
+    "Bps": 90.0,
+    "formula": "as GIPA (same prior)"
+   },
+   "indep / greedy / local": {
+    "Bps": 0.0,
+    "formula": "none"
+   },
+   "la": {
+    "Bps": 0.0,
+    "formula": "none: each vehicle uses only its own task's realised latency"
+   },
+   "rbr": {
+    "Bps": 600.0,
+    "formula": "M float32 load shares every slot"
+   },
+   "ql": {
+    "Bps": 200.0,
+    "formula": "largest RSU share (1 float32) every slot"
+   },
+   "mappo (base)": {
+    "Bps": 90.0,
+    "formula": "prior refresh as GIPA; training needs the global state"
+   },
+   "mappo (load variant)": {
+    "Bps": 600.0,
+    "formula": "per-slot load shares, as RBR"
+   },
+   "price": {
+    "Bps": 3858000.0,
+    "formula": "30 iterations per slot x (M prices down + N PMFs of M+1 float32 up); N = 160"
+   }
+  }
+ },
+ "complexity": {
+  "gipa": {
+   "time": "O(K |A|)",
+   "memory": "O(|A|)",
+   "runtime_comm": "prior refresh, O(M) per T_p slots",
+   "training": "none (prior offline)"
+  },
+  "plan": {
+   "time": "O(|A|) per decision; grid search O(G_S G_B M) per refresh",
+   "memory": "O(|A|)",
+   "runtime_comm": "plan refresh, O(M)",
+   "training": "none"
+  },
+  "msoft / entreg": {
+   "time": "O(|A|)",
+   "memory": "O(|A|)",
+   "runtime_comm": "prior refresh",
+   "training": "none"
+  },
+  "greedy / indep": {
+   "time": "O(|A|)",
+   "memory": "O(|A|)",
+   "runtime_comm": "none",
+   "training": "none"
+  },
+  "price": {
+   "time": "O(I N |A|) per slot, centralised",
+   "memory": "O(N |A|)",
+   "runtime_comm": "I rounds of prices and PMFs per slot",
+   "training": "none"
+  },
+  "rbr": {
+   "time": "O(|A|)",
+   "memory": "O(|A|)",
+   "runtime_comm": "load broadcast every slot",
+   "training": "none"
+  },
+  "ql": {
+   "time": "O(|A|) lookup",
+   "memory": "O(|S| |A|)",
+   "runtime_comm": "load statistic every slot",
+   "training": "O(T N |A|), T = 15,000 slots"
+  },
+  "la": {
+   "time": "O(|A|) draw + update",
+   "memory": "O(|A|) (pursuit: 3 |A|)",
+   "runtime_comm": "none (own feedback)",
+   "training": "online; hundreds of slots to converge"
+  },
+  "mappo": {
+   "time": "O(P) forward pass, P = actor parameters",
+   "memory": "O(P)",
+   "runtime_comm": "prior refresh (base) or load broadcast (load)",
+   "training": "O(E P) with E = samples x epochs; 400 iterations"
+  }
+ }
+}

@@ -1,0 +1,16 @@
+Manuscript ITS-2026-08-0579, revision R1: figure files for submission (eight figures)
+
+File                    Pixels   dpi  Width mm     MB  Status  Content
+Figure_1.tif         3375x2383   600       143   0.85  ok      System model
+Figure_2.tif         4390x2680   620       180   0.72  x0.97   GIPA stages and the three decision rules
+Figure_3.tif         4296x1831   607       180   0.67  x0.99   User equilibrium and system optimum
+Figure_4.tif         4296x1863   607       180   0.51  x0.99   Mean latency against fleet size, both latency models
+Figure_5.tif         4296x1715   607       180   0.56  x0.99   Robustness to prediction error
+Figure_6.tif         4290x1716   606       180   0.46  x0.99   RSU load and admission
+Figure_7.tif         4296x1716   607       180   0.66  x0.99   Learning automata
+Figure_8.tif         4302x1921   608       180   0.56  x0.99   Asynchronous arrivals with persistent queues (E5b)
+
+All files: RGB, LZW-compressed TIFF, white background.
+
+Checks:
+  none

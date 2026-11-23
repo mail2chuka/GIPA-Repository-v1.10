@@ -1,0 +1,10 @@
+capacities (17, 59)
+80 plan z=0 {'lat': 20.3254, 'mS': 0.5443, 'mB': 0.0, 'over_sel': 0.4716, 'sev_sel': 1.6188, 'maxl_sel': 20.8659, 'off': 0.6494, 'offS': 1.0, 'offB': 0.5003}
+80 plan z=2 {'lat': 21.7505, 'mS': 0.0417, 'mB': 0.0, 'over_sel': 0.0279, 'sev_sel': 0.0546, 'maxl_sel': 14.3244, 'off': 0.427, 'offS': 1.0, 'offB': 0.183}
+80 gipa heuristic {'lat': 17.5045, 'mS': 1.0, 'mB': 0.0, 'over_sel': 0.0, 'sev_sel': 0.0, 'maxl_sel': 17.8978, 'off': 0.5485, 'offS': 0.0, 'offB': 0.782}
+160 plan z=0 {'lat': 24.4, 'mS': 0.5398, 'mB': 0.0, 'over_sel': 0.4704, 'sev_sel': 1.6496, 'maxl_sel': 20.8452, 'off': 0.3254, 'offS': 1.0, 'offB': 0.0334}
+160 plan z=2 infeasible
+160 gipa heuristic {'lat': 21.7542, 'mS': 1.0, 'mB': 0.0, 'over_sel': 0.0, 'sev_sel': 0.0, 'maxl_sel': 33.1711, 'off': 0.5386, 'offS': 0.0, 'offB': 0.7717}
+240 plan z=0 infeasible
+240 plan z=2 infeasible
+240 gipa heuristic {'lat': 25.1711, 'mS': 1.0, 'mB': 0.0, 'over_sel': 0.0, 'sev_sel': 0.0, 'maxl_sel': 0.0, 'off': 0.0, 'offS': 0.0, 'offB': 0.0}

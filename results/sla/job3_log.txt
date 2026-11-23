@@ -1,0 +1,12 @@
+== 08:32:45 job 3
+homog own N=240 run 0: lat 18.588  miss 0.064%  off 0.294  plateau True  train 486s  total 487s
+homog own N=240 run 1: lat 18.739  miss 0.076%  off 0.295  plateau False  train 477s  total 478s
+homog own N=240 run 2: lat 18.462  miss 0.006%  off 0.290  plateau False  train 501s  total 503s
+homog own N=240 run 3: lat 18.955  miss 0.107%  off 0.319  plateau False  train 465s  total 467s
+homog own N=240 run 4: lat 18.673  miss 0.003%  off 0.328  plateau False  train 468s  total 469s
+homog own N=320 run 0: lat 19.825  miss 0.009%  off 0.303  plateau False  train 606s  total 607s
+homog own N=320 run 1: lat 18.906  miss 0.010%  off 0.186  plateau False  train 635s  total 637s
+homog own N=320 run 2: lat 19.225  miss 0.431%  off 0.254  plateau False  train 671s  total 672s
+homog own N=320 run 3: lat 19.090  miss 0.043%  off 0.236  plateau False  train 646s  total 648s
+homog own N=320 run 4: lat 19.686  miss 0.282%  off 0.296  plateau False  train 621s  total 622s
+./run_e16.sh: line 51: syntax error near unexpected token `;;'

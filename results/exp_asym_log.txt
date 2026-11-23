@@ -1,0 +1,38 @@
+0. symmetric reproduction: max |diff| 0 ms (passed); planner vs grid: max relative gap 0 (passed)
+1. sym|A|affine       N= 80 lat: GIPA u/c  15.09/ 15.09 noDiff c  15.72 plan  15.03 LA  15.03 local  18.41 greedy  49.96 RBR  39.17 | herd GIPA u/c 1.00/1.00 noDiff 1.00 plan 0.99 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|affine       N=160 lat: GIPA u/c  18.38/ 18.38 noDiff c  18.37 plan  16.69 LA  16.73 local  18.38 greedy  93.94 RBR  27.20 | herd GIPA u/c 1.01/1.01 noDiff 0.00 plan 1.00 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|affine       N=240 lat: GIPA u/c  18.38/ 18.38 noDiff c  18.38 plan  17.26 LA  17.28 local  18.38 greedy 137.94 RBR  34.69 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.00 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|affine       N=320 lat: GIPA u/c  18.35/ 18.35 noDiff c  18.35 plan  17.52 LA  17.53 local  18.35 greedy 181.93 RBR  42.17 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 0.99 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|ps           N= 80 lat: GIPA u/c  16.83/ 16.83 noDiff c  19.02 plan  15.56 LA  15.92 local  18.41 greedy  44.03 RBR  34.72 | herd GIPA u/c 1.00/1.00 noDiff 1.00 plan 0.99 | miss S GIPA u/c   0.5/  0.5%
+1. sym|A|ps           N=160 lat: GIPA u/c  19.70/ 19.70 noDiff c  18.37 plan  16.96 LA  17.06 local  18.38 greedy  81.77 RBR  25.13 | herd GIPA u/c 1.01/1.01 noDiff 0.00 plan 0.99 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|ps           N=240 lat: GIPA u/c  18.38/ 18.38 noDiff c  18.38 plan  17.43 LA  17.49 local  18.38 greedy 119.70 RBR  31.59 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.00 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|ps           N=320 lat: GIPA u/c  18.35/ 18.35 noDiff c  18.35 plan  17.65 LA  17.67 local  18.35 greedy 157.28 RBR  37.97 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 0.99 | miss S GIPA u/c   0.0/  0.0%
+1. sym|B|affine       N= 80 lat: GIPA u/c  17.50/ 17.50 noDiff c  16.91 plan  21.00 LA  20.01 local  25.22 greedy  49.96 RBR  39.20 | herd GIPA u/c 1.00/1.00 noDiff 1.00 plan 0.81 | miss S GIPA u/c 100.0/100.0%
+1. sym|B|affine       N=160 lat: GIPA u/c  21.75/ 21.75 noDiff c  23.43 plan    n/a LA  24.38 local  25.17 greedy  93.94 RBR  72.18 | herd GIPA u/c 1.01/1.01 noDiff 1.00 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|affine       N=240 lat: GIPA u/c  25.17/ 25.17 noDiff c  25.17 plan    n/a LA  25.80 local  25.17 greedy 137.94 RBR  38.01 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|affine       N=320 lat: GIPA u/c  25.14/ 25.14 noDiff c  25.14 plan    n/a LA  27.23 local  25.14 greedy 181.93 RBR  45.49 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|ps           N= 80 lat: GIPA u/c  18.35/ 18.35 noDiff c  19.03 plan  18.31 LA  18.29 local  25.22 greedy  44.03 RBR  34.75 | herd GIPA u/c 1.00/1.00 noDiff 1.00 plan 1.00 | miss S GIPA u/c   2.2/  2.2%
+1. sym|B|ps           N=160 lat: GIPA u/c  23.43/ 23.43 noDiff c  26.19 plan  22.26 LA  22.45 local  25.17 greedy  81.77 RBR  63.04 | herd GIPA u/c 1.01/1.01 noDiff 1.00 plan 1.00 | miss S GIPA u/c 100.0/100.0%
+1. sym|B|ps           N=240 lat: GIPA u/c  25.17/ 25.17 noDiff c  25.17 plan    n/a LA  23.97 local  25.17 greedy 119.70 RBR  34.91 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|ps           N=320 lat: GIPA u/c  25.14/ 25.14 noDiff c  25.14 plan    n/a LA  24.68 local  25.14 greedy 157.28 RBR  41.29 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|A|affine     N= 80 lat: GIPA u/c  14.02/ 14.91 noDiff c  21.90 plan  13.94 LA  14.25 local  18.41 greedy  34.97 RBR  31.51 | herd GIPA u/c 0.96/1.20 noDiff 2.39 plan 1.08 | miss S GIPA u/c   0.0/ 17.0%
+1. fast1|A|affine     N=160 lat: GIPA u/c  17.30/ 17.30 noDiff c  18.37 plan  16.15 LA  16.35 local  18.38 greedy  65.76 RBR  57.81 | herd GIPA u/c 0.81/0.81 noDiff 2.34 plan 1.09 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|affine     N=240 lat: GIPA u/c  22.23/ 20.40 noDiff c  18.38 plan  16.90 LA  17.00 local  18.38 greedy  96.56 RBR  85.61 | herd GIPA u/c 2.40/0.80 noDiff    n/a plan 1.08 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|affine     N=320 lat: GIPA u/c  18.35/ 18.35 noDiff c  18.35 plan  17.25 LA  17.29 local  18.35 greedy 127.35 RBR 117.36 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.08 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|ps         N= 80 lat: GIPA u/c  15.16/ 15.16 noDiff c  29.75 plan  14.66 LA  14.85 local  18.41 greedy  30.82 RBR  27.97 | herd GIPA u/c 1.06/1.05 noDiff 2.32 plan 1.05 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|ps         N=160 lat: GIPA u/c  18.49/ 18.49 noDiff c  18.37 plan  16.51 LA  16.75 local  18.38 greedy  57.24 RBR  50.54 | herd GIPA u/c 0.81/0.81 noDiff 2.35 plan 1.06 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|ps         N=240 lat: GIPA u/c  23.98/ 22.19 noDiff c  18.38 plan  17.14 LA  17.26 local  18.38 greedy  83.79 RBR  74.50 | herd GIPA u/c 2.40/0.80 noDiff    n/a plan 1.06 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|ps         N=320 lat: GIPA u/c  18.35/ 18.35 noDiff c  18.35 plan  17.43 LA  17.50 local  18.35 greedy 110.10 RBR 101.90 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.05 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|B|affine     N= 80 lat: GIPA u/c  16.51/ 19.60 noDiff c  34.87 plan  19.43 LA  18.22 local  25.22 greedy  34.97 RBR  31.51 | herd GIPA u/c 0.96/1.48 noDiff 2.40 plan 0.89 | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|affine     N=160 lat: GIPA u/c  20.18/ 20.18 noDiff c  37.81 plan    n/a LA  23.52 local  25.17 greedy  65.76 RBR  57.81 | herd GIPA u/c 0.97/0.97 noDiff 2.40 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|affine     N=240 lat: GIPA u/c  26.52/ 23.33 noDiff c  25.17 plan    n/a LA  25.16 local  25.17 greedy  96.56 RBR  84.12 | herd GIPA u/c 2.40/0.80 noDiff 1.60 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|affine     N=320 lat: GIPA u/c  25.14/ 25.14 noDiff c  25.14 plan    n/a LA  26.53 local  25.14 greedy 127.35 RBR 117.36 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|ps         N= 80 lat: GIPA u/c  16.65/ 16.65 noDiff c  29.75 plan  16.52 LA  17.06 local  25.22 greedy  30.82 RBR  27.97 | herd GIPA u/c 1.05/1.04 noDiff 2.32 plan 1.04 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|B|ps         N=160 lat: GIPA u/c  21.62/ 21.62 noDiff c  43.60 plan  21.26 LA  21.71 local  25.17 greedy  57.24 RBR  50.54 | herd GIPA u/c 0.97/0.97 noDiff 2.39 plan 1.10 | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|ps         N=240 lat: GIPA u/c  28.28/ 25.13 noDiff c  25.17 plan  23.22 LA  23.31 local  25.17 greedy  83.79 RBR  73.22 | herd GIPA u/c 2.40/0.80 noDiff 1.60 plan 1.10 | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|ps         N=320 lat: GIPA u/c  25.14/ 25.14 noDiff c  25.14 plan    n/a LA  24.20 local  25.14 greedy 110.10 RBR 101.90 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+wrote /home/claude/gipa_revision/results/res_asym.json
+
+real	2m39.726s
+user	4m28.054s
+sys	0m0.122s

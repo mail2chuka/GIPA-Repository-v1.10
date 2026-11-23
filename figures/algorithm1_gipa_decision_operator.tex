@@ -1,0 +1,91 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=12mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{tabularx,array}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.06}
+\newcommand{\lnum}[1]{\textbf{#1}}
+\newcolumntype{N}{>{\raggedleft\arraybackslash}p{6mm}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\begin{document}
+
+\begin{center}
+{\large\bfseries Algorithm 1. GIPA Decision Operator for Vehicle $i$ at Slot $t$}
+\end{center}
+\vspace{-3pt}
+
+{\small
+\textbf{Input:}
+Intrinsic action scores
+$\mathbf q_i(t)=\{q_{i,a}(t)\}_{a\in\mathcal A}$;
+predictive congestion prior
+$\bar{\mathbf c}=\{\bar c_a\}_{a\in\mathcal A}$ with $\bar c_0=0$;
+coverage set $\mathcal R_i(t)$;
+residual dwell times $T_{i,a}^{\mathrm{res}}(t)$;
+task class $k_i(t)$ and deadline $\delta_{k_i(t)}$;
+parameters $\tau,\beta,\nu,\theta_0,\gamma_\theta,K,\eta,$ and $\lambda_{k_i(t)}$.\\
+\textbf{Precondition:}
+$T_i^{\mathrm{loc}}(t)\leq\delta_{k_i(t)}$
+for tasks admitted to the primary controlled regime under Assumption A1.\\
+\textbf{Output:}
+Selected action $a_i(t)\in\mathcal A$, or \textsc{AdmissionFailure}.\\
+\textbf{Communication:}
+No inter-vehicle communication and no instantaneous fleet-load broadcast.
+}
+
+\vspace{4pt}
+\small
+\begin{tabularx}{\textwidth}{N Y}
+\lnum{1} & Construct the predicted-feasible action set $\mathcal F_i(t)$ using (7). \\
+\lnum{2} & \textbf{if} $\mathcal F_i(t)=\varnothing$ \textbf{then} \\
+\lnum{3} & \quad Record an unavoidable predicted miss. \\
+\lnum{4} & \quad \textbf{return} \textsc{AdmissionFailure}. \\
+\lnum{5} & \textbf{end if} \\
+\lnum{6} & Compute $\widetilde q_{i,a}(t)\gets q_{i,a}(t)-\eta\bar c_a$, $\forall a\in\mathcal A$, using (14). \\
+\lnum{7} & Initialize $\mathbf p_i^{(0)}(t)$ on $\mathcal F_i(t)$ by the masked-softmax rule in (15). \\
+\lnum{8} & Set $p_{i,a}^{(0)}(t)\gets0$, $\forall a\in\mathcal A\setminus\mathcal F_i(t)$. \\
+\lnum{9} & \textbf{for} $r=1,\ldots,K$ \textbf{do} \\
+\lnum{10} & \quad Compute $\theta_r\gets\theta_0\gamma_\theta^{\,r}$ using (16), so $\theta_1=\theta_0\gamma_\theta$. \\
+\lnum{11} & \quad Compute $m_{\mathcal F,i}(t)$ using (17). \\
+\lnum{12} & \quad Compute $g_{i,a}^{(r)}(t)$, $\forall a\in\mathcal F_i(t)$, using (18). \\
+\lnum{13} & \quad Update $\mathbf p_i^{(r)}(t)$ by normalized multiplicative reweighting and class-specific diffusion using (19). \\
+\lnum{14} & \quad Set $p_{i,a}^{(r)}(t)\gets0$, $\forall a\in\mathcal A\setminus\mathcal F_i(t)$. \\
+\lnum{15} & \textbf{end for} \\
+\lnum{16} & By (19), the final PMF satisfies
+$\displaystyle p_{i,a}^{(K)}(t)\geq\frac{\lambda_{k_i(t)}}{|\mathcal F_i(t)|}$,
+$\forall a\in\mathcal F_i(t)$. \\
+\lnum{17} & Sample $a_i(t)$ according to (20), equivalently
+$\Pr\{a_i(t)=a\mid\mathcal H_t\}=p_{i,a}^{(K)}(t)$,
+$\forall a\in\mathcal A$. \\
+\lnum{18} & \textbf{if} $a_i(t)=0$ \textbf{then} \\
+\lnum{19} & \quad Execute the complete task locally. \\
+\lnum{20} & \textbf{else} \\
+\lnum{21} & \quad Offload the complete task to RSU $a_i(t)\in\mathcal R$. \\
+\lnum{22} & \textbf{end if} \\
+\lnum{23} & Discard $\mathbf p_i^{(K)}(t)$; no probability state is carried to slot $t+1$. \\
+\lnum{24} & \textbf{return} $a_i(t)$. \\
+\end{tabularx}
+
+\vspace{3pt}
+\footnotesize
+\textbf{Complexity:}
+$O(K|\mathcal A|)$ time and $O(|\mathcal A|)$ space per decision,
+excluding external intrinsic-score or latency-prediction cost.
+
+\textbf{Scope:}
+Under Assumption A1, local execution belongs to $\mathcal F_i(t)$ in Regime A,
+so the failure branch is unreachable. Regime B deliberately violates A1 for
+safety-critical tasks and is used as a diagnostic stress test. Outside A1, a
+forced-local implementation safeguard lies outside the predicted-feasibility
+guarantee and must be recorded as an unavoidable predicted miss. The floor
+implied by (19) prevents complete PMF collapse but does not impose RSU capacity
+or prevent overload in every realized slot.
+
+\end{document}

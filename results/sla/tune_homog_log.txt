@@ -1,0 +1,5 @@
+tune homog {'lr': 0.003, 'beta_tau': 0.5, 'beta_risk': 0.5}  lat 17.709  miss 0.08%  plateau False  276s
+tune homog {'lr': 0.003, 'beta_tau': 2.0, 'beta_risk': 0.5}  lat 17.292  miss 0.27%  plateau False  283s
+tune homog {'lr': 0.0003, 'beta_tau': 0.5, 'beta_risk': 0.5}  lat 18.468  miss 0.19%  plateau False  280s
+tune homog {'lr': 0.0003, 'beta_tau': 2.0, 'beta_risk': 0.5}  lat 16.877  miss 0.02%  plateau False  282s
+chosen {'lr': 0.0003, 'beta_tau': 2.0, 'beta_risk': 0.5}

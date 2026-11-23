@@ -1,0 +1,5 @@
+tune het50 {'lr': 0.003, 'beta_tau': 0.5, 'beta_risk': 0.5}  lat 14.857  miss 3.92%  plateau True  283s
+tune het50 {'lr': 0.003, 'beta_tau': 2.0, 'beta_risk': 0.5}  lat 15.189  miss 4.84%  plateau True  284s
+tune het50 {'lr': 0.0003, 'beta_tau': 0.5, 'beta_risk': 0.5}  lat 15.324  miss 5.49%  plateau True  286s
+tune het50 {'lr': 0.0003, 'beta_tau': 2.0, 'beta_risk': 0.5}  lat 15.351  miss 5.60%  plateau True  291s
+chosen {'lr': 0.003, 'beta_tau': 0.5, 'beta_risk': 0.5}

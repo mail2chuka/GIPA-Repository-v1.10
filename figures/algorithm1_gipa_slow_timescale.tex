@@ -1,0 +1,76 @@
+% Algorithm 1 of the first revision (ITS-2026-08-0579): GIPA on the slow timescale,
+% Stage 0 (prior) and Stage 2 (refresh), for every variant of GIPA.
+% Build: pdflatex algorithm1_gipa_slow_timescale.tex
+% Equation numbers refer to the amended manuscript; edit them here if they change.
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=12mm,paperheight=230mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{tabularx,array,booktabs}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.06}
+\newcommand{\lnum}[1]{\textbf{#1}}
+\newcommand{\cmt}[1]{\hfill{\itshape\footnotesize #1}}
+\newcolumntype{N}{>{\raggedleft\arraybackslash}p{6mm}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\begin{document}
+
+\begin{center}
+{\large\bfseries Algorithm 1. GIPA on the Slow Timescale: Stage 0 (Prior) and Stage 2 (Refresh)}
+\end{center}
+\vspace{-3pt}
+
+{\small
+\textbf{Input:}
+anticipated fleet size $\bar N$ and class mix $\{\pi_k\}$;
+latency model: affine (7), processor sharing (5) or asynchronous (Table III);
+RSU set $\mathcal R$; deadlines $\delta_k$;
+the variant of GIPA, given by a prior $\mathsf P\in\{\text{heuristic},\text{planned}\}$ and a Stage~1 rule
+$\mathsf S\in\{\text{operator},\text{ranking}\}$ (ranking requires the planned prior);
+margin $z$; refresh period $T_{\mathrm{up}}$; smoothing coefficient $\alpha_{\mathrm{tr}}$.\\
+\textbf{Output:} the prior, broadcast through the RSUs every $T_{\mathrm{up}}$ slots.\\
+\textbf{Communication:} one broadcast per refresh; no messages between vehicles.
+}
+
+\vspace{4pt}
+\small
+\begin{tabularx}{\textwidth}{N Y}
+\lnum{1} & \textbf{loop} every $T_{\mathrm{up}}$ slots \\
+\lnum{2} & \quad \textit{Stage 0: form the prior} \\
+\lnum{3} & \quad \textbf{if} $\mathsf P=$ heuristic \textbf{then} \cmt{describes the load if the fleet spreads evenly} \\
+\lnum{4} & \quad\quad $\bar n\gets\bar N/(M+1)$; \ $\bar c_0\gets0$ and $\bar c_j\gets$ predicted congestion delay at RSU $j$ with load $\bar n$, $j\in\mathcal R$, by (11) \\
+\lnum{5} & \quad\quad prior $\gets\bar{\mathbf c}$ \\
+\lnum{6} & \quad \textbf{else} \cmt{planned prior: prescribes the load} \\
+\lnum{7} & \quad\quad Solve P1 (12)--(13) with margin $z$ for $x_{kj}$: closed form under (7) (Proposition 2), grid search for identical RSUs, sequential quadratic programming otherwise \\
+\lnum{8} & \quad\quad \textbf{if} P1 is infeasible \textbf{then} reduce $z$ or apply admission control \cmt{no allocation meets the margin} \\
+\lnum{9} & \quad\quad $r^{\mathrm{off}}_k$, $\rho_{j\mid k}$ and $\phi_k$ by (14); record the class-average scores $\bar q_{k,a}$ \\
+\lnum{10} & \quad\quad \textbf{if} $\mathsf S=$ ranking \textbf{then} $\tau_k\gets$ the $(1-r^{\mathrm{off}}_k)$-quantile of the benefit (24) over 20{,}000 synthetic class-$k$ tasks \\
+\lnum{11} & \quad\quad prior $\gets\{\phi_k\}$ \\
+\lnum{12} & \quad \textbf{end if} \\
+\lnum{13} & \quad Broadcast the prior through the RSUs \cmt{60 B/s planned, 90 B/s heuristic ($M=3$, $T_{\mathrm{up}}=20$ slots)} \\
+\lnum{14} & \quad \textit{Stage 1:} for the next $T_{\mathrm{up}}$ slots, every vehicle runs Algorithm 2 for each of its tasks \\
+\lnum{15} & \quad \textit{Stage 2: refresh} \\
+\lnum{16} & \quad $\hat N_k\gets$ number of class-$k$ vehicles associated with the RSUs; $\hat N\gets\sum_k\hat N_k$ \cmt{aggregate counts only} \\
+\lnum{17} & \quad $\bar N\gets(1-\alpha_{\mathrm{tr}})\bar N+\alpha_{\mathrm{tr}}\hat N$; \ $\pi_k\gets(1-\alpha_{\mathrm{tr}})\pi_k+\alpha_{\mathrm{tr}}\hat N_k/\hat N$ \\
+\lnum{18} & \textbf{end loop} \\
+\end{tabularx}
+
+\vspace{5pt}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}l l l Y@{}}
+\toprule
+\textbf{Variant} & \textbf{Prior (Stage 0)} & \textbf{Stage 1 rule} & \textbf{Behaviour} \\
+\midrule
+GIPA with heuristic prior & $\bar{\mathbf c}$, (11) & operator, uniform target & spreads the load; settles at the user equilibrium (Section V-A) \\
+GIPA with planned prior & $\phi_k$, (12)--(14) & operator, plan as start and target & samples the plan for an average task; amplification tilts it towards the task's advantage \\
+Planned prior with per-task ranking & $\phi_k$ and $\tau_k$ & threshold on the benefit (24) & keeps the planned offload share exactly, filled with the tasks that gain most \\
+\bottomrule
+\end{tabularx}
+
+\vspace{2pt}
+The latency model changes only the expected latency used in Stage 0; with asynchronous arrivals, Stage 1 runs at each task arrival instead of each slot.
+
+\end{document}

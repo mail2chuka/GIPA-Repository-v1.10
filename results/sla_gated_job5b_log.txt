@@ -1,0 +1,17 @@
+== 19:13:42 job 5
+exists het50_idle_N320_r0.json
+exists het50_idle_N320_r1.json
+exists het50_idle_N320_r2.json
+exists het50_idle_N320_r3.json
+exists het50_idle_N320_r4.json
+exists het50_own_N80_r0.json
+exists het50_own_N80_r1.json
+exists het50_own_N80_r2.json
+exists het50_own_N80_r3.json
+exists het50_own_N80_r4.json
+exists het50_own_N160_r0.json
+exists het50_own_N160_r1.json
+exists het50_own_N160_r2.json
+het50 own N=160 run 3: lat 15.569  miss 5.591%  off 0.406  plateau True  train 234s  total 236s
+het50 own N=160 run 4: lat 15.605  miss 5.758%  off 0.415  plateau False  train 255s  total 257s
+== 19:21:55 done

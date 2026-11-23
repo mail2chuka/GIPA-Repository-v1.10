@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite this GIPA reproducibility package."
+title: "GIPA Vehicular Edge Offloading Reproducibility Package"
+type: software
+version: "1.10"
+date-released: 2026-11-23
+license: MIT
+repository-code: "https://github.com/mail2chuka/GIPA-Repository-v1.10"
+url: "https://github.com/mail2chuka/GIPA-Repository-v1.10"
+authors:
+  - family-names: Osuizugbe
+    given-names: Chukwukaelo

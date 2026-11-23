@@ -1,0 +1,60 @@
+{
+ "setting": "homog",
+ "grid": [
+  {
+   "setting": "homog",
+   "beta_tau": 0.5,
+   "beta_risk": 0.0,
+   "lat": 22.23854027777778,
+   "miss": 0.02225,
+   "plateau": false,
+   "seconds": 268.75997257232666
+  },
+  {
+   "setting": "homog",
+   "beta_tau": 0.5,
+   "beta_risk": 0.5,
+   "lat": 22.078322222222223,
+   "miss": 0.034569444444444444,
+   "plateau": false,
+   "seconds": 276.9257597923279
+  },
+  {
+   "setting": "homog",
+   "beta_tau": 2.0,
+   "beta_risk": 0.0,
+   "lat": 20.08692638888889,
+   "miss": 0.004555555555555556,
+   "plateau": false,
+   "seconds": 278.29827523231506
+  },
+  {
+   "setting": "homog",
+   "beta_tau": 2.0,
+   "beta_risk": 0.5,
+   "lat": 20.255819444444445,
+   "miss": 0.013541666666666665,
+   "plateau": false,
+   "seconds": 277.96357679367065
+  }
+ ],
+ "chosen": {
+  "beta_tau": 2.0,
+  "beta_risk": 0.0
+ },
+ "rule": "lowest latency with miss rate within 0.5 pp of the lowest",
+ "density": 160,
+ "seeds": [
+  2000,
+  2001,
+  2002,
+  2003,
+  2004,
+  2005,
+  2006,
+  2007,
+  2008,
+  2009
+ ],
+ "iterations": 400
+}

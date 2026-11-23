@@ -1,0 +1,1 @@
+homog idle N=160 run 1: lat 17.087  miss 0.000%  off 0.149  plateau False  train 789s  total 790s

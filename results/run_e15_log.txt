@@ -1,0 +1,6 @@
+tuning done 53 s
+batch done 746 s
+carry done 988 s
+fluct done 189 s
+done 236 s
+E15 exit 0

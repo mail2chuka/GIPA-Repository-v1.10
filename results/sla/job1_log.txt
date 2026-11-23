@@ -1,0 +1,17 @@
+== 05:53:47 job 1
+homog idle N=80 run 0: lat 15.080  miss 0.004%  off 0.451  plateau False  train 145s  total 146s
+homog idle N=80 run 1: lat 15.598  miss 0.008%  off 0.645  plateau True  train 147s  total 148s
+homog idle N=80 run 2: lat 15.624  miss 0.005%  off 0.672  plateau False  train 143s  total 144s
+homog idle N=80 run 3: lat 15.186  miss 0.009%  off 0.569  plateau True  train 141s  total 142s
+homog idle N=80 run 4: lat 15.433  miss 0.009%  off 0.619  plateau False  train 152s  total 152s
+homog idle N=160 run 0: lat 16.894  miss 0.017%  off 0.313  plateau False  train 281s  total 282s
+homog idle N=160 run 1: lat 17.416  miss 0.029%  off 0.395  plateau False  train 289s  total 290s
+homog idle N=160 run 2: lat 18.192  miss 0.366%  off 0.141  plateau False  train 285s  total 286s
+homog idle N=160 run 3: lat 17.229  miss 0.368%  off 0.194  plateau False  train 278s  total 279s
+homog idle N=160 run 4: lat 18.175  miss 0.006%  off 0.462  plateau False  train 290s  total 291s
+homog idle N=240 run 0: lat 18.485  miss 0.006%  off 0.321  plateau True  train 427s  total 428s
+homog idle N=240 run 1: lat 18.747  miss 0.006%  off 0.337  plateau False  train 437s  total 438s
+homog idle N=240 run 2: lat 18.392  miss 0.005%  off 0.306  plateau True  train 434s  total 435s
+homog idle N=240 run 3: lat 18.370  miss 0.008%  off 0.315  plateau True  train 429s  total 430s
+homog idle N=240 run 4: lat 17.640  miss 0.022%  off 0.222  plateau False  train 434s  total 436s
+== 07:05:54 done

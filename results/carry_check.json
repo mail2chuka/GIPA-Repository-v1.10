@@ -1,0 +1,246 @@
+[
+ {
+  "L": 22.0,
+  "D": 40.0,
+  "own": false,
+  "f": 0.0,
+  "chain": {
+   "stable": false
+  },
+  "sim": null
+ },
+ {
+  "L": 22.0,
+  "D": 40.0,
+  "own": false,
+  "f": 0.1,
+  "chain": {
+   "share_local": 0.9000000000001424,
+   "lat_local": 123.5080783988594,
+   "miss_local": 0.8231159347082196,
+   "stable": true
+  },
+  "sim": {
+   "share_local": 0.8999396984924624,
+   "lat_local": 119.91370276065398,
+   "miss_local": 0.821036026981149
+  }
+ },
+ {
+  "L": 22.0,
+  "D": 40.0,
+  "own": false,
+  "f": 0.2,
+  "chain": {
+   "share_local": 0.8000000000000191,
+   "lat_local": 31.342971805320424,
+   "miss_local": 0.1437413954914134,
+   "stable": true
+  },
+  "sim": {
+   "share_local": 0.7996507537688442,
+   "lat_local": 31.30208476690515,
+   "miss_local": 0.1422398597377624
+  }
+ },
+ {
+  "L": 22.0,
+  "D": 40.0,
+  "own": false,
+  "f": 0.4,
+  "chain": {
+   "share_local": 0.6000000000000002,
+   "lat_local": 25.018711801751678,
+   "miss_local": 0.006198604895976043,
+   "stable": true
+  },
+  "sim": {
+   "share_local": 0.5996608040201005,
+   "lat_local": 25.01786353256657,
+   "miss_local": 0.006204512601344981
+  }
+ },
+ {
+  "L": 22.0,
+  "D": 40.0,
+  "own": true,
+  "f": 0.0,
+  "chain": {
+   "share_local": 0.909,
+   "lat_local": 30.994499449944993,
+   "miss_local": 0.0,
+   "stable": true
+  },
+  "sim": {
+   "share_local": 0.9090909547738694,
+   "lat_local": 30.99999613065346,
+   "miss_local": 0.0
+  }
+ },
+ {
+  "L": 22.0,
+  "D": 40.0,
+  "own": true,
+  "f": 0.1,
+  "chain": {
+   "share_local": 0.8542676418053721,
+   "lat_local": 29.293201344247482,
+   "miss_local": 0.0,
+   "stable": true
+  },
+  "sim": {
+   "share_local": 0.8542070351758794,
+   "lat_local": 29.29202316409706,
+   "miss_local": 0.0
+  }
+ },
+ {
+  "L": 22.0,
+  "D": 40.0,
+  "own": true,
+  "f": 0.2,
+  "chain": {
+   "share_local": 0.7812057139361148,
+   "lat_local": 27.59419500796717,
+   "miss_local": 0.0,
+   "stable": true
+  },
+  "sim": {
+   "share_local": 0.7809427135678392,
+   "lat_local": 27.5895915000296,
+   "miss_local": 0.0
+  }
+ },
+ {
+  "L": 22.0,
+  "D": 40.0,
+  "own": true,
+  "f": 0.4,
+  "chain": {
+   "share_local": 0.5985435277375107,
+   "lat_local": 24.878331967934905,
+   "miss_local": 0.0,
+   "stable": true
+  },
+  "sim": {
+   "share_local": 0.59821608040201,
+   "lat_local": 24.877073375614263,
+   "miss_local": 0.0
+  }
+ },
+ {
+  "L": 30.0,
+  "D": 40.0,
+  "own": false,
+  "f": 0.0,
+  "chain": {
+   "stable": false
+  },
+  "sim": null
+ },
+ {
+  "L": 30.0,
+  "D": 40.0,
+  "own": false,
+  "f": 0.1,
+  "chain": {
+   "stable": false
+  },
+  "sim": null
+ },
+ {
+  "L": 30.0,
+  "D": 40.0,
+  "own": false,
+  "f": 0.2,
+  "chain": {
+   "stable": false
+  },
+  "sim": null
+ },
+ {
+  "L": 30.0,
+  "D": 40.0,
+  "own": false,
+  "f": 0.4,
+  "chain": {
+   "share_local": 0.5999999999999998,
+   "lat_local": 76.45751310992773,
+   "miss_local": 0.6771243444668672,
+   "stable": true
+  },
+  "sim": {
+   "share_local": 0.5996608040201005,
+   "lat_local": 76.80030167808434,
+   "miss_local": 0.6774751220329751
+  }
+ },
+ {
+  "L": 30.0,
+  "D": 40.0,
+  "own": true,
+  "f": 0.0,
+  "chain": {
+   "share_local": 0.6666666666666666,
+   "lat_local": 35.0,
+   "miss_local": 0.0,
+   "stable": true
+  },
+  "sim": {
+   "share_local": 0.6666668341708543,
+   "lat_local": 35.00000376884327,
+   "miss_local": 0.0
+  }
+ },
+ {
+  "L": 30.0,
+  "D": 40.0,
+  "own": true,
+  "f": 0.1,
+  "chain": {
+   "share_local": 0.6309963099628242,
+   "lat_local": 34.73684210526316,
+   "miss_local": 0.0,
+   "stable": true
+  },
+  "sim": {
+   "share_local": 0.6309708542713568,
+   "lat_local": 34.736977076085985,
+   "miss_local": 0.0
+  }
+ },
+ {
+  "L": 30.0,
+  "D": 40.0,
+  "own": true,
+  "f": 0.2,
+  "chain": {
+   "share_local": 0.5901639344263616,
+   "lat_local": 34.44444444444742,
+   "miss_local": 0.0,
+   "stable": true
+  },
+  "sim": {
+   "share_local": 0.5900301507537689,
+   "lat_local": 34.44339783334469,
+   "miss_local": 0.0
+  }
+ },
+ {
+  "L": 30.0,
+  "D": 40.0,
+  "own": true,
+  "f": 0.4,
+  "chain": {
+   "share_local": 0.4897959183672362,
+   "lat_local": 33.75,
+   "miss_local": 0.0,
+   "stable": true
+  },
+  "sim": {
+   "share_local": 0.489508040201005,
+   "lat_local": 33.752039017740096,
+   "miss_local": 0.0
+  }
+ }
+]

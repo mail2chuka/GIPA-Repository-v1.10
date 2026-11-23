@@ -1,0 +1,33 @@
+== Tue Oct 27 19:48:35 UTC 2026 train model=affine mask=deadline N=240,320
+N=240 seed 3: lat  17.28 p95  22.0 miss S/B  0.01/ 0.00% off S/B 0.00/0.21 plateau True (3.3 min)
+N=240 seed 0: lat  17.29 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.00/0.24 plateau True (3.3 min)
+N=240 seed 4: lat  17.27 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.00/0.24 plateau True (3.1 min)
+N=240 seed 1: lat  17.27 p95  22.0 miss S/B  0.01/ 0.00% off S/B 0.00/0.22 plateau True (3.2 min)
+N=240 seed 2: lat  17.27 p95  22.0 miss S/B  0.01/ 0.00% off S/B 0.00/0.24 plateau True (3.2 min)
+N=320 seed 3: lat  17.52 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.00/0.18 plateau True (4.3 min)
+N=320 seed 0: lat  17.53 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.00/0.18 plateau True (4.3 min)
+N=320 seed 4: lat  17.52 p95  22.0 miss S/B  0.01/ 0.00% off S/B 0.00/0.19 plateau True (4.2 min)
+wrote /home/claude/gipa_revision/results/mappo/train_affine_base_central_A_dmask_b.json
+N=320 seed 1: lat  17.53 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.00/0.16 plateau True (4.3 min)
+N=320 seed 2: lat  17.53 p95  22.0 miss S/B  0.01/ 0.00% off S/B 0.00/0.17 plateau True (4.2 min)
+wrote /home/claude/gipa_revision/results/mappo/train_affine_base_central_A_dmask_a.json
+== Tue Oct 27 20:11:13 UTC 2026 train model=ps mask=deadline N=240,320
+N=240 seed 0: lat  17.45 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.15/0.17 plateau True (3.1 min)
+N=240 seed 3: lat  17.45 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.11/0.14 plateau True (3.2 min)
+N=240 seed 1: lat  17.46 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.11/0.20 plateau True (3.2 min)
+N=240 seed 4: lat  17.46 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.07/0.20 plateau True (3.2 min)
+N=240 seed 2: lat  17.44 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.13/0.16 plateau True (3.2 min)
+N=320 seed 3: lat  17.65 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.10/0.13 plateau True (4.4 min)
+N=320 seed 0: lat  17.66 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.12/0.13 plateau True (4.3 min)
+N=320 seed 4: lat  17.66 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.01/0.13 plateau True (4.3 min)
+wrote /home/claude/gipa_revision/results/mappo/train_ps_base_central_A_dmask_b.json
+N=320 seed 1: lat  17.66 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.09/0.12 plateau True (4.2 min)
+N=320 seed 2: lat  17.65 p95  22.0 miss S/B  0.00/ 0.00% off S/B 0.10/0.13 plateau True (4.3 min)
+wrote /home/claude/gipa_revision/results/mappo/train_ps_base_central_A_dmask_a.json
+== Tue Oct 27 20:33:44 UTC 2026 merge
+affine|base|central|A|deadline  N=240: 5 runs, mean latency 17.27 ms (range 17.27-17.29), all plateaued: True
+affine|base|central|A|deadline  N=320: 5 runs, mean latency 17.53 ms (range 17.52-17.53), all plateaued: True
+ps|base|central|A|deadline  N=240: 5 runs, mean latency 17.45 ms (range 17.44-17.46), all plateaued: True
+ps|base|central|A|deadline  N=320: 5 runs, mean latency 17.66 ms (range 17.65-17.66), all plateaued: True
+wrote results/res_mappo_dmask_reference.json
+== Tue Oct 27 20:33:44 UTC 2026 done

@@ -1,0 +1,17 @@
+== 05:53:48 job 4
+het50 idle N=80 run 0: lat 13.181  miss 2.047%  off 0.638  plateau False  train 148s  total 149s
+het50 idle N=80 run 1: lat 12.887  miss 1.763%  off 0.637  plateau True  train 147s  total 148s
+het50 idle N=80 run 2: lat 13.247  miss 2.615%  off 0.666  plateau True  train 145s  total 146s
+het50 idle N=80 run 3: lat 12.985  miss 2.243%  off 0.637  plateau False  train 145s  total 146s
+het50 idle N=80 run 4: lat 13.123  miss 2.475%  off 0.656  plateau True  train 157s  total 158s
+het50 idle N=160 run 0: lat 14.933  miss 3.973%  off 0.352  plateau True  train 287s  total 288s
+het50 idle N=160 run 1: lat 15.310  miss 4.798%  off 0.392  plateau True  train 289s  total 290s
+het50 idle N=160 run 2: lat 15.266  miss 4.857%  off 0.381  plateau True  train 290s  total 291s
+het50 idle N=160 run 3: lat 15.502  miss 5.532%  off 0.403  plateau False  train 285s  total 286s
+het50 idle N=160 run 4: lat 15.245  miss 5.117%  off 0.395  plateau False  train 298s  total 299s
+het50 idle N=240 run 0: lat 16.311  miss 7.036%  off 0.305  plateau True  train 427s  total 428s
+het50 idle N=240 run 1: lat 16.018  miss 6.351%  off 0.280  plateau False  train 435s  total 437s
+het50 idle N=240 run 2: lat 16.105  miss 6.308%  off 0.287  plateau False  train 432s  total 433s
+het50 idle N=240 run 3: lat 16.334  miss 6.917%  off 0.303  plateau False  train 429s  total 430s
+het50 idle N=240 run 4: lat 16.073  miss 6.438%  off 0.284  plateau False  train 432s  total 433s
+== 07:06:30 done

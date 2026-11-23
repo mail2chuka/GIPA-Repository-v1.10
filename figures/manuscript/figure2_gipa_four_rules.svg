@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170mm" height="108mm" viewBox="0 0 481.889764 306.141732" role="img" aria-labelledby="title desc">
+<title id="title">GIPA planning, task-level rules and queue-aware variants</title>
+<desc id="desc">Slow model-based planning supplies a cached prior. Task-level rules and queue-aware variants include probability refinement, own-queue deadline screening under planned sampling, backlog-priority screening and benefit-threshold ranking. Own-queue information can also enter the operator and ranking. Optional periodic prior refresh is a separate slow stage. Vehicles use no per-task coordination or real-time RSU load report.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<rect x="8.5039" y="5.6693" width="464.8819" height="56.6929" rx="3.1181" fill="white" stroke="black" stroke-width="0.75"/>
+<text x="240.9449" y="22.1102" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="700" fill="black">Stage 0   Slow model-based planning</text>
+<text x="240.9449" y="38.2677" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.6" font-weight="400" fill="black">Anticipated demand and classes, planning latency model and deadlines</text>
+<text x="240.9449" y="51.0236" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.6" font-weight="400" fill="black">Heuristic prior or planned class probabilities; rule-specific thresholds</text>
+<text x="240.9449" y="80.5039" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9.3" font-weight="700" fill="black">Stage 1   Task-level rules and queue-aware variants</text>
+<polyline points="240.9449,62.3622 240.9449,69.1654" fill="none" stroke="black" stroke-width="0.65"/>
+<polygon points="240.9449,69.1654 239.5620,66.0593 242.3278,66.0593" fill="black"/>
+<polyline points="240.9449,85.3228 240.9449,91.2756" fill="none" stroke="black" stroke-width="0.65"/>
+<polyline points="63.0709,91.2756 418.8189,91.2756" fill="none" stroke="black" stroke-width="0.65"/>
+<polyline points="63.0709,91.2756 63.0709,99.2126" fill="none" stroke="black" stroke-width="0.65"/>
+<polygon points="63.0709,99.2126 61.6880,96.1065 64.4538,96.1065" fill="black"/>
+<polyline points="181.6441,91.2756 181.6441,99.2126" fill="none" stroke="black" stroke-width="0.65"/>
+<polygon points="181.6441,99.2126 180.2612,96.1065 183.0270,96.1065" fill="black"/>
+<polyline points="300.2457,91.2756 300.2457,99.2126" fill="none" stroke="black" stroke-width="0.65"/>
+<polygon points="300.2457,99.2126 298.8628,96.1065 301.6286,96.1065" fill="black"/>
+<polyline points="418.8189,91.2756 418.8189,99.2126" fill="none" stroke="black" stroke-width="0.65"/>
+<polygon points="418.8189,99.2126 417.4360,96.1065 420.2018,96.1065" fill="black"/>
+<rect x="8.5039" y="99.7795" width="109.1339" height="120.1890" rx="3.1181" fill="white" stroke="black" stroke-width="0.75"/>
+<text x="63.0709" y="114.8031" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.9" font-weight="700" fill="black">Probability</text>
+<text x="63.0709" y="125.8583" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.9" font-weight="700" fill="black">operator</text>
+<text x="63.0709" y="144.5669" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Own predictions + prior</text>
+<text x="63.0709" y="157.1811" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Coverage + deadline mask</text>
+<text x="63.0709" y="169.7953" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Reweight + mix with target</text>
+<text x="63.0709" y="182.4094" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Sample one action</text>
+<text x="63.0709" y="195.0236" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Heuristic or planned target</text>
+<rect x="127.0772" y="99.7795" width="109.1339" height="120.1890" rx="3.1181" fill="white" stroke="black" stroke-width="0.75"/>
+<text x="181.6441" y="114.8031" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.9" font-weight="700" fill="black">Own-queue</text>
+<text x="181.6441" y="125.8583" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.9" font-weight="700" fill="black">deadline screen</text>
+<text x="181.6441" y="144.5669" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Own FIFO backlog + plan</text>
+<text x="181.6441" y="157.1811" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Predict local completion</text>
+<text x="181.6441" y="169.7953" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Local execution too late:</text>
+<text x="181.6441" y="182.4094" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">redraw to a planned RSU</text>
+<text x="181.6441" y="195.0236" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Otherwise sample the plan</text>
+<rect x="245.6787" y="99.7795" width="109.1339" height="120.1890" rx="3.1181" fill="white" stroke="black" stroke-width="0.75"/>
+<text x="300.2457" y="114.8031" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.9" font-weight="700" fill="black">Backlog-priority</text>
+<text x="300.2457" y="125.8583" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.9" font-weight="700" fill="black">screen</text>
+<text x="300.2457" y="144.5669" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Background FIFO backlog</text>
+<text x="300.2457" y="157.1811" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Backlog ≥ h: offload</text>
+<text x="252.6573" y="169.7953" font-family="Arial, Helvetica, sans-serif" font-size="8.1" fill="black">Otherwise: offload with p<tspan baseline-shift="super" font-size="5.832">off</tspan></text>
+<text x="300.2457" y="182.4094" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Sample a planned RSU</text>
+<text x="300.2457" y="195.0236" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Plan re-optimised offline</text>
+<rect x="364.2520" y="99.7795" width="109.1339" height="120.1890" rx="3.1181" fill="white" stroke="black" stroke-width="0.75"/>
+<text x="418.8189" y="114.8031" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.9" font-weight="700" fill="black">Benefit-threshold</text>
+<text x="418.8189" y="125.8583" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.9" font-weight="700" fill="black">ranking</text>
+<text x="418.8189" y="144.5669" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Heterogeneous tasks</text>
+<text x="418.8189" y="157.1811" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Saving &gt; class threshold</text>
+<text x="418.8189" y="169.7953" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">or locally infeasible: offload</text>
+<text x="418.8189" y="182.4094" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">Uniform reachable RSU</text>
+<text x="418.8189" y="195.0236" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.1" font-weight="400" fill="black">No full RSU deadline mask</text>
+<text x="240.9449" y="235.8425" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.4" font-weight="400" fill="black">Independent decisions use each vehicle&#x27;s own information and a cached plan.</text>
+<text x="240.9449" y="248.3150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.4" font-weight="400" fill="black">No per-task coordination or real-time RSU-load reports.</text>
+<rect x="8.5039" y="263.6220" width="464.8819" height="36.8504" rx="3.1181" fill="white" stroke="black" stroke-width="0.75" stroke-dasharray="3 2"/>
+<text x="240.9449" y="278.3622" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9.4" font-weight="700" fill="black">Stage 2   Optional slow prior refresh</text>
+<text x="240.9449" y="291.9685" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.4" font-weight="400" fill="black">Aggregate association counts can update the plan for later tasks.</text>
+</svg>

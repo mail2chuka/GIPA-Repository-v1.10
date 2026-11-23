@@ -1,0 +1,31 @@
+0. Table III: 5: 21.64 ms (paper 21.64), 10: 45.92 ms (paper 45.90), 20: 95.48 ms (paper 95.48), 40: 195.25 ms (paper 195.25)
+   batch formula True (max diff 7.1e-15); M/M/1-PS 4.989 vs 5.000; GIPA PMF True
+   plan A N=55: x_S 0.333, x_B 0.333, rho 0.504, expected latency 7.06 ms
+   plan A N=80: x_S 0.333, x_B 0.333, rho 0.733, expected latency 8.01 ms
+   plan A N=87: x_S 0.333, x_B 0.328, rho 0.787, expected latency 8.66 ms
+   plan A N=104: x_S 0.333, x_B 0.265, rho 0.790, expected latency 10.22 ms
+   plan A N=160: x_S 0.333, x_B 0.148, rho 0.785, expected latency 13.02 ms
+   plan A N=240: x_S 0.333, x_B 0.078, rho 0.791, expected latency 14.75 ms
+   plan B N=55: x_S 0.333, x_B 0.333, rho 0.504, expected latency 7.06 ms
+   plan B N=80: x_S 0.333, x_B 0.333, rho 0.733, expected latency 8.01 ms
+   plan B N=87: x_S 0.333, x_B 0.333, rho 0.798, expected latency 8.67 ms
+   plan B N=104: x_S 0.333, x_B 0.282, rho 0.830, expected latency 11.22 ms
+   plan B N=160: x_S 0.333, x_B 0.160, rho 0.828, expected latency 16.01 ms
+   plan B N=240: x_S 0.333, x_B 0.085, rho 0.828, expected latency 18.97 ms
+1. A N= 55 median lat: local   18.41 greedy 11950.46(U100%) GIPA    9.28 GIPA-soj    9.28/   9.28 plan    7.07 LA    9.21 RBR20/100    9.58/  17.88 GIPA-b20/100    9.35/   9.35 JSQ    9.05 | miss% GIPA 0.0 plan 0.0 LA 0.0 JSQ 0.0
+1. A N= 80 median lat: local   18.49 greedy 24745.22(U100%) GIPA    9.66 GIPA-soj    9.66/   9.66 plan    8.05 LA    9.73 RBR20/100   23.73/  45.89(U20%) GIPA-b20/100    9.76/   9.79 JSQ   14.13 | miss% GIPA 0.0 plan 0.0 LA 0.0 JSQ 0.7
+1. A N= 87 median lat: local   18.42 greedy 27908.82(U100%) GIPA    9.75 GIPA-soj    9.74/   9.74 plan    8.64 LA    9.74 RBR20/100   25.82/ 128.18(U20%) GIPA-b20/100    9.88/   9.91 JSQ   16.37 | miss% GIPA 0.0 plan 0.0 LA 0.0 JSQ 2.3
+1. A N=104 median lat: local   18.43 greedy 36122.59(U100%) GIPA   10.55 GIPA-soj   10.33/  10.33 plan   10.24 LA   10.59 RBR20/100   30.84/  71.88(U50%) GIPA-b20/100   10.57/  11.20 JSQ   21.08 | miss% GIPA 0.0 plan 0.0 LA 0.0 JSQ 7.7
+1. A N=160 median lat: local   18.32 greedy 62852.74(U100%) GIPA   13.31 GIPA-soj   18.32/3305.16(U100%) plan   12.96 LA   13.23 RBR20/100   38.35/  33.52 GIPA-b20/100   23.36/  87.35(U13%) JSQ   26.29 | miss% GIPA 0.0 plan 0.0 LA 0.1 JSQ 33.5
+1. A N=240 median lat: local   18.40 greedy 101340.29(U100%) GIPA   18.40 GIPA-soj   18.40/12852.45(U100%) plan   14.76 LA   16.06 RBR20/100   43.65(U17%)/  68.51(U27%) GIPA-b20/100   29.57/  46.58(U23%) JSQ   29.06 | miss% GIPA 0.0 plan 0.0 LA 0.0 JSQ 34.7
+1. B N= 55 median lat: local   25.21 greedy 11950.46(U100%) GIPA   10.18 GIPA-soj   10.18/  10.18 plan    7.07 LA    9.86 RBR20/100    9.58/  17.88 GIPA-b20/100   10.27/  10.28 JSQ    9.05 | miss% GIPA 0.0 plan 0.0 LA 0.2 JSQ 0.0
+1. B N= 80 median lat: local   25.32 greedy 24745.22(U100%) GIPA   10.63 GIPA-soj   10.63/  10.63 plan    8.05 LA   10.34 RBR20/100   24.79/  54.08(U27%) GIPA-b20/100   10.78/  10.80 JSQ   14.15 | miss% GIPA 0.0 plan 0.0 LA 0.2 JSQ 0.8
+1. B N= 87 median lat: local   25.22 greedy 27908.82(U100%) GIPA   10.71 GIPA-soj   10.71/  10.71 plan    8.65 LA   10.43 RBR20/100   28.20/ 126.84(U23%) GIPA-b20/100   10.89/  10.96 JSQ   16.53 | miss% GIPA 0.0 plan 0.0 LA 0.2 JSQ 2.6
+1. B N=104 median lat: local   25.24 greedy 36122.59(U100%) GIPA   11.47 GIPA-soj   11.47/  11.47 plan   11.21 LA   11.72 RBR20/100   33.15/  75.70(U57%) GIPA-b20/100   11.79/  13.88 JSQ   24.58 | miss% GIPA 0.0 plan 0.1 LA 0.4 JSQ 17.6
+1. B N=160 median lat: local   25.10 greedy 62852.74(U100%) GIPA   19.51(U20%) GIPA-soj   25.10/4291.50(U100%) plan   15.95 LA   16.53 RBR20/100   44.20/  36.92(U3%) GIPA-b20/100   29.10/  61.24(U53%) JSQ   31.98 | miss% GIPA 43.1 plan 0.1 LA 1.2 JSQ 56.3
+1. B N=240 median lat: local   25.20 greedy 101340.29(U100%) GIPA   25.20 GIPA-soj   25.20/14378.50(U100%) plan   18.99 LA   20.22 RBR20/100   50.53(U7%)/  74.38(U37%) GIPA-b20/100   35.94/  66.69(U47%) JSQ   35.37 | miss% GIPA 30.2 plan 0.1 LA 0.1 JSQ 53.5
+wrote /home/claude/gipa_revision/results/res_async.json
+
+real	19m21.658s
+user	38m23.066s
+sys	0m1.952s

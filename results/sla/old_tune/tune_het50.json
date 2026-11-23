@@ -1,0 +1,60 @@
+{
+ "setting": "het50",
+ "grid": [
+  {
+   "setting": "het50",
+   "beta_tau": 0.5,
+   "beta_risk": 0.0,
+   "lat": 16.868146627367267,
+   "miss": 0.06355555555555556,
+   "plateau": true,
+   "seconds": 272.6657991409302
+  },
+  {
+   "setting": "het50",
+   "beta_tau": 0.5,
+   "beta_risk": 0.5,
+   "lat": 16.78555240131276,
+   "miss": 0.06676388888888889,
+   "plateau": false,
+   "seconds": 284.02666878700256
+  },
+  {
+   "setting": "het50",
+   "beta_tau": 2.0,
+   "beta_risk": 0.0,
+   "lat": 19.358295650451613,
+   "miss": 0.10033333333333334,
+   "plateau": false,
+   "seconds": 276.65222001075745
+  },
+  {
+   "setting": "het50",
+   "beta_tau": 2.0,
+   "beta_risk": 0.5,
+   "lat": 16.155143587526876,
+   "miss": 0.05690277777777777,
+   "plateau": false,
+   "seconds": 277.7970278263092
+  }
+ ],
+ "chosen": {
+  "beta_tau": 2.0,
+  "beta_risk": 0.5
+ },
+ "rule": "lowest latency with miss rate within 0.5 pp of the lowest",
+ "density": 160,
+ "seeds": [
+  2000,
+  2001,
+  2002,
+  2003,
+  2004,
+  2005,
+  2006,
+  2007,
+  2008,
+  2009
+ ],
+ "iterations": 400
+}

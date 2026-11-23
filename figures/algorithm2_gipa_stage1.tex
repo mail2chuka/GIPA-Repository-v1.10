@@ -1,0 +1,68 @@
+% Algorithm 2 of the first revision (ITS-2026-08-0579): GIPA Stage 1, the decision
+% for one task on one vehicle, for every variant of GIPA.
+% Build: pdflatex algorithm2_gipa_stage1.tex
+% Equation numbers refer to the amended manuscript; edit them here if they change.
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=12mm,paperheight=230mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{tabularx,array}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.06}
+\newcommand{\lnum}[1]{\textbf{#1}}
+\newcommand{\cmt}[1]{\hfill{\itshape\footnotesize #1}}
+\newcolumntype{N}{>{\raggedleft\arraybackslash}p{6mm}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\begin{document}
+
+\begin{center}
+{\large\bfseries Algorithm 2. GIPA Stage 1: Decision for the Task of Vehicle $i$ at Slot $t$}
+\end{center}
+\vspace{-3pt}
+
+{\small
+\textbf{Input:}
+task class $k=k_i(t)$ and deadline $\delta_k$;
+predicted local latency $\hat T^{\mathrm{loc}}_i(t)$ and predicted latency $\hat\ell_{i,j}(t)$ at each RSU, including the congestion the prior expects;
+intrinsic scores $q_{i,a}(t)$, $a\in\mathcal A$;
+coverage set $\mathcal R_i(t)$ and residual dwell times $T^{\mathrm{res}}_{ij}(t)$;
+the variant $(\mathsf P,\mathsf S)$ and the prior from Algorithm 1;
+parameters $\gamma,\tau,\beta,\nu,\theta_0,\gamma_\theta,K,\eta,\lambda_k$.\\
+\textbf{Output:} action $a_i(t)\in\mathcal A$: $0$ (local) or an RSU.\\
+\textbf{Communication:} none between vehicles; no instantaneous load information; no reward or feedback.
+}
+
+\vspace{4pt}
+\small
+\begin{tabularx}{\textwidth}{N Y}
+\lnum{1} & Construct the predicted-feasible set $\mathcal F_i(t)$ with guard band $\gamma$ by (8). \cmt{all variants} \\
+\lnum{2} & \textbf{if} $\mathcal F_i(t)=\varnothing$ \textbf{then} execute locally, record an unavoidable predicted miss and \textbf{return} $0$. \\
+\lnum{3} & \textbf{if} $\mathsf S=$ ranking \textbf{then} \cmt{planned prior with per-task ranking} \\
+\lnum{4} & \quad Compute the predicted benefit $\beta_i(t)$ by (24). \\
+\lnum{5} & \quad \textbf{if} ($\beta_i(t)>\tau_k$ \textbf{or} $\hat T^{\mathrm{loc}}_i(t)>\delta_k$) \textbf{and} $\mathcal F_i(t)\cap\mathcal R\neq\varnothing$ \textbf{then} \\
+\lnum{6} & \quad\quad Draw RSU $j$ from $\rho_{\cdot\mid k}$ restricted to $\mathcal F_i(t)\cap\mathcal R$ and renormalised; offload the task to $j$ and \textbf{return} $j$. \\
+\lnum{7} & \quad \textbf{else} execute locally and \textbf{return} $0$. \\
+\lnum{8} & \textbf{end if} \cmt{otherwise $\mathsf S=$ operator} \\
+\lnum{9} & \textbf{if} $\mathsf P=$ heuristic \textbf{then} \\
+\lnum{10} & \quad $\tilde q_{i,a}(t)\gets q_{i,a}(t)-\eta\bar c_a$ by (15); $\mathbf p^{(0)}_i(t)\gets$ masked softmax by (17); $u_i\gets$ uniform on $\mathcal F_i(t)$. \\
+\lnum{11} & \textbf{else} \cmt{planned prior} \\
+\lnum{12} & \quad $\tilde q_{i,a}(t)\gets q_{i,a}(t)-\bar q_{k,a}$ by (16); $\mathbf p^{(0)}_i(t)\gets u_i\gets\phi_k$ restricted to $\mathcal F_i(t)$ by (18). \\
+\lnum{13} & \textbf{end if} \\
+\lnum{14} & \textbf{for} $r=1,\ldots,K$ \textbf{do} \\
+\lnum{15} & \quad $\theta_r\gets\theta_0\gamma_\theta^{\,r}$ by (19); $m_{\mathcal F,i}(t)$ by (20); $g^{(r)}_{i,a}(t)$, $a\in\mathcal F_i(t)$, by (21). \cmt{amplify} \\
+\lnum{16} & \quad $\mathbf p^{(r)}_i(t)$ by (22): reweight, then diffuse a share $\lambda_k$ towards $u_i$; $p^{(r)}_{i,a}(t)=0$ for $a\notin\mathcal F_i(t)$. \cmt{diffuse} \\
+\lnum{17} & \textbf{end for} \\
+\lnum{18} & Sample $a_i(t)\sim\mathbf p^{(K)}_i(t)$ by (23); execute locally ($a_i(t)=0$) or offload the complete task to RSU $a_i(t)$. \\
+\lnum{19} & Discard $\mathbf p^{(K)}_i(t)$; no probability state is carried to the next task. \\
+\end{tabularx}
+
+\vspace{3pt}
+\footnotesize
+\textbf{Special cases:} with the planned prior and identical tasks in a class, every $\tilde q_{i,a}(t)=0$ and $\mathbf p^{(K)}_i(t)=\phi_k|_{\mathcal F_i(t)}$, so lines 14--17 can be skipped; with $\beta=0$ the vehicle samples the plan restricted to $\mathcal F_i(t)$. With asynchronous arrivals the algorithm runs at each task arrival.\\
+\textbf{Complexity:} $O(K|\mathcal A|)$ time and $O(|\mathcal A|)$ memory per decision with the operator, $O(|\mathcal A|)$ with ranking, excluding latency prediction.
+\textbf{Guarantee (operator):} every feasible action keeps probability at least $\lambda_k u_{i,a}$ (Proposition 5); the floor prevents collapse onto one action but does not cap RSU load, which is set by the prior.
+
+\end{document}

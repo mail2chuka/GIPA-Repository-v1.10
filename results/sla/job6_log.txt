@@ -1,0 +1,12 @@
+== 08:35:21 job 6
+het50 own N=240 run 0: lat 16.902  miss 7.974%  off 0.331  plateau True  train 474s  total 476s
+het50 own N=240 run 1: lat 16.979  miss 8.559%  off 0.331  plateau True  train 489s  total 490s
+het50 own N=240 run 2: lat 16.961  miss 8.203%  off 0.333  plateau True  train 491s  total 492s
+het50 own N=240 run 3: lat 17.041  miss 7.854%  off 0.327  plateau False  train 474s  total 476s
+het50 own N=240 run 4: lat 16.916  miss 8.072%  off 0.323  plateau False  train 468s  total 469s
+het50 own N=320 run 0: lat 17.712  miss 9.937%  off 0.272  plateau False  train 605s  total 607s
+het50 own N=320 run 1: lat 17.914  miss 9.918%  off 0.279  plateau False  train 647s  total 649s
+het50 own N=320 run 2: lat 17.492  miss 9.364%  off 0.256  plateau False  train 651s  total 653s
+het50 own N=320 run 3: lat 17.670  miss 9.390%  off 0.278  plateau True  train 632s  total 634s
+het50 own N=320 run 4: lat 17.545  miss 9.336%  off 0.268  plateau True  train 644s  total 646s
+./run_e16.sh: line 51: syntax error near unexpected token `;;'

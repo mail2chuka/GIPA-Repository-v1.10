@@ -1,0 +1,577 @@
+== 11:16:07 python /home/claude/gipa_revision/experiments/exp.py
+MAIN DONE
+--- regime A  N=160 ---
+  greedy         mS= 100.0 mB= 100.0 lat= 93.94 p95=  95.4 off=1.00 offS=1.00 offB=1.00 fair=0.33
+  indep          mS= 100.0 mB=  18.4 lat= 35.64 p95=  40.2 off=1.00 offS=1.00 offB=1.00 fair=0.99
+  msoft          mS=   0.0 mB=   0.0 lat= 22.79 p95=  30.8 off=0.70 offS=0.00 offB=1.00 fair=0.98
+  msoft_prior    mS=   0.0 mB= 100.0 lat= 83.98 p95= 116.0 off=0.00 offS=0.00 offB=0.00 fair=0.33
+  price          mS=   6.4 mB=   0.1 lat= 23.24 p95=  31.5 off=0.69 offS=0.06 offB=0.95 fair=0.98
+  entreg         mS=   0.0 mB=  99.2 lat= 79.67 p95= 116.0 off=0.00 offS=0.00 offB=0.01 fair=0.41
+  rbr            mS=  51.1 mB=   9.3 lat= 27.20 p95=  31.3 off=0.51 offS=0.51 offB=0.51 fair=0.99
+  ql             mS=   0.0 mB=  97.8 lat= 73.72 p95= 116.0 off=0.02 offS=0.02 offB=0.02 fair=0.57
+  local          mS=   0.0 mB= 100.0 lat= 83.98 p95= 116.0 off=0.00 offS=0.00 offB=0.00 fair=N/A 
+  gipa           mS=   0.0 mB=   0.0 lat= 18.57 p95=  24.6 off=0.48 offS=0.00 offB=0.69 fair=0.98
+  gipa_noamp     mS=   0.0 mB=   0.0 lat= 18.95 p95=  25.0 off=0.51 offS=0.00 offB=0.73 fair=0.98
+  gipa_nodiff    mS=   0.0 mB= 100.0 lat= 83.98 p95= 116.0 off=0.00 offS=0.00 offB=0.00 fair=0.33
+  gipa_fixed     mS=   0.0 mB=   0.0 lat= 18.42 p95=  24.4 off=0.47 offS=0.00 offB=0.67 fair=0.98
+  gipa_binary    mS=   0.0 mB=   0.0 lat= 18.42 p95=  24.4 off=0.47 offS=0.00 offB=0.67 fair=0.98
+  gipa_noprior   mS=   0.0 mB=   0.0 lat= 19.48 p95=  25.9 off=0.55 offS=0.00 offB=0.78 fair=0.98
+--- regime B  N=160 ---
+  greedy         mS= 100.0 mB= 100.0 lat= 93.94 p95=  95.4 off=1.00 offS=1.00 offB=1.00 fair=0.33
+  indep          mS= 100.0 mB=  18.4 lat= 35.64 p95=  40.2 off=1.00 offS=1.00 offB=1.00 fair=0.99
+  msoft          mS= 100.0 mB=   0.0 lat= 24.00 p95=  30.8 off=0.70 offS=0.00 offB=1.00 fair=0.98
+  msoft_prior    mS= 100.0 mB=   0.0 lat= 23.11 p95=  29.9 off=0.64 offS=0.00 offB=0.92 fair=0.98
+  price          mS= 100.0 mB=   0.0 lat= 23.93 p95=  30.7 off=0.69 offS=0.00 offB=1.00 fair=0.98
+  entreg         mS= 100.0 mB=   0.5 lat= 22.42 p95=  30.1 off=0.58 offS=0.00 offB=0.83 fair=0.98
+  rbr            mS= 100.0 mB= 100.0 lat= 72.18 p95=  74.9 off=1.00 offS=1.00 offB=1.00 fair=0.50
+  ql             mS=  98.7 mB=  98.5 lat=336.30 p95= 500.0 off=0.16 offS=0.50 offB=0.02 fair=0.46
+  local          mS= 100.0 mB= 100.0 lat=353.19 p95= 500.0 off=0.00 offS=0.00 offB=0.00 fair=N/A 
+  gipa           mS= 100.0 mB=   1.3 lat= 22.25 p95=  31.7 off=0.54 offS=0.00 offB=0.77 fair=0.98
+  gipa_noamp     mS= 100.0 mB=   1.6 lat= 22.24 p95=  33.0 off=0.53 offS=0.00 offB=0.75 fair=0.98
+  gipa_nodiff    mS= 100.0 mB=   0.0 lat= 23.45 p95=  29.9 off=0.67 offS=0.00 offB=0.95 fair=0.98
+  gipa_fixed     mS= 100.0 mB=   1.5 lat= 22.24 p95=  32.8 off=0.53 offS=0.00 offB=0.76 fair=0.98
+  gipa_binary    mS= 100.0 mB=   1.0 lat= 22.29 p95=  30.7 off=0.55 offS=0.00 offB=0.79 fair=0.98
+  gipa_noprior   mS= 100.0 mB=   1.1 lat= 22.26 p95=  31.1 off=0.55 offS=0.00 offB=0.78 fair=0.98
+
+=== SELF-CONSISTENT PRIOR ===
+ regA N=80: sc_prior=[8.09 8.09 8.09] (iters 400, resid 1.2e+00)  heuristic=[10.45 10.45 10.45]   <-- DID NOT CONVERGE
+ regA N=160: sc_prior=[14.4 14.4 14.4] (iters 10, resid 1.7e-07)  heuristic=[21.45 21.45 21.45]
+ regA N=240: sc_prior=[20.81 20.81 20.81] (iters 23, resid 8.4e-07)  heuristic=[32.45 32.45 32.45]
+ regA N=320: sc_prior=[26.62 26.62 26.62] (iters 23, resid 8.2e-07)  heuristic=[43.45 43.45 43.45]
+ regB N=80: sc_prior=[10.33 10.33 10.33] (iters 400, resid 1.7e+00)  heuristic=[10.45 10.45 10.45]   <-- DID NOT CONVERGE
+ regB N=160: sc_prior=[15.5 15.5 15.5] (iters 23, resid 8.0e-07)  heuristic=[21.45 21.45 21.45]
+ regB N=240: sc_prior=[22.26 22.26 22.26] (iters 17, resid 8.4e-07)  heuristic=[32.45 32.45 32.45]
+ regB N=320: sc_prior=[26.62 26.62 26.62] (iters 22, resid 8.8e-07)  heuristic=[43.45 43.45 43.45]
+
+=== REGIME B with self-consistent prior (and margins) ===
+ N=80 static    mS= 100.0 mB=  1.1 lat= 17.96 offS=0.00 offB=0.78 fair=0.96
+ N=80 sc        mS= 100.0 mB=  1.1 lat= 17.96 offS=0.00 offB=0.78 fair=0.96
+ N=80 sc_m10    mS= 100.0 mB=  1.1 lat= 17.96 offS=0.00 offB=0.78 fair=0.96
+ N=80 workload  mS=  93.1 mB=  1.1 lat= 20.71 offS=1.00 offB=0.78 fair=0.97
+ N=80 ALL-LOCAL mS= 100.0 mB=100.0 lat=354.81
+ N=160 static    mS= 100.0 mB=  1.3 lat= 22.25 offS=0.00 offB=0.77 fair=0.98
+ N=160 sc        mS= 100.0 mB=  1.1 lat= 22.26 offS=0.00 offB=0.78 fair=0.98
+ N=160 sc_m10    mS= 100.0 mB=  1.1 lat= 22.26 offS=0.00 offB=0.78 fair=0.98
+ N=160 workload  mS= 100.0 mB=  1.1 lat= 22.26 offS=0.00 offB=0.78 fair=0.98
+ N=160 ALL-LOCAL mS= 100.0 mB=100.0 lat=353.19
+ N=240 static    mS= 100.0 mB=100.0 lat=353.32 offS=0.00 offB=0.00 fair=N/A 
+ N=240 sc        mS= 100.0 mB=  2.3 lat= 26.17 offS=0.00 offB=0.74 fair=0.98
+ N=240 sc_m10    mS= 100.0 mB=  3.6 lat= 25.84 offS=0.00 offB=0.69 fair=0.98
+ N=240 workload  mS= 100.0 mB=  1.7 lat= 26.55 offS=0.00 offB=0.77 fair=0.99
+ N=240 ALL-LOCAL mS= 100.0 mB=100.0 lat=353.32
+ N=320 static    mS= 100.0 mB=100.0 lat=352.38 offS=0.00 offB=0.00 fair=N/A 
+ N=320 sc        mS= 100.0 mB= 12.9 lat= 29.17 offS=0.00 offB=0.69 fair=0.99
+ N=320 sc_m10    mS= 100.0 mB= 12.9 lat= 29.17 offS=0.00 offB=0.69 fair=0.99
+ N=320 workload  mS= 100.0 mB= 12.9 lat= 29.17 offS=0.00 offB=0.69 fair=0.99
+ N=320 ALL-LOCAL mS= 100.0 mB=100.0 lat=352.38
+== 11:17:39 python /home/claude/gipa_revision/experiments/exp_planner.py --out /home/claude/gipa_revision/results/carry_blind/res_planner.json
+===== Regime A
+N= 80 gipa     lat= 15.17 p95= 22.3 missS=  0.0% missB= 0.00% offS=0.00 offB=0.78 maxRSU= 17.9
+N= 80 local    lat= 84.33 p95=116.0 missS=  0.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N= 80 plan_z0  lat= 15.17 p95= 22.7 missS=  0.0% missB= 0.00% offS=0.00 offB=0.74 maxRSU= 17.0  (x_S=0.000, x_B=0.247)
+N= 80 plan_z2  lat= 15.17 p95= 22.7 missS=  0.0% missB= 0.00% offS=0.00 offB=0.74 maxRSU= 17.0  (x_S=0.000, x_B=0.247)
+N=160 gipa     lat= 18.57 p95= 24.6 missS=  0.0% missB= 0.00% offS=0.00 offB=0.69 maxRSU= 29.9
+N=160 local    lat= 83.98 p95=116.0 missS=  0.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=160 plan_z0  lat= 17.89 p95= 28.6 missS=  0.0% missB= 0.24% offS=0.00 offB=0.42 maxRSU= 19.0  (x_S=0.000, x_B=0.140)
+N=160 plan_z2  lat= 17.89 p95= 28.6 missS=  0.0% missB= 0.24% offS=0.00 offB=0.42 maxRSU= 19.0  (x_S=0.000, x_B=0.140)
+N=240 gipa     lat= 84.01 p95=116.0 missS=  0.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=240 local    lat= 84.01 p95=116.0 missS=  0.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=240 plan_z0  lat= 19.55 p95= 33.0 missS=  0.0% missB= 1.57% offS=0.00 offB=0.31 maxRSU= 21.0  (x_S=0.000, x_B=0.104)
+N=240 plan_z2  lat= 19.55 p95= 33.0 missS=  0.0% missB= 1.57% offS=0.00 offB=0.31 maxRSU= 21.0  (x_S=0.000, x_B=0.104)
+N=320 gipa     lat= 83.80 p95=116.0 missS=  0.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=320 local    lat= 83.80 p95=116.0 missS=  0.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=320 plan_z0  lat= 20.92 p95= 37.5 missS=  0.0% missB= 4.51% offS=0.00 offB=0.25 maxRSU= 22.5  (x_S=0.000, x_B=0.085)
+N=320 plan_z2  lat= 20.92 p95= 37.5 missS=  0.0% missB= 4.51% offS=0.00 offB=0.25 maxRSU= 22.5  (x_S=0.000, x_B=0.085)
+===== Regime B
+N= 80 gipa     lat= 17.96 p95= 31.6 missS=100.0% missB= 1.15% offS=0.00 offB=0.78 maxRSU= 17.9
+N= 80 local    lat=354.81 p95=500.0 missS=100.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N= 80 plan_z0  lat= 25.88 p95= 62.6 missS= 54.4% missB=18.92% offS=1.00 offB=0.50 maxRSU= 20.9  (x_S=0.333, x_B=0.167)
+N= 80 plan_z2  infeasible
+N=160 gipa     lat= 22.25 p95= 31.7 missS=100.0% missB= 1.26% offS=0.00 offB=0.77 maxRSU= 33.2
+N=160 local    lat=353.19 p95=500.0 missS=100.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=160 plan_z0  infeasible
+N=160 plan_z2  infeasible
+N=240 gipa     lat=353.32 p95=500.0 missS=100.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=240 local    lat=353.32 p95=500.0 missS=100.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=240 plan_z0  infeasible
+N=240 plan_z2  infeasible
+N=320 gipa     lat=352.38 p95=500.0 missS=100.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=320 local    lat=352.38 p95=500.0 missS=100.0% missB=100.00% offS=0.00 offB=0.00 maxRSU=  0.0
+N=320 plan_z0  infeasible
+N=320 plan_z2  infeasible
+===== Misspecification sweep (Regime A)
+true N=160 plan for 0.50N: lat= 19.05 p95= 25.2 missS=  0.0% missB= 0.00% offS=0.00 offB=0.74 maxRSU= 32.0
+true N=160 plan for 0.75N: lat= 17.76 p95= 25.9 missS=  0.0% missB= 0.03% offS=0.00 offB=0.53 maxRSU= 23.5
+true N=160 plan for 1.00N: lat= 17.89 p95= 28.6 missS=  0.0% missB= 0.24% offS=0.00 offB=0.42 maxRSU= 19.0
+true N=160 plan for 1.25N: lat= 18.36 p95= 30.9 missS=  0.0% missB= 0.82% offS=0.00 offB=0.35 maxRSU= 16.3
+true N=160 plan for 1.50N: lat= 18.87 p95= 33.0 missS=  0.0% missB= 1.70% offS=0.00 offB=0.31 maxRSU= 14.5
+true N=240 plan for 0.50N: lat= 19.77 p95= 27.0 missS=  0.0% missB= 0.01% offS=0.00 offB=0.53 maxRSU= 34.3
+true N=240 plan for 0.75N: lat= 19.15 p95= 29.7 missS=  0.0% missB= 0.46% offS=0.00 offB=0.38 maxRSU= 25.3
+true N=240 plan for 1.00N: lat= 19.55 p95= 33.0 missS=  0.0% missB= 1.57% offS=0.00 offB=0.31 maxRSU= 21.0
+true N=240 plan for 1.25N: lat= 20.32 p95= 36.7 missS=  0.0% missB= 3.92% offS=0.00 offB=0.26 maxRSU= 17.9
+true N=240 plan for 1.50N: lat= 21.07 p95= 39.8 missS=  0.0% missB= 6.36% offS=0.00 offB=0.23 maxRSU= 16.1
+wrote /home/claude/gipa_revision/results/carry_blind/res_planner.json
+== 11:17:59 python /home/claude/gipa_revision/experiments/exp_calibration.py --out /home/claude/gipa_revision/results/carry_blind/res_calibration.json
+A. Eq. (5) with class-independent compute vs affine model: max |difference| = 2.8e-14 -> PASS
+B. Regime A, N = 80
+   local            lat  84.33 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  34.72 p95  41.5 miss S/B  99.1/50.4% off S/B 1.00/1.00 maxRSU  61.9
+   msoft|agnostic   lat  17.11 p95  22.1 miss S/B   0.0/ 0.0% off S/B 0.00/1.00 maxRSU  22.4
+   msoft|class      lat  19.03 p95  24.6 miss S/B  17.0/ 0.0% off S/B 1.00/1.00 maxRSU  31.2
+   gipa|agnostic    lat  16.02 p95  22.3 miss S/B   0.0/ 0.0% off S/B 0.00/0.78 maxRSU  17.9
+   gipa|class       lat  16.91 p95  22.5 miss S/B   0.5/ 0.0% off S/B 0.83/0.78 maxRSU  25.1
+   plan|agnostic    lat  15.93 p95  22.7 miss S/B   0.0/ 0.0% off S/B 0.00/0.74 maxRSU  17.0
+   plan|class       lat  15.91 p95  24.1 miss S/B   0.0/ 0.0% off S/B 0.05/0.63 maxRSU  15.3
+   plan_z2|class    lat  15.91 p95  24.1 miss S/B   0.0/ 0.0% off S/B 0.05/0.63 maxRSU  15.3
+B. Regime A, N = 160
+   local            lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  25.13 p95  31.3 miss S/B  51.1/10.6% off S/B 0.51/0.51 maxRSU  30.5
+   msoft|agnostic   lat  25.57 p95  35.3 miss S/B   0.0/ 1.5% off S/B 0.00/1.00 maxRSU  42.5
+   msoft|class      lat  25.57 p95  35.3 miss S/B   0.0/ 1.5% off S/B 0.00/1.00 maxRSU  42.5
+   gipa|agnostic    lat  19.89 p95  27.1 miss S/B   0.0/ 0.0% off S/B 0.00/0.69 maxRSU  29.9
+   gipa|class       lat  19.89 p95  27.1 miss S/B   0.0/ 0.0% off S/B 0.00/0.69 maxRSU  29.9
+   plan|agnostic    lat  18.38 p95  28.6 miss S/B   0.0/ 0.2% off S/B 0.00/0.42 maxRSU  19.0
+   plan|class       lat  18.61 p95  30.4 miss S/B   0.0/ 0.6% off S/B 0.00/0.37 maxRSU  16.8
+   plan_z2|class    lat  18.61 p95  30.4 miss S/B   0.0/ 0.6% off S/B 0.00/0.37 maxRSU  16.8
+B. Regime A, N = 240
+   local            lat  84.01 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  31.59 p95  39.2 miss S/B  51.1/51.1% off S/B 0.51/0.51 maxRSU  44.7
+   msoft|agnostic   lat  84.01 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   msoft|class      lat  84.01 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic    lat  84.01 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class       lat  84.01 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|agnostic    lat  19.95 p95  33.0 miss S/B   0.0/ 1.6% off S/B 0.00/0.31 maxRSU  21.0
+   plan|class       lat  20.39 p95  35.7 miss S/B   0.0/ 3.1% off S/B 0.00/0.27 maxRSU  18.6
+   plan_z2|class    lat  20.39 p95  35.7 miss S/B   0.0/ 3.1% off S/B 0.00/0.27 maxRSU  18.6
+B. Regime A, N = 320
+   local            lat  83.80 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  37.97 p95  47.0 miss S/B  51.1/51.1% off S/B 0.51/0.51 maxRSU  59.0
+   msoft|agnostic   lat  83.80 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   msoft|class      lat  83.80 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic    lat  83.80 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class       lat  83.80 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|agnostic    lat  21.28 p95  37.5 miss S/B   0.0/ 4.5% off S/B 0.00/0.25 maxRSU  22.5
+   plan|class       lat  21.90 p95  40.8 miss S/B   0.0/ 7.2% off S/B 0.00/0.23 maxRSU  20.2
+   plan_z2|class    lat  21.90 p95  40.8 miss S/B   0.0/ 7.2% off S/B 0.00/0.23 maxRSU  20.2
+B. Regime B, N = 80
+   local            lat 354.81 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  34.75 p95  41.5 miss S/B  99.0/50.5% off S/B 1.00/1.00 maxRSU  61.9
+   msoft|agnostic   lat  18.31 p95  22.1 miss S/B 100.0/ 0.0% off S/B 0.00/1.00 maxRSU  22.4
+   msoft|class      lat  19.03 p95  24.6 miss S/B  17.0/ 0.0% off S/B 1.00/1.00 maxRSU  31.2
+   gipa|agnostic    lat  18.81 p95  31.6 miss S/B 100.0/ 1.1% off S/B 0.00/0.78 maxRSU  17.9
+   gipa|class       lat  18.81 p95  31.6 miss S/B   2.2/ 1.1% off S/B 1.00/0.78 maxRSU  26.6
+   plan|agnostic    lat  24.25 p95  62.6 miss S/B   0.0/18.9% off S/B 1.00/0.50 maxRSU  20.9
+   plan|class       lat  18.70 p95  30.3 miss S/B   3.3/ 0.6% off S/B 1.00/0.82 maxRSU  27.4
+   plan_z2|class    lat  18.73 p95  30.8 miss S/B   2.5/ 0.8% off S/B 1.00/0.80 maxRSU  27.1
+B. Regime B, N = 160
+   local            lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  63.04 p95  74.8 miss S/B 100.0/99.9% off S/B 1.00/1.00 maxRSU 122.7
+   msoft|agnostic   lat  26.77 p95  35.3 miss S/B 100.0/ 1.5% off S/B 0.00/1.00 maxRSU  42.5
+   msoft|class      lat  26.77 p95  35.3 miss S/B 100.0/ 1.5% off S/B 0.00/1.00 maxRSU  42.5
+   gipa|agnostic    lat  23.90 p95  32.1 miss S/B 100.0/ 1.3% off S/B 0.00/0.77 maxRSU  33.2
+   gipa|class       lat  23.91 p95  32.0 miss S/B 100.0/ 1.2% off S/B 0.00/0.77 maxRSU  33.3
+   plan|agnostic    infeasible plan
+   plan|class       lat  37.33 p95 107.6 miss S/B  51.4/37.8% off S/B 1.00/0.40 maxRSU  35.9
+   plan_z2|class    infeasible plan
+B. Regime B, N = 240
+   local            lat 353.32 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  34.91 p95  43.1 miss S/B 100.0/51.1% off S/B 0.51/0.51 maxRSU  44.7
+   msoft|agnostic   lat 353.32 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   msoft|class      lat 353.32 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic    lat 353.32 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class       lat 353.32 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|agnostic    infeasible plan
+   plan|class       infeasible plan
+   plan_z2|class    infeasible plan
+B. Regime B, N = 320
+   local            lat 352.38 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr              lat  41.29 p95  50.9 miss S/B 100.0/51.1% off S/B 0.51/0.51 maxRSU  59.0
+   msoft|agnostic   lat 352.38 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   msoft|class      lat 352.38 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic    lat 352.38 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class       lat 352.38 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|agnostic    infeasible plan
+   plan|class       infeasible plan
+   plan_z2|class    infeasible plan
+C. Regime A, F = 10.00 GHz (mean compute 1.84 ms/task)
+   local              lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat  55.88 p95  70.8 miss S/B  51.1/51.1% off S/B 0.51/0.51 maxRSU  30.5
+   msoft_prior|class  lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic      lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class         lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|class         lat  25.69 p95  53.0 miss S/B   0.0/19.0% off S/B 0.00/0.17 maxRSU   8.3
+C. Regime A, F = 18.40 GHz (mean compute 1.00 ms/task)
+   local              lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat  35.86 p95  45.1 miss S/B  51.1/51.1% off S/B 0.51/0.51 maxRSU  30.5
+   msoft_prior|class  lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic      lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class         lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|class         lat  21.46 p95  38.7 miss S/B   0.0/ 5.6% off S/B 0.00/0.24 maxRSU  11.5
+C. Regime A, F = 33.45 GHz (mean compute 0.55 ms/task)
+   local              lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat  25.13 p95  31.3 miss S/B  51.1/10.6% off S/B 0.51/0.51 maxRSU  30.5
+   msoft_prior|class  lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic      lat  19.89 p95  27.1 miss S/B   0.0/ 0.0% off S/B 0.00/0.69 maxRSU  29.9
+   gipa|class         lat  19.89 p95  27.1 miss S/B   0.0/ 0.0% off S/B 0.00/0.69 maxRSU  29.9
+   plan|class         lat  18.61 p95  30.4 miss S/B   0.0/ 0.6% off S/B 0.00/0.37 maxRSU  16.8
+C. Regime A, F = 60.00 GHz (mean compute 0.31 ms/task)
+   local              lat  83.98 p95 116.0 miss S/B   0.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat  19.33 p95  23.9 miss S/B  20.1/ 0.0% off S/B 0.51/0.51 maxRSU  30.5
+   msoft_prior|class  lat  20.03 p95  25.5 miss S/B  31.4/ 0.0% off S/B 0.94/1.00 maxRSU  58.6
+   gipa|agnostic      lat  16.44 p95  22.2 miss S/B   0.0/ 0.0% off S/B 0.00/0.78 maxRSU  33.6
+   gipa|class         lat  17.59 p95  22.6 miss S/B   1.1/ 0.0% off S/B 0.82/0.78 maxRSU  47.7
+   plan|class         lat  16.18 p95  24.8 miss S/B   0.0/ 0.0% off S/B 0.00/0.59 maxRSU  25.9
+C. Regime B, F = 10.00 GHz (mean compute 1.84 ms/task)
+   local              lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat 196.26 p95 232.1 miss S/B 100.0/100.0% off S/B 1.00/1.00 maxRSU 122.2
+   msoft_prior|class  lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic      lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class         lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|class         infeasible plan
+C. Regime B, F = 18.40 GHz (mean compute 1.00 ms/task)
+   local              lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat 110.01 p95 130.2 miss S/B 100.0/100.0% off S/B 1.00/1.00 maxRSU 122.9
+   msoft_prior|class  lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|agnostic      lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   gipa|class         lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   plan|class         infeasible plan
+C. Regime B, F = 33.45 GHz (mean compute 0.55 ms/task)
+   local              lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat  63.04 p95  74.8 miss S/B 100.0/99.9% off S/B 1.00/1.00 maxRSU 122.7
+   msoft_prior|class  lat  25.73 p95  33.7 miss S/B 100.0/ 0.3% off S/B 0.00/0.94 maxRSU  40.0
+   gipa|agnostic      lat  23.90 p95  32.1 miss S/B 100.0/ 1.3% off S/B 0.00/0.77 maxRSU  33.2
+   gipa|class         lat  23.91 p95  32.0 miss S/B 100.0/ 1.2% off S/B 0.00/0.77 maxRSU  33.3
+   plan|class         lat  37.33 p95 107.6 miss S/B  51.4/37.8% off S/B 1.00/0.40 maxRSU  35.9
+C. Regime B, F = 60.00 GHz (mean compute 0.31 ms/task)
+   local              lat 353.19 p95 500.0 miss S/B 100.0/100.0% off S/B 0.00/0.00 maxRSU   0.0
+   rbr                lat  37.76 p95  44.9 miss S/B 100.0/50.1% off S/B 1.00/1.00 maxRSU 122.5
+   msoft_prior|class  lat  20.24 p95  25.7 miss S/B  39.2/ 0.0% off S/B 1.00/1.00 maxRSU  59.6
+   gipa|agnostic      lat  19.21 p95  31.1 miss S/B 100.0/ 1.1% off S/B 0.00/0.78 maxRSU  33.6
+   gipa|class         lat  19.57 p95  31.1 miss S/B   4.1/ 1.1% off S/B 1.00/0.78 maxRSU  50.7
+   plan|class         lat  19.63 p95  32.6 miss S/B   3.1/ 1.5% off S/B 1.00/0.76 maxRSU  49.9
+wrote /home/claude/gipa_revision/results/carry_blind/res_calibration.json
+== 11:20:30 python /home/claude/gipa_revision/experiments/exp_capacity.py --out /home/claude/gipa_revision/results/carry_blind/res_capacity.json
+Regime A, N = 80  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel  80.0 | soft lat  49.96 missS 100.0% missB 100.0% | AC lat  23.21 missS   0.0% missB  11.6% rej  78.7% maxAdm  17.0
+  indep        overload(sel)  98.4%  maxSel  31.2 | soft lat  21.00 missS  99.0% missB   0.0% | AC lat  17.08 missS   0.0% missB   0.0% rej  36.3% maxAdm  17.0
+  rbr          overload(sel)  49.9%  maxSel  61.9 | soft lat  39.17 missS 100.0% missB  50.4% | AC lat  20.09 missS   0.0% missB   2.0% rej  68.2% maxAdm  17.0
+  price        overload(sel)   1.3%  maxSel  22.5 | soft lat  15.73 missS   0.1% missB   0.0% | AC lat  15.72 missS   0.0% missB   0.0% rej   0.3% maxAdm  22.4
+  msoft        overload(sel)   0.0%  maxSel  22.4 | soft lat  15.72 missS   0.0% missB   0.0% | AC lat  15.72 missS   0.0% missB   0.0% rej   0.0% maxAdm  22.4
+  msoft_prior  overload(sel)   0.0%  maxSel  22.5 | soft lat  15.72 missS   0.0% missB   0.0% | AC lat  15.72 missS   0.0% missB   0.0% rej   0.0% maxAdm  22.5
+  entreg       overload(sel)   0.0%  maxSel  22.1 | soft lat  15.64 missS   0.0% missB   0.0% | AC lat  15.64 missS   0.0% missB   0.0% rej   0.0% maxAdm  22.1
+  ql           overload(sel)   0.0%  maxSel   0.9 | soft lat  74.34 missS   0.0% missB  98.0% | AC lat  74.34 missS   0.0% missB  98.0% rej   0.0% maxAdm   0.9
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat  84.33 missS   0.0% missB 100.0% | AC lat  84.33 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel  17.9 | soft lat  15.17 missS   0.0% missB   0.0% | AC lat  15.17 missS   0.0% missB   0.0% rej   0.0% maxAdm  17.9
+  plan         overload(sel)   0.0%  maxSel  17.0 | soft lat  15.17 missS   0.0% missB   0.0% | AC lat  15.17 missS   0.0% missB   0.0% rej   0.0% maxAdm  17.0
+Regime A, N = 160  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel 160.0 | soft lat  93.94 missS 100.0% missB 100.0% | AC lat  34.18 missS   0.0% missB  49.7% rej  89.3% maxAdm  17.1
+  indep        overload(sel) 100.0%  maxSel  59.6 | soft lat  35.64 missS 100.0% missB  18.4% | AC lat  20.13 missS   0.0% missB   2.2% rej  68.1% maxAdm  17.1
+  rbr          overload(sel)  51.1%  maxSel  30.5 | soft lat  27.20 missS  51.1% missB   9.3% | AC lat  25.05 missS   0.0% missB  19.8% rej  34.8% maxAdm   8.8
+  price        overload(sel)  36.2%  maxSel  41.9 | soft lat  23.24 missS   6.4% missB   0.1% | AC lat  21.27 missS   0.0% missB   0.1% rej  16.0% maxAdm  36.4
+  msoft        overload(sel)   0.0%  maxSel  42.5 | soft lat  22.79 missS   0.0% missB   0.0% | AC lat  22.79 missS   0.0% missB   0.0% rej   0.0% maxAdm  42.5
+  msoft_prior  overload(sel)   0.0%  maxSel   0.0 | soft lat  83.98 missS   0.0% missB 100.0% | AC lat  83.98 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  entreg       overload(sel)   0.0%  maxSel   0.6 | soft lat  79.67 missS   0.0% missB  99.2% | AC lat  79.67 missS   0.0% missB  99.2% rej   0.0% maxAdm   0.6
+  ql           overload(sel)   0.0%  maxSel   1.6 | soft lat  73.72 missS   0.0% missB  97.8% | AC lat  73.72 missS   0.0% missB  97.8% rej   0.0% maxAdm   1.6
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat  83.98 missS   0.0% missB 100.0% | AC lat  83.98 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel  29.9 | soft lat  18.57 missS   0.0% missB   0.0% | AC lat  18.57 missS   0.0% missB   0.0% rej   0.0% maxAdm  29.9
+  plan         overload(sel)   0.0%  maxSel  19.0 | soft lat  17.89 missS   0.0% missB   0.2% | AC lat  17.89 missS   0.0% missB   0.2% rej   0.0% maxAdm  19.0
+Regime A, N = 240  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel 240.0 | soft lat 137.94 missS 100.0% missB 100.0% | AC lat  44.92 missS   0.0% missB  73.1% rej  92.9% maxAdm  17.1
+  indep        overload(sel) 100.0%  maxSel  87.6 | soft lat  50.31 missS 100.0% missB  99.8% | AC lat  23.02 missS   0.0% missB  11.0% rej  78.6% maxAdm  17.3
+  rbr          overload(sel)  51.1%  maxSel  44.7 | soft lat  34.69 missS  51.1% missB  51.1% | AC lat  32.84 missS   0.0% missB  46.5% rej  40.2% maxAdm   8.8
+  price        overload(sel)  28.6%  maxSel  62.3 | soft lat  29.96 missS   0.0% missB  32.2% | AC lat  29.08 missS   0.0% missB   0.0% rej   2.3% maxAdm  58.6
+  msoft        overload(sel)   0.0%  maxSel   0.0 | soft lat  84.01 missS   0.0% missB 100.0% | AC lat  84.01 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  msoft_prior  overload(sel)   0.0%  maxSel   0.0 | soft lat  84.01 missS   0.0% missB 100.0% | AC lat  84.01 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  entreg       overload(sel)   0.0%  maxSel   0.0 | soft lat  84.01 missS   0.0% missB 100.0% | AC lat  84.01 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  ql           overload(sel)   0.0%  maxSel   2.1 | soft lat  73.72 missS   0.0% missB  97.8% | AC lat  73.72 missS   0.0% missB  97.8% rej   0.0% maxAdm   2.1
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat  84.01 missS   0.0% missB 100.0% | AC lat  84.01 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel   0.0 | soft lat  84.01 missS   0.0% missB 100.0% | AC lat  84.01 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  plan         overload(sel)   0.0%  maxSel  21.0 | soft lat  19.55 missS   0.0% missB   1.6% | AC lat  19.55 missS   0.0% missB   1.6% rej   0.0% maxAdm  21.0
+Regime A, N = 320  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel 320.0 | soft lat 181.93 missS 100.0% missB 100.0% | AC lat  52.55 missS   0.0% missB  84.2% rej  94.7% maxAdm  17.1
+  indep        overload(sel) 100.0%  maxSel 115.4 | soft lat  64.96 missS 100.0% missB 100.0% | AC lat  26.32 missS   0.0% missB  23.8% rej  84.0% maxAdm  17.2
+  rbr          overload(sel)  51.1%  maxSel  59.0 | soft lat  42.17 missS  51.1% missB  51.1% | AC lat  40.31 missS   0.0% missB  65.1% rej  42.9% maxAdm   8.8
+  price        overload(sel)  96.6%  maxSel  79.6 | soft lat  35.77 missS   0.0% missB  94.9% | AC lat  28.43 missS   0.0% missB   0.0% rej  18.5% maxAdm  59.0
+  msoft        overload(sel)   0.0%  maxSel   0.0 | soft lat  83.80 missS   0.0% missB 100.0% | AC lat  83.80 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  msoft_prior  overload(sel)   0.0%  maxSel   0.0 | soft lat  83.80 missS   0.0% missB 100.0% | AC lat  83.80 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  entreg       overload(sel)   0.0%  maxSel   0.0 | soft lat  83.80 missS   0.0% missB 100.0% | AC lat  83.80 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  ql           overload(sel)   0.0%  maxSel   2.7 | soft lat  73.56 missS   0.0% missB  97.8% | AC lat  73.56 missS   0.0% missB  97.8% rej   0.0% maxAdm   2.7
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat  83.80 missS   0.0% missB 100.0% | AC lat  83.80 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel   0.0 | soft lat  83.80 missS   0.0% missB 100.0% | AC lat  83.80 missS   0.0% missB 100.0% rej   0.0% maxAdm   0.0
+  plan         overload(sel)   0.0%  maxSel  22.5 | soft lat  20.92 missS   0.0% missB   4.5% | AC lat  20.92 missS   0.0% missB   4.5% rej   0.0% maxAdm  22.5
+Regime B, N = 80  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel  80.0 | soft lat  49.96 missS 100.0% missB 100.0% | AC lat 126.74 missS  78.7% missB  78.4% rej  78.7% maxAdm  17.0
+  indep        overload(sel)  98.4%  maxSel  31.2 | soft lat  21.00 missS  99.0% missB   0.0% | AC lat  20.97 missS  36.2% missB  14.6% rej  36.3% maxAdm  17.0
+  rbr          overload(sel)  49.8%  maxSel  61.9 | soft lat  39.20 missS 100.0% missB  50.5% | AC lat  59.70 missS  68.4% missB  63.5% rej  68.2% maxAdm  17.0
+  price        overload(sel)   0.0%  maxSel  22.4 | soft lat  16.91 missS 100.0% missB   0.0% | AC lat  16.91 missS 100.0% missB   0.0% rej   0.0% maxAdm  22.4
+  msoft        overload(sel)   0.0%  maxSel  22.4 | soft lat  16.91 missS 100.0% missB   0.0% | AC lat  16.91 missS 100.0% missB   0.0% rej   0.0% maxAdm  22.4
+  msoft_prior  overload(sel)   0.0%  maxSel  22.4 | soft lat  16.91 missS 100.0% missB   0.0% | AC lat  16.91 missS 100.0% missB   0.0% rej   0.0% maxAdm  22.4
+  entreg       overload(sel)   0.0%  maxSel  22.5 | soft lat  16.91 missS 100.0% missB   0.0% | AC lat  16.91 missS 100.0% missB   0.0% rej   0.0% maxAdm  22.5
+  ql           overload(sel)  17.7%  maxSel  13.1 | soft lat 336.52 missS  97.7% missB  98.6% | AC lat 337.02 missS  58.7% missB  98.6% rej  13.2% maxAdm   9.7
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat 354.81 missS 100.0% missB 100.0% | AC lat 354.81 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel  17.9 | soft lat  17.96 missS 100.0% missB   1.1% | AC lat  17.96 missS 100.0% missB   1.1% rej   0.0% maxAdm  17.9
+  plan         overload(sel)  47.2%  maxSel  20.9 | soft lat  25.88 missS  54.4% missB  18.9% | AC lat  28.73 missS   9.1% missB  27.7% rej   9.0% maxAdm  17.0
+Regime B, N = 160  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel 160.0 | soft lat  93.94 missS 100.0% missB 100.0% | AC lat 226.51 missS  89.5% missB  89.3% rej  89.3% maxAdm  17.1
+  indep        overload(sel) 100.0%  maxSel  59.6 | soft lat  35.64 missS 100.0% missB  18.4% | AC lat  60.30 missS  68.1% missB  63.6% rej  68.1% maxAdm  17.1
+  rbr          overload(sel)  49.9%  maxSel 122.7 | soft lat  72.18 missS 100.0% missB 100.0% | AC lat 167.94 missS  84.0% missB  83.9% rej  84.0% maxAdm  17.2
+  price        overload(sel)   0.0%  maxSel  42.2 | soft lat  23.93 missS 100.0% missB   0.0% | AC lat  23.93 missS 100.0% missB   0.0% rej   0.0% maxAdm  42.2
+  msoft        overload(sel)   0.0%  maxSel  42.5 | soft lat  24.00 missS 100.0% missB   0.0% | AC lat  24.00 missS 100.0% missB   0.0% rej   0.0% maxAdm  42.5
+  msoft_prior  overload(sel)   0.0%  maxSel  39.3 | soft lat  23.11 missS 100.0% missB   0.0% | AC lat  23.11 missS 100.0% missB   0.0% rej   0.0% maxAdm  39.3
+  entreg       overload(sel)   0.0%  maxSel  35.4 | soft lat  22.42 missS 100.0% missB   0.5% | AC lat  22.42 missS 100.0% missB   0.5% rej   0.0% maxAdm  35.4
+  ql           overload(sel)  16.6%  maxSel  24.7 | soft lat 336.30 missS  98.7% missB  98.5% | AC lat 336.13 missS  81.2% missB  98.6% rej  31.0% maxAdm   9.3
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat 353.19 missS 100.0% missB 100.0% | AC lat 353.19 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel  33.2 | soft lat  22.25 missS 100.0% missB   1.3% | AC lat  22.25 missS 100.0% missB   1.3% rej   0.0% maxAdm  33.2
+  plan         infeasible plan
+Regime B, N = 240  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel 240.0 | soft lat 137.94 missS 100.0% missB 100.0% | AC lat 266.85 missS  92.9% missB  92.9% rej  92.9% maxAdm  17.1
+  indep        overload(sel) 100.0%  maxSel  87.6 | soft lat  50.31 missS 100.0% missB  99.8% | AC lat 125.76 missS  78.8% missB  78.3% rej  78.6% maxAdm  17.3
+  rbr          overload(sel)  51.1%  maxSel  44.7 | soft lat  38.01 missS 100.0% missB  51.1% | AC lat 225.72 missS  89.2% missB  89.1% rej  40.2% maxAdm   8.8
+  price        overload(sel)  20.5%  maxSel  55.1 | soft lat  53.45 missS 100.0% missB  31.2% | AC lat  52.96 missS 100.0% missB   7.9% rej   1.6% maxAdm  52.6
+  msoft        overload(sel)   0.0%  maxSel   0.0 | soft lat 353.32 missS 100.0% missB 100.0% | AC lat 353.32 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  msoft_prior  overload(sel)   0.0%  maxSel   0.0 | soft lat 353.32 missS 100.0% missB 100.0% | AC lat 353.32 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  entreg       overload(sel)   0.0%  maxSel   0.0 | soft lat 353.32 missS 100.0% missB 100.0% | AC lat 353.32 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  ql           overload(sel)  16.8%  maxSel  37.2 | soft lat 338.61 missS  98.8% missB  98.8% | AC lat 336.87 missS  86.9% missB  98.7% rej  37.1% maxAdm   9.6
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat 353.32 missS 100.0% missB 100.0% | AC lat 353.32 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel   0.0 | soft lat 353.32 missS 100.0% missB 100.0% | AC lat 353.32 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  plan         infeasible plan
+Regime B, N = 320  (Q_S = 17, Q_B = 59)
+  greedy       overload(sel)  33.3%  maxSel 320.0 | soft lat 181.93 missS 100.0% missB 100.0% | AC lat 287.47 missS  94.6% missB  94.7% rej  94.7% maxAdm  17.1
+  indep        overload(sel) 100.0%  maxSel 115.4 | soft lat  64.96 missS 100.0% missB 100.0% | AC lat 172.23 missS  84.1% missB  83.9% rej  84.0% maxAdm  17.2
+  rbr          overload(sel)  51.1%  maxSel  59.0 | soft lat  45.49 missS 100.0% missB  51.1% | AC lat 254.87 missS  91.9% missB  91.8% rej  42.9% maxAdm   8.8
+  price        overload(sel)  98.0%  maxSel  81.5 | soft lat  38.16 missS 100.0% missB  98.4% | AC lat  31.14 missS 100.0% missB   4.4% rej  20.5% maxAdm  59.0
+  msoft        overload(sel)   0.0%  maxSel   0.0 | soft lat 352.38 missS 100.0% missB 100.0% | AC lat 352.38 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  msoft_prior  overload(sel)   0.0%  maxSel   0.0 | soft lat 352.38 missS 100.0% missB 100.0% | AC lat 352.38 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  entreg       overload(sel)   0.0%  maxSel   0.0 | soft lat 352.38 missS 100.0% missB 100.0% | AC lat 352.38 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  ql           overload(sel)  16.4%  maxSel  49.0 | soft lat 339.63 missS  98.7% missB  98.8% | AC lat 336.01 missS  90.2% missB  98.7% rej  39.2% maxAdm   9.7
+  local        overload(sel)   0.0%  maxSel   0.0 | soft lat 352.38 missS 100.0% missB 100.0% | AC lat 352.38 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  gipa         overload(sel)   0.0%  maxSel   0.0 | soft lat 352.38 missS 100.0% missB 100.0% | AC lat 352.38 missS 100.0% missB 100.0% rej   0.0% maxAdm   0.0
+  plan         infeasible plan
+wrote /home/claude/gipa_revision/results/carry_blind/res_capacity.json
+== 11:22:40 python /home/claude/gipa_revision/experiments/exp_prediction.py --out /home/claude/gipa_revision/results/carry_blind/res_prediction.json
+N=160 baseline                           err 0.000 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.79 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 score_sigma0.05                    err 0.040 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.79 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 score_sigma0.10                    err 0.080 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.78 miss S/B  0.00/ 0.04% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 score_sigma0.20                    err 0.160 | GIPA lat  18.63 miss S/B  0.00/ 0.00% offB 0.70 | msoft lat  22.77 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 score_sigma0.30                    err 0.239 | GIPA lat  18.72 miss S/B  0.00/ 0.00% offB 0.71 | msoft lat  22.61 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 mask_sigma0.05                     err 0.040 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.79 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 mask_sigma0.10                     err 0.080 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.79 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 mask_sigma0.20                     err 0.160 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.79 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 mask_sigma0.30                     err 0.239 | GIPA lat  18.58 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.79 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 both_sigma0.05                     err 0.040 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.79 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 both_sigma0.10                     err 0.080 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.78 miss S/B  0.00/ 0.04% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 both_sigma0.20                     err 0.160 | GIPA lat  18.63 miss S/B  0.00/ 0.00% offB 0.70 | msoft lat  22.77 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 both_sigma0.30                     err 0.239 | GIPA lat  18.72 miss S/B  0.00/ 0.00% offB 0.71 | msoft lat  22.61 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 both_sigma0.10_bias-0.10           err 0.117 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.78 miss S/B  0.00/ 0.04% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 both_sigma0.10_bias+0.10           err 0.117 | GIPA lat  18.58 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.78 miss S/B  0.00/ 0.04% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 both_sigma0.30_guard0.10           err 0.239 | GIPA lat  18.75 miss S/B  0.00/ 0.00% offB 0.71 | msoft lat  22.61 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 both_sigma0.10_bias-0.10_guard0.10 err 0.117 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.78 miss S/B  0.00/ 0.04% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 both_sigma0.30_guard0.20           err 0.239 | GIPA lat  18.69 miss S/B  0.00/ 0.00% offB 0.70 | msoft lat  22.61 miss S/B  0.00/ 0.00% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 both_sigma0.10_bias-0.10_guard0.20 err 0.117 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.78 miss S/B  0.00/ 0.04% | plan lat  17.89 miss S/B  0.00/ 0.24%
+N=160 prior_f0.50                        err 0.000 | GIPA lat  19.48 miss S/B  0.00/ 0.00% offB 0.78 | msoft lat  22.79 miss S/B  0.00/ 0.00% | plan lat  19.05 miss S/B  0.00/ 0.00%
+N=160 prior_f0.75                        err 0.000 | GIPA lat  18.58 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.79 miss S/B  0.00/ 0.00% | plan lat  17.76 miss S/B  0.00/ 0.03%
+N=160 prior_f1.25                        err 0.000 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.79 miss S/B  0.00/ 0.00% | plan lat  18.36 miss S/B  0.00/ 0.82%
+N=160 prior_f1.50                        err 0.000 | GIPA lat  83.98 miss S/B  0.00/100.00% offB 0.00 | msoft lat  83.98 miss S/B  0.00/100.00% | plan lat  18.87 miss S/B  0.00/ 1.70%
+N=160 prior_xi0.7                        err 0.000 | GIPA lat  18.65 miss S/B  0.00/ 0.00% offB 0.70 | msoft lat  22.79 miss S/B  0.00/ 0.00% | plan lat  17.82 miss S/B  0.00/ 0.01%
+N=160 prior_xi1.3                        err 0.000 | GIPA lat  18.57 miss S/B  0.00/ 0.00% offB 0.69 | msoft lat  22.79 miss S/B  0.00/ 0.00% | plan lat  18.45 miss S/B  0.00/ 0.97%
+N=160 drift0.1_oracle                    err 0.000 | GIPA lat  18.59 miss S/B  2.41/ 0.11% offB 0.69 | msoft lat  22.40 miss S/B  2.41/ 0.00% | plan lat  18.09 miss S/B  2.41/ 2.54%
+N=160 drift0.1_ewma                      err 0.071 | GIPA lat  18.59 miss S/B  2.41/ 0.12% offB 0.69 | msoft lat  22.61 miss S/B  2.41/ 0.00% | plan lat  18.09 miss S/B  2.41/ 2.54%
+N=160 drift0.2_oracle                    err 0.000 | GIPA lat  18.64 miss S/B 15.87/ 0.49% offB 0.70 | msoft lat  21.89 miss S/B 15.87/ 0.00% | plan lat  18.88 miss S/B 15.87/ 6.81%
+N=160 drift0.2_ewma                      err 0.151 | GIPA lat  18.67 miss S/B 15.87/ 0.72% offB 0.69 | msoft lat  22.35 miss S/B 15.87/ 0.01% | plan lat  18.88 miss S/B 15.87/ 6.81%
+N=160 drift0.3_oracle                    err 0.000 | GIPA lat  18.67 miss S/B 25.10/ 0.90% offB 0.71 | msoft lat  21.14 miss S/B 25.10/ 0.00% | plan lat  20.26 miss S/B 25.10/11.14%
+N=160 drift0.3_ewma                      err 0.266 | GIPA lat  18.76 miss S/B 25.10/ 1.46% offB 0.70 | msoft lat  22.09 miss S/B 25.10/ 0.02% | plan lat  20.26 miss S/B 25.10/11.14%
+N=160 drift0.2_ewma_guard0.10            err 0.151 | GIPA lat  18.67 miss S/B 15.87/ 0.72% offB 0.69 | msoft lat  22.35 miss S/B 15.87/ 0.01% | plan lat  18.88 miss S/B 15.87/ 6.81%
+N= 80 baseline                           err 0.000 | GIPA lat  15.17 miss S/B  0.00/ 0.00% offB 0.78 | msoft lat  15.72 miss S/B  0.00/ 0.00% | plan lat  15.17 miss S/B  0.00/ 0.00%
+N= 80 both_sigma0.10                     err 0.080 | GIPA lat  15.17 miss S/B  0.00/ 0.00% offB 0.77 | msoft lat  15.71 miss S/B  0.00/ 0.00% | plan lat  15.17 miss S/B  0.00/ 0.00%
+N= 80 both_sigma0.20                     err 0.160 | GIPA lat  15.20 miss S/B  0.28/ 0.00% offB 0.76 | msoft lat  15.81 miss S/B  1.71/ 0.00% | plan lat  15.17 miss S/B  0.00/ 0.00%
+N= 80 both_sigma0.30                     err 0.239 | GIPA lat  15.37 miss S/B  2.30/ 0.00% offB 0.76 | msoft lat  16.29 miss S/B 11.92/ 0.00% | plan lat  15.17 miss S/B  0.00/ 0.00%
+N= 80 score_sigma0.30                    err 0.239 | GIPA lat  15.17 miss S/B  0.00/ 0.00% offB 0.75 | msoft lat  15.67 miss S/B  0.00/ 0.00% | plan lat  15.17 miss S/B  0.00/ 0.00%
+N= 80 mask_sigma0.30                     err 0.239 | GIPA lat  15.38 miss S/B  2.63/ 0.00% offB 0.78 | msoft lat  16.34 miss S/B 11.98/ 0.00% | plan lat  15.17 miss S/B  0.00/ 0.00%
+N= 80 both_sigma0.10_bias-0.10           err 0.117 | GIPA lat  15.17 miss S/B  0.00/ 0.00% offB 0.76 | msoft lat  15.71 miss S/B  0.01/ 0.00% | plan lat  15.17 miss S/B  0.00/ 0.00%
+N= 80 both_sigma0.30_guard0.10           err 0.239 | GIPA lat  15.18 miss S/B  0.09/ 0.00% offB 0.76 | msoft lat  15.70 miss S/B  0.48/ 0.00% | plan lat  15.17 miss S/B  0.00/ 0.00%
+N= 80 both_sigma0.10_bias-0.10_guard0.10 err 0.117 | GIPA lat  15.17 miss S/B  0.00/ 0.00% offB 0.76 | msoft lat  15.71 miss S/B  0.00/ 0.00% | plan lat  15.17 miss S/B  0.00/ 0.00%
+N= 80 both_sigma0.30_guard0.20           err 0.239 | GIPA lat  15.17 miss S/B  0.00/ 0.00% offB 0.76 | msoft lat  15.67 miss S/B  0.00/ 0.00% | plan lat  15.17 miss S/B  0.00/ 0.00%
+N= 80 both_sigma0.10_bias-0.10_guard0.20 err 0.117 | GIPA lat  15.17 miss S/B  0.00/ 0.00% offB 0.76 | msoft lat  15.71 miss S/B  0.00/ 0.00% | plan lat  15.17 miss S/B  0.00/ 0.00%
+N= 80 drift0.2_oracle                    err 0.000 | GIPA lat  15.08 miss S/B 14.69/ 0.33% offB 0.76 | msoft lat  14.88 miss S/B 15.60/ 0.00% | plan lat  15.22 miss S/B 15.08/ 0.45%
+N= 80 drift0.2_ewma                      err 0.151 | GIPA lat  15.15 miss S/B 15.08/ 0.32% offB 0.77 | msoft lat  15.26 miss S/B 15.08/ 0.00% | plan lat  15.22 miss S/B 15.08/ 0.45%
+wrote /home/claude/gipa_revision/results/carry_blind/res_prediction.json
+== 11:27:37 python /home/claude/gipa_revision/experiments/exp_prediction_obs.py --out /home/claude/gipa_revision/results/carry_blind/res_prediction_obs.json
+ref N= 80 oracle                           local  84.33  0.00/100.00% off 0.00 | plan  15.17  0.00/ 0.00% off 0.52 | plan_mask  15.17  0.00/ 0.00% off 0.52 | gipa_plan  15.17  0.00/ 0.00% off 0.52 | plan_mask_z2  15.17  0.00/ 0.00% off 0.52 | gipa_plan_z2  15.17  0.00/ 0.00% off 0.52 | gipa  15.17  0.00/ 0.00% off 0.55 | msoft_prior  15.72  0.00/ 0.00% off 0.70 | rbr  39.17 100.00/50.37% off 1.00
+A N= 80 noise0.1_guard0.0                local  84.33  0.00/100.00% off 0.00 | plan  15.17  0.00/ 0.00% off 0.52 | plan_mask  15.23  0.54/ 0.00% off 0.53 | gipa_plan  15.23  0.51/ 0.00% off 0.52 | plan_mask_z2  15.17  0.00/ 0.00% off 0.52 | gipa_plan_z2  15.17  0.00/ 0.00% off 0.52 | gipa  15.17  0.00/ 0.00% off 0.54 | msoft_prior  15.57  0.00/ 0.00% off 0.68
+A N= 80 noise0.2_guard0.0                local  84.33  0.00/100.00% off 0.00 | plan  15.17  0.00/ 0.00% off 0.52 | plan_mask  15.59  5.28/ 0.00% off 0.57 | gipa_plan  15.59  5.10/ 0.00% off 0.56 | plan_mask_z2  15.17  0.03/ 0.00% off 0.52 | gipa_plan_z2  15.18  0.03/ 0.00% off 0.52 | gipa  15.20  0.28/ 0.00% off 0.54 | msoft_prior  15.28  0.22/ 0.00% off 0.60
+A N= 80 noise0.3_guard0.0                local  84.33  0.00/100.00% off 0.00 | plan  15.17  0.00/ 0.00% off 0.52 | plan_mask  15.86 10.13/ 0.00% off 0.60 | gipa_plan  15.85  9.86/ 0.00% off 0.59 | plan_mask_z2  15.24  0.58/ 0.00% off 0.53 | gipa_plan_z2  15.24  0.60/ 0.00% off 0.52 | gipa  15.37  2.30/ 0.00% off 0.55 | msoft_prior  15.30  1.61/ 0.00% off 0.57
+A N= 80 noise0.1_bias-0.1_guard0.0       local  84.33  0.00/100.00% off 0.00 | plan  15.17  0.00/ 0.00% off 0.52 | plan_mask  15.18  0.04/ 0.00% off 0.52 | gipa_plan  15.19  0.04/ 0.00% off 0.51 | plan_mask_z2  15.17  0.00/ 0.00% off 0.52 | gipa_plan_z2  15.18  0.00/ 0.00% off 0.51 | gipa  15.17  0.00/ 0.00% off 0.54 | msoft_prior  15.33  0.00/ 0.00% off 0.63
+A N= 80 noise0.1_guard0.1                local  84.33  0.00/100.00% off 0.00 | plan  15.17  0.00/ 0.00% off 0.52 | plan_mask  15.65  6.27/ 0.00% off 0.57 | gipa_plan  15.65  6.13/ 0.00% off 0.57 | plan_mask_z2  15.17  0.00/ 0.00% off 0.52 | gipa_plan_z2  15.17  0.00/ 0.00% off 0.52 | gipa  15.17  0.00/ 0.00% off 0.54 | msoft_prior  15.57  0.00/ 0.00% off 0.68
+A N= 80 noise0.2_guard0.1                local  84.33  0.00/100.00% off 0.00 | plan  15.17  0.00/ 0.00% off 0.52 | plan_mask  16.08 14.66/ 0.00% off 0.62 | gipa_plan  16.07 14.71/ 0.00% off 0.61 | plan_mask_z2  15.17  0.00/ 0.00% off 0.52 | gipa_plan_z2  15.18  0.00/ 0.00% off 0.52 | gipa  15.17  0.00/ 0.00% off 0.53 | msoft_prior  15.26  0.00/ 0.00% off 0.60
+A N= 80 noise0.3_guard0.1                local  84.33  0.00/100.00% off 0.00 | plan  15.17  0.00/ 0.00% off 0.52 | plan_mask  16.27 19.22/ 0.00% off 0.63 | gipa_plan  16.26 19.13/ 0.00% off 0.63 | plan_mask_z2  15.17  0.00/ 0.00% off 0.52 | gipa_plan_z2  15.17  0.00/ 0.00% off 0.52 | gipa  15.18  0.09/ 0.00% off 0.53 | msoft_prior  15.18  0.08/ 0.00% off 0.56
+A N= 80 noise0.1_bias-0.1_guard0.1       local  84.33  0.00/100.00% off 0.00 | plan  15.17  0.00/ 0.00% off 0.52 | plan_mask  15.24  0.67/ 0.00% off 0.53 | gipa_plan  15.25  0.59/ 0.00% off 0.51 | plan_mask_z2  15.17  0.00/ 0.00% off 0.52 | gipa_plan_z2  15.18  0.00/ 0.00% off 0.51 | gipa  15.17  0.00/ 0.00% off 0.54 | msoft_prior  15.33  0.00/ 0.00% off 0.63
+B N= 80 drift0.1_oracle                  local  87.16  2.38/91.79% off 0.00 | plan  15.18  2.38/ 0.08% off 0.52 | plan_mask  15.22  0.52/ 0.08% off 0.53 | gipa_plan  15.15  0.48/ 0.06% off 0.52 | plan_mask_z2  15.18  2.38/ 0.08% off 0.52 | gipa_plan_z2  15.11  2.38/ 0.06% off 0.52 | gipa  15.12  2.38/ 0.05% off 0.54 | msoft_prior  15.06  2.38/ 0.00% off 0.68 | rbr  38.95 100.00/50.00% off 1.00
+B N= 80 drift0.1_ewma_breakdown          local  87.16  2.38/91.79% off 0.00 | plan  15.18  2.38/ 0.08% off 0.52 | plan_mask  15.29  3.05/ 0.08% off 0.53 | gipa_plan  15.25  3.05/ 0.06% off 0.53 | plan_mask_z2  15.18  2.38/ 0.08% off 0.52 | gipa_plan_z2  15.14  2.38/ 0.06% off 0.52 | gipa  15.16  2.38/ 0.05% off 0.54 | msoft_prior  15.53  2.38/ 0.00% off 0.70 | rbr  39.10 100.00/50.22% off 1.00
+B N= 80 drift0.1_ewma_total              local  87.16  2.38/91.79% off 0.00 | plan  15.18  2.38/ 0.08% off 0.52 | plan_mask  15.19  2.22/ 0.08% off 0.52 | gipa_plan  15.22  2.16/ 0.12% off 0.49 | plan_mask_z2  15.18  2.38/ 0.08% off 0.52 | gipa_plan_z2  15.21  2.38/ 0.12% off 0.49 | gipa  15.20  2.38/ 0.09% off 0.49 | msoft_prior  16.92  2.38/ 3.78% off 0.32 | rbr  18.37  4.86/ 1.44% off 0.45
+B N= 80 drift0.1_ewma_total_debiased     local  87.16  2.38/91.79% off 0.00 | plan  15.18  2.38/ 0.08% off 0.52 | plan_mask  15.28  2.97/ 0.08% off 0.53 | gipa_plan  15.25  3.00/ 0.07% off 0.53 | plan_mask_z2  15.18  2.38/ 0.08% off 0.52 | gipa_plan_z2  15.15  2.38/ 0.07% off 0.51 | gipa  15.16  2.38/ 0.05% off 0.54 | msoft_prior  15.47  2.38/ 0.00% off 0.70 | rbr  21.83  9.46/ 0.07% off 0.66
+B N= 80 drift0.2_oracle                  local 100.99 15.08/82.99% off 0.00 | plan  15.22 15.08/ 0.45% off 0.52 | plan_mask  15.48  5.13/ 0.45% off 0.57 | gipa_plan  15.34  4.75/ 0.39% off 0.56 | plan_mask_z2  15.22 14.84/ 0.45% off 0.52 | gipa_plan_z2  15.09 14.84/ 0.39% off 0.52 | gipa  15.08 14.69/ 0.33% off 0.54 | msoft_prior  13.75 14.72/ 0.00% off 0.60 | rbr  38.55 99.92/49.33% off 1.00
+B N= 80 drift0.2_ewma_breakdown          local 100.99 15.08/82.99% off 0.00 | plan  15.22 15.08/ 0.45% off 0.52 | plan_mask  16.46 29.99/ 0.45% off 0.65 | gipa_plan  16.37 29.29/ 0.40% off 0.65 | plan_mask_z2  15.22 15.08/ 0.45% off 0.52 | gipa_plan_z2  15.15 15.08/ 0.40% off 0.52 | gipa  15.15 15.08/ 0.32% off 0.54 | msoft_prior  15.26 15.08/ 0.00% off 0.70 | rbr  39.06 100.00/50.45% off 1.00
+B N= 80 drift0.2_ewma_breakdown_guard0.1 local 100.99 15.08/82.99% off 0.00 | plan  15.22 15.08/ 0.45% off 0.52 | plan_mask  17.78 62.05/ 0.45% off 0.75 | gipa_plan  17.67 61.32/ 0.40% off 0.74 | plan_mask_z2  15.22 15.08/ 0.45% off 0.52 | gipa_plan_z2  15.15 15.08/ 0.40% off 0.52 | gipa  15.15 15.08/ 0.32% off 0.54 | msoft_prior  15.26 15.08/ 0.00% off 0.70 | rbr  39.06 100.00/50.45% off 1.00
+B N= 80 drift0.2_ewma_total              local 100.99 15.08/82.99% off 0.00 | plan  15.22 15.08/ 0.45% off 0.52 | plan_mask  15.28 13.64/ 0.45% off 0.53 | gipa_plan  15.30 13.37/ 0.62% off 0.50 | plan_mask_z2  15.22 15.08/ 0.45% off 0.52 | gipa_plan_z2  15.25 15.08/ 0.62% off 0.49 | gipa  15.17 15.08/ 0.45% off 0.50 | msoft_prior  15.42 15.08/ 2.51% off 0.37 | rbr  17.80 17.52/ 0.51% off 0.46
+B N= 80 drift0.2_ewma_total_guard0.1     local 100.99 15.08/82.99% off 0.00 | plan  15.22 15.08/ 0.45% off 0.52 | plan_mask  15.26 14.63/ 0.45% off 0.53 | gipa_plan  15.28 14.49/ 0.62% off 0.50 | plan_mask_z2  15.22 15.08/ 0.45% off 0.52 | gipa_plan_z2  15.25 15.08/ 0.62% off 0.49 | gipa  15.17 15.08/ 0.45% off 0.50 | msoft_prior  15.42 15.08/ 2.51% off 0.37 | rbr  17.80 17.52/ 0.51% off 0.46
+B N= 80 drift0.2_ewma_total_debiased     local 100.99 15.08/82.99% off 0.00 | plan  15.22 15.08/ 0.45% off 0.52 | plan_mask  15.96 19.42/ 0.45% off 0.61 | gipa_plan  15.94 19.73/ 0.42% off 0.60 | plan_mask_z2  15.22 15.08/ 0.45% off 0.52 | gipa_plan_z2  15.15 15.08/ 0.40% off 0.51 | gipa  15.16 15.08/ 0.32% off 0.54 | msoft_prior  15.20 15.08/ 0.00% off 0.70 | rbr  21.98 24.79/ 0.03% off 0.66
+B N= 80 drift0.2_ewma_total_debiased_guard0.1 local 100.99 15.08/82.99% off 0.00 | plan  15.22 15.08/ 0.45% off 0.52 | plan_mask  15.54 15.34/ 0.45% off 0.56 | gipa_plan  15.50 15.11/ 0.41% off 0.56 | plan_mask_z2  15.22 15.08/ 0.45% off 0.52 | gipa_plan_z2  15.15 15.08/ 0.40% off 0.51 | gipa  15.16 15.08/ 0.32% off 0.54 | msoft_prior  15.20 15.08/ 0.00% off 0.70 | rbr  21.98 24.79/ 0.03% off 0.66
+B N= 80 drift0.3_oracle                  local 118.76 24.37/79.59% off 0.00 | plan  15.28 24.37/ 1.08% off 0.52 | plan_mask  15.66 10.10/ 1.00% off 0.59 | gipa_plan  15.45  9.27/ 0.87% off 0.59 | plan_mask_z2  15.29 21.72/ 1.00% off 0.53 | gipa_plan_z2  15.10 21.73/ 0.87% off 0.52 | gipa  15.13 21.07/ 0.73% off 0.55 | msoft_prior  12.68 20.78/ 0.00% off 0.57 | rbr  37.42 98.86/48.95% off 0.98
+B N= 80 drift0.3_ewma_breakdown          local 118.76 24.37/79.59% off 0.00 | plan  15.28 24.37/ 1.08% off 0.52 | plan_mask  17.27 50.62/ 1.08% off 0.71 | gipa_plan  17.13 49.87/ 0.96% off 0.71 | plan_mask_z2  15.28 24.37/ 1.08% off 0.52 | gipa_plan_z2  15.17 24.37/ 0.96% off 0.52 | gipa  15.14 24.37/ 0.79% off 0.53 | msoft_prior  14.98 24.37/ 0.00% off 0.70 | rbr  38.94 100.00/50.31% off 1.00
+B N= 80 drift0.3_ewma_total              local 118.76 24.37/79.59% off 0.00 | plan  15.28 24.37/ 1.08% off 0.52 | plan_mask  15.34 22.77/ 1.08% off 0.53 | gipa_plan  15.34 22.50/ 1.31% off 0.51 | plan_mask_z2  15.28 24.37/ 1.08% off 0.52 | gipa_plan_z2  15.28 24.37/ 1.30% off 0.50 | gipa  15.16 24.37/ 0.97% off 0.50 | msoft_prior  14.69 24.37/ 2.81% off 0.41 | rbr  17.58 26.34/ 1.18% off 0.46
+B N= 80 drift0.3_ewma_total_debiased     local 118.76 24.37/79.59% off 0.00 | plan  15.28 24.37/ 1.08% off 0.52 | plan_mask  16.10 27.03/ 1.08% off 0.62 | gipa_plan  16.06 27.23/ 1.02% off 0.61 | plan_mask_z2  15.28 24.37/ 1.08% off 0.52 | gipa_plan_z2  15.18 24.37/ 0.98% off 0.51 | gipa  15.17 24.37/ 0.79% off 0.54 | msoft_prior  14.92 24.37/ 0.00% off 0.70 | rbr  21.72 34.57/ 0.06% off 0.67
+C N= 80 stage0_L0.8_E0.8                 plan  15.58  0.00/ 0.02% off 0.40 | gipa_plan  15.42  0.00/ 0.01% off 0.43 | gipa_plan_z2  15.42  0.00/ 0.01% off 0.43
+C N= 80 stage0_L0.8_E1.2                 plan  16.71  0.00/ 0.30% off 0.29 | gipa_plan  16.27  0.00/ 0.11% off 0.32 | gipa_plan_z2  16.27  0.00/ 0.11% off 0.32
+C N= 80 stage0_L1.2_E0.8                 plan  15.72  0.00/ 0.00% off 0.70 | gipa_plan  15.72  0.00/ 0.00% off 0.70 | gipa_plan_z2  15.72  0.00/ 0.00% off 0.70
+C N= 80 stage0_L1.2_E1.2                 plan  15.32  0.00/ 0.00% off 0.62 | gipa_plan  15.26  0.00/ 0.00% off 0.60 | gipa_plan_z2  15.26  0.00/ 0.00% off 0.60
+ref N=160 oracle                           local  83.98  0.00/100.00% off 0.00 | plan  17.89  0.00/ 0.24% off 0.29 | plan_mask  17.89  0.00/ 0.24% off 0.29 | gipa_plan  17.89  0.00/ 0.24% off 0.29 | plan_mask_z2  17.89  0.00/ 0.24% off 0.29 | gipa_plan_z2  17.89  0.00/ 0.24% off 0.29 | gipa  18.57  0.00/ 0.00% off 0.48 | msoft_prior  83.98  0.00/100.00% off 0.00 | rbr  27.20 51.11/ 9.25% off 0.51
+A N=160 noise0.1_guard0.0                local  83.98  0.00/100.00% off 0.00 | plan  17.89  0.00/ 0.24% off 0.29 | plan_mask  17.96  0.94/ 0.24% off 0.30 | gipa_plan  17.97  0.90/ 0.26% off 0.30 | plan_mask_z2  17.89  0.00/ 0.24% off 0.29 | gipa_plan_z2  17.90  0.00/ 0.26% off 0.29 | gipa  18.57  0.00/ 0.00% off 0.48 | msoft_prior  82.13  0.00/99.72% off 0.00
+A N=160 noise0.2_guard0.0                local  83.98  0.00/100.00% off 0.00 | plan  17.89  0.00/ 0.24% off 0.29 | plan_mask  18.45 10.37/ 0.24% off 0.34 | gipa_plan  18.46 10.29/ 0.26% off 0.34 | plan_mask_z2  17.89  0.00/ 0.24% off 0.29 | gipa_plan_z2  17.91  0.00/ 0.26% off 0.29 | gipa  18.63  0.00/ 0.00% off 0.49 | msoft_prior  35.28  0.00/52.69% off 0.07
+A N=160 noise0.3_guard0.0                local  83.98  0.00/100.00% off 0.00 | plan  17.89  0.00/ 0.24% off 0.29 | plan_mask  18.83 19.52/ 0.23% off 0.37 | gipa_plan  18.83 19.42/ 0.25% off 0.37 | plan_mask_z2  17.89  0.00/ 0.23% off 0.29 | gipa_plan_z2  17.90  0.00/ 0.25% off 0.29 | gipa  18.72  0.00/ 0.00% off 0.49 | msoft_prior  21.38  0.00/ 8.73% off 0.15
+A N=160 noise0.1_bias-0.1_guard0.0       local  83.98  0.00/100.00% off 0.00 | plan  17.89  0.00/ 0.24% off 0.29 | plan_mask  17.90  0.06/ 0.24% off 0.29 | gipa_plan  17.98  0.05/ 0.33% off 0.28 | plan_mask_z2  17.89  0.00/ 0.24% off 0.29 | gipa_plan_z2  17.98  0.00/ 0.33% off 0.28 | gipa  18.57  0.00/ 0.00% off 0.48 | msoft_prior  83.67  0.00/99.96% off 0.00
+A N=160 noise0.1_guard0.1                local  83.98  0.00/100.00% off 0.00 | plan  17.89  0.00/ 0.24% off 0.29 | plan_mask  18.27  6.54/ 0.24% off 0.33 | gipa_plan  18.28  6.52/ 0.26% off 0.33 | plan_mask_z2  17.89  0.00/ 0.24% off 0.29 | gipa_plan_z2  17.90  0.00/ 0.26% off 0.29 | gipa  18.57  0.00/ 0.00% off 0.48 | msoft_prior  82.13  0.00/99.72% off 0.00
+A N=160 noise0.2_guard0.1                local  83.98  0.00/100.00% off 0.00 | plan  17.89  0.00/ 0.24% off 0.29 | plan_mask  18.81 19.17/ 0.24% off 0.37 | gipa_plan  18.82 18.88/ 0.26% off 0.37 | plan_mask_z2  17.89  0.00/ 0.24% off 0.29 | gipa_plan_z2  17.91  0.00/ 0.26% off 0.29 | gipa  18.63  0.00/ 0.00% off 0.49 | msoft_prior  35.28  0.00/52.69% off 0.07
+A N=160 noise0.3_guard0.1                local  83.98  0.00/100.00% off 0.00 | plan  17.89  0.00/ 0.24% off 0.29 | plan_mask  19.07 25.99/ 0.19% off 0.39 | gipa_plan  19.07 25.67/ 0.21% off 0.39 | plan_mask_z2  17.86  0.00/ 0.19% off 0.30 | gipa_plan_z2  17.87  0.00/ 0.21% off 0.30 | gipa  18.75  0.00/ 0.00% off 0.50 | msoft_prior  21.38  0.00/ 8.73% off 0.15
+A N=160 noise0.1_bias-0.1_guard0.1       local  83.98  0.00/100.00% off 0.00 | plan  17.89  0.00/ 0.24% off 0.29 | plan_mask  17.98  1.17/ 0.24% off 0.30 | gipa_plan  18.06  0.92/ 0.33% off 0.29 | plan_mask_z2  17.89  0.00/ 0.24% off 0.29 | gipa_plan_z2  17.98  0.00/ 0.33% off 0.28 | gipa  18.57  0.00/ 0.00% off 0.48 | msoft_prior  83.67  0.00/99.96% off 0.00
+B N=160 drift0.1_oracle                  local  86.73  2.41/91.96% off 0.00 | plan  18.09  2.41/ 2.54% off 0.29 | plan_mask  18.15  1.08/ 2.54% off 0.30 | gipa_plan  17.96  1.04/ 2.02% off 0.30 | plan_mask_z2  18.09  2.41/ 2.54% off 0.29 | gipa_plan_z2  17.90  2.41/ 2.02% off 0.29 | gipa  18.59  2.41/ 0.11% off 0.48 | msoft_prior  84.25  2.41/91.69% off 0.00 | rbr  34.06 59.86/22.39% off 0.59
+B N=160 drift0.1_ewma_breakdown          local  86.73  2.41/91.96% off 0.00 | plan  18.09  2.41/ 2.54% off 0.29 | plan_mask  18.25  4.32/ 2.54% off 0.31 | gipa_plan  18.07  4.30/ 1.98% off 0.31 | plan_mask_z2  18.09  2.41/ 2.54% off 0.29 | gipa_plan_z2  17.92  2.41/ 1.98% off 0.29 | gipa  18.59  2.41/ 0.12% off 0.48 | msoft_prior  86.60  2.41/91.95% off 0.00 | rbr  30.77 56.11/17.28% off 0.55
+B N=160 drift0.1_ewma_total              local  86.73  2.41/91.96% off 0.00 | plan  18.09  2.41/ 2.54% off 0.29 | plan_mask  18.09  2.31/ 2.54% off 0.29 | gipa_plan  18.36  2.28/ 3.51% off 0.27 | plan_mask_z2  18.09  2.41/ 2.54% off 0.29 | gipa_plan_z2  18.36  2.41/ 3.50% off 0.27 | gipa  21.94  2.41/11.05% off 0.32 | msoft_prior  86.60  2.41/91.95% off 0.00 | rbr  19.65  3.16/ 3.01% off 0.24
+B N=160 drift0.1_ewma_total_debiased     local  86.73  2.41/91.96% off 0.00 | plan  18.09  2.41/ 2.54% off 0.29 | plan_mask  18.18  3.28/ 2.54% off 0.30 | gipa_plan  18.06  3.23/ 2.14% off 0.30 | plan_mask_z2  18.09  2.41/ 2.54% off 0.29 | gipa_plan_z2  17.96  2.41/ 2.12% off 0.29 | gipa  18.74  2.41/ 0.05% off 0.50 | msoft_prior  86.16  2.41/91.67% off 0.00 | rbr  27.86  7.71/35.05% off 0.44
+B N=160 drift0.2_oracle                  local 100.31 15.87/82.79% off 0.00 | plan  18.88 15.87/ 6.81% off 0.29 | plan_mask  19.28 10.28/ 6.81% off 0.34 | gipa_plan  18.90  9.86/ 5.87% off 0.34 | plan_mask_z2  18.88 15.87/ 6.81% off 0.29 | gipa_plan_z2  18.51 15.87/ 5.87% off 0.29 | gipa  18.64 15.87/ 0.49% off 0.49 | msoft_prior  44.82 15.87/59.07% off 0.06 | rbr  71.14 99.94/99.85% off 1.00
+B N=160 drift0.2_ewma_breakdown          local 100.31 15.87/82.79% off 0.00 | plan  18.88 15.87/ 6.81% off 0.29 | plan_mask  20.62 44.39/ 6.81% off 0.42 | gipa_plan  20.22 43.96/ 5.77% off 0.42 | plan_mask_z2  18.88 15.87/ 6.81% off 0.29 | gipa_plan_z2  18.50 15.87/ 5.77% off 0.29 | gipa  18.67 15.87/ 0.72% off 0.48 | msoft_prior  78.02 15.87/75.22% off 0.04 | rbr  51.54 81.58/59.41% off 0.78
+B N=160 drift0.2_ewma_breakdown_guard0.1 local 100.31 15.87/82.79% off 0.00 | plan  18.88 15.87/ 6.81% off 0.29 | plan_mask  18.88 15.87/ 6.81% off 0.29 | gipa_plan  18.50 15.87/ 5.77% off 0.29 | plan_mask_z2  18.88 15.87/ 6.81% off 0.29 | gipa_plan_z2  18.50 15.87/ 5.77% off 0.29 | gipa  18.67 15.87/ 0.72% off 0.48 | msoft_prior  78.02 15.87/75.22% off 0.04 | rbr  51.54 81.58/59.41% off 0.78
+B N=160 drift0.2_ewma_total              local 100.31 15.87/82.79% off 0.00 | plan  18.88 15.87/ 6.81% off 0.29 | plan_mask  18.93 15.27/ 6.81% off 0.30 | gipa_plan  19.13 15.00/ 7.79% off 0.27 | plan_mask_z2  18.88 15.87/ 6.81% off 0.29 | gipa_plan_z2  19.08 15.87/ 7.73% off 0.27 | gipa  23.55 15.87/12.93% off 0.32 | msoft_prior  79.59 15.87/76.75% off 0.03 | rbr  19.83 17.12/ 4.00% off 0.28
+B N=160 drift0.2_ewma_total_guard0.1     local 100.31 15.87/82.79% off 0.00 | plan  18.88 15.87/ 6.81% off 0.29 | plan_mask  18.88 15.87/ 6.81% off 0.29 | gipa_plan  19.08 15.87/ 7.73% off 0.27 | plan_mask_z2  18.88 15.87/ 6.81% off 0.29 | gipa_plan_z2  19.08 15.87/ 7.73% off 0.27 | gipa  40.44 15.87/34.84% off 0.18 | msoft_prior  79.59 15.87/76.75% off 0.03 | rbr  19.83 17.12/ 4.00% off 0.28
+B N=160 drift0.2_ewma_total_debiased     local 100.31 15.87/82.79% off 0.00 | plan  18.88 15.87/ 6.81% off 0.29 | plan_mask  19.19 17.52/ 6.81% off 0.33 | gipa_plan  18.91 17.49/ 6.00% off 0.32 | plan_mask_z2  18.88 15.87/ 6.81% off 0.29 | gipa_plan_z2  18.55 15.87/ 5.88% off 0.29 | gipa  18.82 15.87/ 0.41% off 0.50 | msoft_prior  67.04 15.87/64.47% off 0.13 | rbr  27.19 19.63/40.36% off 0.51
+B N=160 drift0.2_ewma_total_debiased_guard0.1 local 100.31 15.87/82.79% off 0.00 | plan  18.88 15.87/ 6.81% off 0.29 | plan_mask  18.88 15.87/ 6.81% off 0.29 | gipa_plan  18.55 15.87/ 5.88% off 0.29 | plan_mask_z2  18.88 15.87/ 6.81% off 0.29 | gipa_plan_z2  18.55 15.87/ 5.88% off 0.29 | gipa  18.82 15.87/ 0.41% off 0.50 | msoft_prior  67.04 15.87/64.47% off 0.13 | rbr  27.19 19.63/40.36% off 0.51
+B N=160 drift0.3_oracle                  local 117.85 25.10/79.44% off 0.00 | plan  20.26 25.10/11.14% off 0.29 | plan_mask  20.53 18.61/10.67% off 0.37 | gipa_plan  19.92 17.99/ 9.53% off 0.37 | plan_mask_z2  19.90 25.10/10.67% off 0.29 | gipa_plan_z2  19.31 25.10/ 9.53% off 0.29 | gipa  18.67 25.10/ 0.90% off 0.49 | msoft_prior  22.77 25.10/21.16% off 0.15 | rbr  68.85 98.92/97.84% off 0.98
+B N=160 drift0.3_ewma_breakdown          local 117.85 25.10/79.44% off 0.00 | plan  20.26 25.10/11.14% off 0.29 | plan_mask  23.17 66.97/11.12% off 0.49 | gipa_plan  22.45 66.71/ 9.83% off 0.48 | plan_mask_z2  20.25 25.10/11.12% off 0.29 | gipa_plan_z2  19.57 25.10/ 9.83% off 0.29 | gipa  18.76 25.10/ 1.46% off 0.49 | msoft_prior  50.32 25.10/50.52% off 0.16 | rbr  69.28 98.33/95.74% off 0.98
+B N=160 drift0.3_ewma_total              local 117.85 25.10/79.44% off 0.00 | plan  20.26 25.10/11.14% off 0.29 | plan_mask  20.30 24.39/11.12% off 0.30 | gipa_plan  20.21 24.14/11.62% off 0.28 | plan_mask_z2  20.25 25.10/11.12% off 0.29 | gipa_plan_z2  20.13 25.10/11.54% off 0.27 | gipa  26.50 25.10/16.19% off 0.31 | msoft_prior  57.29 25.10/59.43% off 0.09 | rbr  20.40 26.38/ 5.97% off 0.30
+B N=160 drift0.3_ewma_total_debiased     local 117.85 25.10/79.44% off 0.00 | plan  20.26 25.10/11.14% off 0.29 | plan_mask  20.59 26.07/11.12% off 0.33 | gipa_plan  20.03 25.99/10.08% off 0.33 | plan_mask_z2  20.25 25.10/11.12% off 0.29 | gipa_plan_z2  19.62 25.10/ 9.92% off 0.29 | gipa  18.88 25.10/ 1.02% off 0.50 | msoft_prior  41.72 25.10/38.00% off 0.30 | rbr  27.10 28.30/42.43% off 0.52
+C N=160 stage0_L0.8_E0.8                 plan  19.29  0.00/ 2.61% off 0.20 | gipa_plan  18.63  0.00/ 1.27% off 0.23 | gipa_plan_z2  18.63  0.00/ 1.27% off 0.23
+C N=160 stage0_L0.8_E1.2                 plan  21.70  0.00/ 9.67% off 0.14 | gipa_plan  20.31  0.00/ 5.26% off 0.17 | gipa_plan_z2  20.31  0.00/ 5.26% off 0.17
+C N=160 stage0_L1.2_E0.8                 plan  18.01  0.00/ 0.00% off 0.42 | gipa_plan  17.83  0.00/ 0.01% off 0.39 | gipa_plan_z2  17.83  0.00/ 0.01% off 0.39
+C N=160 stage0_L1.2_E1.2                 plan  17.82  0.00/ 0.01% off 0.39 | gipa_plan  17.74  0.00/ 0.04% off 0.35 | gipa_plan_z2  17.74  0.00/ 0.04% off 0.35
+ref N=240 oracle                           local  84.01  0.00/100.00% off 0.00 | plan  19.55  0.00/ 1.57% off 0.22 | plan_mask  19.55  0.00/ 1.57% off 0.22 | gipa_plan  19.55  0.00/ 1.57% off 0.22 | plan_mask_z2  19.55  0.00/ 1.57% off 0.22 | gipa_plan_z2  19.55  0.00/ 1.57% off 0.22 | gipa  84.01  0.00/100.00% off 0.00 | msoft_prior  84.01  0.00/100.00% off 0.00 | rbr  34.69 51.11/51.06% off 0.51
+A N=240 noise0.1_guard0.0                local  84.01  0.00/100.00% off 0.00 | plan  19.55  0.00/ 1.57% off 0.22 | plan_mask  19.61  1.05/ 1.57% off 0.22 | gipa_plan  19.62  1.05/ 1.60% off 0.22 | plan_mask_z2  19.55  0.00/ 1.57% off 0.22 | gipa_plan_z2  19.55  0.00/ 1.60% off 0.22 | gipa  19.51  0.00/ 1.58% off 0.22 | msoft_prior  84.01  0.00/100.00% off 0.00
+A N=240 noise0.2_guard0.0                local  84.01  0.00/100.00% off 0.00 | plan  19.55  0.00/ 1.57% off 0.22 | plan_mask  20.09 10.72/ 1.57% off 0.26 | gipa_plan  20.11 10.75/ 1.62% off 0.26 | plan_mask_z2  19.54  0.00/ 1.57% off 0.22 | gipa_plan_z2  19.56  0.00/ 1.62% off 0.22 | gipa  19.14  0.00/ 0.29% off 0.28 | msoft_prior  83.94  0.00/99.99% off 0.00
+A N=240 noise0.3_guard0.0                local  84.01  0.00/100.00% off 0.00 | plan  19.55  0.00/ 1.57% off 0.22 | plan_mask  20.49 19.54/ 1.54% off 0.28 | gipa_plan  20.51 19.42/ 1.60% off 0.28 | plan_mask_z2  19.53  0.00/ 1.54% off 0.22 | gipa_plan_z2  19.55  0.00/ 1.60% off 0.22 | gipa  19.19  0.00/ 0.19% off 0.30 | msoft_prior  78.04  0.00/99.02% off 0.01
+A N=240 noise0.1_bias-0.1_guard0.0       local  84.01  0.00/100.00% off 0.00 | plan  19.55  0.00/ 1.57% off 0.22 | plan_mask  19.55  0.07/ 1.57% off 0.22 | gipa_plan  19.73  0.06/ 2.09% off 0.21 | plan_mask_z2  19.55  0.00/ 1.57% off 0.22 | gipa_plan_z2  19.72  0.00/ 2.09% off 0.21 | gipa  20.25  0.00/ 0.01% off 0.40 | msoft_prior  84.01  0.00/100.00% off 0.00
+A N=240 noise0.1_guard0.1                local  84.01  0.00/100.00% off 0.00 | plan  19.55  0.00/ 1.57% off 0.22 | plan_mask  19.55  0.00/ 1.57% off 0.22 | gipa_plan  19.55  0.00/ 1.60% off 0.22 | plan_mask_z2  19.55  0.00/ 1.57% off 0.22 | gipa_plan_z2  19.55  0.00/ 1.60% off 0.22 | gipa  84.01  0.00/100.00% off 0.00 | msoft_prior  84.01  0.00/100.00% off 0.00
+A N=240 noise0.2_guard0.1                local  84.01  0.00/100.00% off 0.00 | plan  19.55  0.00/ 1.57% off 0.22 | plan_mask  19.63  1.56/ 1.57% off 0.23 | gipa_plan  19.65  1.55/ 1.62% off 0.22 | plan_mask_z2  19.54  0.00/ 1.57% off 0.22 | gipa_plan_z2  19.56  0.00/ 1.62% off 0.22 | gipa  78.86  0.00/99.15% off 0.01 | msoft_prior  84.00  0.00/100.00% off 0.00
+A N=240 noise0.3_guard0.1                local  84.01  0.00/100.00% off 0.00 | plan  19.55  0.00/ 1.57% off 0.22 | plan_mask  19.87  8.12/ 1.32% off 0.26 | gipa_plan  19.89  7.94/ 1.40% off 0.25 | plan_mask_z2  19.45  0.00/ 1.32% off 0.23 | gipa_plan_z2  19.48  0.00/ 1.40% off 0.22 | gipa  48.77  0.00/78.85% off 0.04 | msoft_prior  81.92  0.00/99.68% off 0.00
+A N=240 noise0.1_bias-0.1_guard0.1       local  84.01  0.00/100.00% off 0.00 | plan  19.55  0.00/ 1.57% off 0.22 | plan_mask  19.55  0.01/ 1.57% off 0.22 | gipa_plan  19.72  0.01/ 2.09% off 0.21 | plan_mask_z2  19.55  0.00/ 1.57% off 0.22 | gipa_plan_z2  19.72  0.00/ 2.09% off 0.21 | gipa  83.98  0.00/100.00% off 0.00 | msoft_prior  84.01  0.00/100.00% off 0.00
+B N=240 drift0.1_oracle                  local  86.71  2.18/91.70% off 0.00 | plan  20.14  2.18/ 7.05% off 0.22 | plan_mask  20.19  1.48/ 7.05% off 0.22 | gipa_plan  19.87  1.48/ 5.86% off 0.22 | plan_mask_z2  20.14  2.18/ 7.05% off 0.22 | gipa_plan_z2  19.82  2.18/ 5.86% off 0.22 | gipa  24.08  2.18/17.86% off 0.22 | msoft_prior  86.71  2.18/91.70% off 0.00 | rbr  34.49 52.20/51.01% off 0.51
+B N=240 drift0.1_ewma_breakdown          local  86.71  2.18/91.70% off 0.00 | plan  20.14  2.18/ 7.05% off 0.22 | plan_mask  20.14  2.18/ 7.05% off 0.22 | gipa_plan  19.74  2.18/ 5.59% off 0.22 | plan_mask_z2  20.14  2.18/ 7.05% off 0.22 | gipa_plan_z2  19.74  2.18/ 5.59% off 0.22 | gipa  86.71  2.18/91.70% off 0.00 | msoft_prior  86.71  2.18/91.70% off 0.00 | rbr  34.63 52.20/51.00% off 0.51
+B N=240 drift0.1_ewma_total              local  86.71  2.18/91.70% off 0.00 | plan  20.14  2.18/ 7.05% off 0.22 | plan_mask  20.14  2.18/ 7.05% off 0.22 | gipa_plan  20.61  2.18/ 8.95% off 0.20 | plan_mask_z2  20.14  2.18/ 7.05% off 0.22 | gipa_plan_z2  20.61  2.18/ 8.95% off 0.20 | gipa  86.71  2.18/91.70% off 0.00 | msoft_prior  86.71  2.18/91.70% off 0.00 | rbr  22.51  4.06/11.17% off 0.17
+B N=240 drift0.1_ewma_total_debiased     local  86.71  2.18/91.70% off 0.00 | plan  20.14  2.18/ 7.05% off 0.22 | plan_mask  20.14  2.18/ 7.05% off 0.22 | gipa_plan  19.85  2.18/ 5.97% off 0.22 | plan_mask_z2  20.14  2.18/ 7.05% off 0.22 | gipa_plan_z2  19.85  2.18/ 5.97% off 0.22 | gipa  86.71  2.18/91.70% off 0.00 | msoft_prior  86.71  2.18/91.70% off 0.00 | rbr  34.84 14.89/52.08% off 0.31
+B N=240 drift0.2_oracle                  local 100.53 15.35/82.41% off 0.00 | plan  22.41 15.35/14.48% off 0.22 | plan_mask  22.80 12.41/14.47% off 0.26 | gipa_plan  22.04 12.30/12.79% off 0.26 | plan_mask_z2  22.41 15.35/14.47% off 0.22 | gipa_plan_z2  21.65 15.35/12.79% off 0.22 | gipa  23.03 15.35/13.76% off 0.28 | msoft_prior 100.30 15.35/82.39% off 0.00 | rbr  34.18 58.65/50.76% off 0.51
+B N=240 drift0.2_ewma_breakdown          local 100.53 15.35/82.41% off 0.00 | plan  22.41 15.35/14.48% off 0.22 | plan_mask  22.41 15.35/14.48% off 0.22 | gipa_plan  21.48 15.35/12.32% off 0.22 | plan_mask_z2  22.41 15.35/14.48% off 0.22 | gipa_plan_z2  21.48 15.35/12.32% off 0.22 | gipa 100.53 15.35/82.41% off 0.00 | msoft_prior 100.53 15.35/82.41% off 0.00 | rbr  34.51 58.66/50.96% off 0.51
+B N=240 drift0.2_ewma_breakdown_guard0.1 local 100.53 15.35/82.41% off 0.00 | plan  22.41 15.35/14.48% off 0.22 | plan_mask  22.41 15.35/14.48% off 0.22 | gipa_plan  21.48 15.35/12.32% off 0.22 | plan_mask_z2  22.41 15.35/14.48% off 0.22 | gipa_plan_z2  21.48 15.35/12.32% off 0.22 | gipa 100.53 15.35/82.41% off 0.00 | msoft_prior 100.53 15.35/82.41% off 0.00 | rbr  34.51 58.66/50.96% off 0.51
+B N=240 drift0.2_ewma_total              local 100.53 15.35/82.41% off 0.00 | plan  22.41 15.35/14.48% off 0.22 | plan_mask  22.41 15.35/14.48% off 0.22 | gipa_plan  22.57 15.35/15.66% off 0.20 | plan_mask_z2  22.41 15.35/14.48% off 0.22 | gipa_plan_z2  22.57 15.35/15.66% off 0.20 | gipa 100.53 15.35/82.41% off 0.00 | msoft_prior 100.53 15.35/82.41% off 0.00 | rbr  20.92 16.77/ 7.26% off 0.19
+B N=240 drift0.2_ewma_total_guard0.1     local 100.53 15.35/82.41% off 0.00 | plan  22.41 15.35/14.48% off 0.22 | plan_mask  22.41 15.35/14.48% off 0.22 | gipa_plan  22.57 15.35/15.66% off 0.20 | plan_mask_z2  22.41 15.35/14.48% off 0.22 | gipa_plan_z2  22.57 15.35/15.66% off 0.20 | gipa 100.53 15.35/82.41% off 0.00 | msoft_prior 100.53 15.35/82.41% off 0.00 | rbr  20.92 16.77/ 7.26% off 0.19
+B N=240 drift0.2_ewma_total_debiased     local 100.53 15.35/82.41% off 0.00 | plan  22.41 15.35/14.48% off 0.22 | plan_mask  22.41 15.35/14.48% off 0.22 | gipa_plan  21.56 15.35/12.56% off 0.22 | plan_mask_z2  22.41 15.35/14.48% off 0.22 | gipa_plan_z2  21.56 15.35/12.56% off 0.22 | gipa 100.53 15.35/82.41% off 0.00 | msoft_prior 100.53 15.35/82.41% off 0.00 | rbr  32.10 25.79/52.11% off 0.40
+B N=240 drift0.2_ewma_total_debiased_guard0.1 local 100.53 15.35/82.41% off 0.00 | plan  22.41 15.35/14.48% off 0.22 | plan_mask  22.41 15.35/14.48% off 0.22 | gipa_plan  21.56 15.35/12.56% off 0.22 | plan_mask_z2  22.41 15.35/14.48% off 0.22 | gipa_plan_z2  21.56 15.35/12.56% off 0.22 | gipa 100.53 15.35/82.41% off 0.00 | msoft_prior 100.53 15.35/82.41% off 0.00 | rbr  32.10 25.79/52.11% off 0.40
+B N=240 drift0.3_oracle                  local 118.49 24.71/79.11% off 0.00 | plan  26.29 24.71/20.90% off 0.22 | plan_mask  25.91 21.80/20.15% off 0.28 | gipa_plan  24.71 21.60/18.32% off 0.28 | plan_mask_z2  25.25 24.71/20.15% off 0.22 | gipa_plan_z2  24.06 24.71/18.32% off 0.22 | gipa  23.86 24.71/14.60% off 0.30 | msoft_prior 107.49 24.71/77.96% off 0.01 | rbr  46.21 69.65/59.05% off 0.60
+B N=240 drift0.3_ewma_breakdown          local 118.49 24.71/79.11% off 0.00 | plan  26.29 24.71/20.90% off 0.22 | plan_mask  26.25 24.71/20.84% off 0.22 | gipa_plan  24.62 24.71/18.61% off 0.22 | plan_mask_z2  26.25 24.71/20.84% off 0.22 | gipa_plan_z2  24.62 24.71/18.61% off 0.22 | gipa 118.49 24.71/79.11% off 0.00 | msoft_prior 118.49 24.71/79.11% off 0.00 | rbr  34.38 63.19/50.92% off 0.51
+B N=240 drift0.3_ewma_total              local 118.49 24.71/79.11% off 0.00 | plan  26.29 24.71/20.90% off 0.22 | plan_mask  26.25 24.71/20.84% off 0.22 | gipa_plan  25.71 24.71/21.23% off 0.20 | plan_mask_z2  26.25 24.71/20.84% off 0.22 | gipa_plan_z2  25.71 24.71/21.23% off 0.20 | gipa 118.49 24.71/79.11% off 0.00 | msoft_prior 118.49 24.71/79.11% off 0.00 | rbr  22.04 25.74/11.13% off 0.22
+B N=240 drift0.3_ewma_total_debiased     local 118.49 24.71/79.11% off 0.00 | plan  26.29 24.71/20.90% off 0.22 | plan_mask  26.25 24.71/20.84% off 0.22 | gipa_plan  24.67 24.71/18.72% off 0.22 | plan_mask_z2  26.25 24.71/20.84% off 0.22 | gipa_plan_z2  24.67 24.71/18.72% off 0.22 | gipa 118.49 24.71/79.11% off 0.00 | msoft_prior 118.49 24.71/79.11% off 0.00 | rbr  31.85 31.87/55.68% off 0.45
+C N=240 stage0_L0.8_E0.8                 plan  22.80  0.00/12.63% off 0.13 | gipa_plan  21.28  0.00/ 7.07% off 0.16 | gipa_plan_z2  21.28  0.00/ 7.07% off 0.16
+C N=240 stage0_L0.8_E1.2                 plan  27.63  0.00/30.04% off 0.10 | gipa_plan  24.66  0.00/19.51% off 0.12 | gipa_plan_z2  24.66  0.00/19.51% off 0.12
+C N=240 stage0_L1.2_E0.8                 plan  19.31  0.00/ 0.08% off 0.33 | gipa_plan  19.15  0.00/ 0.20% off 0.30 | gipa_plan_z2  19.15  0.00/ 0.20% off 0.30
+C N=240 stage0_L1.2_E1.2                 plan  19.19  0.00/ 0.15% off 0.31 | gipa_plan  19.14  0.00/ 0.36% off 0.28 | gipa_plan_z2  19.14  0.00/ 0.36% off 0.28
+wrote /home/claude/gipa_revision/results/carry_blind/res_prediction_obs.json
+== 11:33:53 python /home/claude/gipa_revision/experiments/exp_asym.py --out /home/claude/gipa_revision/results/carry_blind/res_asym.json
+0. symmetric reproduction: max |diff| 330 ms (FAILED); planner vs grid: max relative gap inf (FAILED)
+1. sym|A|affine       N= 80 lat: GIPA u/c  15.17/ 15.17 noDiff c  15.72 plan  15.17 LA  15.63 local  84.33 greedy  49.96 RBR  39.17 | herd GIPA u/c 1.00/1.00 noDiff 1.00 plan 1.00 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|affine       N=160 lat: GIPA u/c  18.57/ 18.57 noDiff c  83.98 plan  17.89 LA  18.53 local  83.98 greedy  93.94 RBR  27.20 | herd GIPA u/c 1.01/1.01 noDiff 0.00 plan 1.00 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|affine       N=240 lat: GIPA u/c  84.01/ 84.01 noDiff c  84.01 plan  19.57 LA  19.56 local  84.01 greedy 137.94 RBR  34.69 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.00 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|affine       N=320 lat: GIPA u/c  83.80/ 83.80 noDiff c  83.80 plan  20.93 LA  20.31 local  83.80 greedy 181.93 RBR  42.17 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 0.99 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|ps           N= 80 lat: GIPA u/c  16.91/ 16.91 noDiff c  19.02 plan  15.91 LA  17.06 local  84.33 greedy  44.03 RBR  34.72 | herd GIPA u/c 1.00/1.00 noDiff 1.00 plan 0.99 | miss S GIPA u/c   0.5/  0.5%
+1. sym|A|ps           N=160 lat: GIPA u/c  19.89/ 19.89 noDiff c  83.98 plan  18.60 LA  18.84 local  83.98 greedy  81.77 RBR  25.13 | herd GIPA u/c 1.01/1.01 noDiff 0.00 plan 1.01 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|ps           N=240 lat: GIPA u/c  84.01/ 84.01 noDiff c  84.01 plan  20.40 LA  19.98 local  84.01 greedy 119.70 RBR  31.59 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.00 | miss S GIPA u/c   0.0/  0.0%
+1. sym|A|ps           N=320 lat: GIPA u/c  83.80/ 83.80 noDiff c  83.80 plan  21.87 LA  21.07 local  83.80 greedy 157.28 RBR  37.97 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 0.99 | miss S GIPA u/c   0.0/  0.0%
+1. sym|B|affine       N= 80 lat: GIPA u/c  17.96/ 17.96 noDiff c  16.91 plan  25.41 LA  20.85 local 354.81 greedy  49.96 RBR  39.20 | herd GIPA u/c 1.00/1.00 noDiff 1.00 plan 1.64 | miss S GIPA u/c 100.0/100.0%
+1. sym|B|affine       N=160 lat: GIPA u/c  22.25/ 22.25 noDiff c  23.45 plan    n/a LA  30.68 local 353.19 greedy  93.94 RBR  72.18 | herd GIPA u/c 1.01/1.01 noDiff 1.00 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|affine       N=240 lat: GIPA u/c 353.32/353.32 noDiff c 353.32 plan    n/a LA  62.82 local 353.32 greedy 137.94 RBR  38.01 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|affine       N=320 lat: GIPA u/c 352.38/352.38 noDiff c 352.38 plan    n/a LA 439.03 local 352.38 greedy 181.93 RBR  45.49 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|ps           N= 80 lat: GIPA u/c  18.81/ 18.81 noDiff c  19.03 plan  18.73 LA  18.92 local 354.81 greedy  44.03 RBR  34.75 | herd GIPA u/c 1.00/1.00 noDiff 1.00 plan 1.00 | miss S GIPA u/c   2.2/  2.2%
+1. sym|B|ps           N=160 lat: GIPA u/c  23.91/ 23.91 noDiff c  26.20 plan    n/a LA  35.29 local 353.19 greedy  81.77 RBR  63.04 | herd GIPA u/c 1.01/1.01 noDiff 1.00 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|ps           N=240 lat: GIPA u/c 353.32/353.32 noDiff c 353.32 plan    n/a LA 143.44 local 353.32 greedy 119.70 RBR  34.91 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. sym|B|ps           N=320 lat: GIPA u/c 352.38/352.38 noDiff c 352.38 plan    n/a LA 368.97 local 352.38 greedy 157.28 RBR  41.29 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|A|affine     N= 80 lat: GIPA u/c  14.12/ 15.01 noDiff c  21.90 plan  13.97 LA  14.25 local  84.33 greedy  34.97 RBR  31.51 | herd GIPA u/c 0.96/1.20 noDiff 2.39 plan 1.08 | miss S GIPA u/c   0.0/ 17.0%
+1. fast1|A|affine     N=160 lat: GIPA u/c  17.50/ 17.50 noDiff c  83.56 plan  16.96 LA  18.04 local  83.98 greedy  65.76 RBR  57.81 | herd GIPA u/c 0.81/0.81 noDiff 2.34 plan 1.08 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|affine     N=240 lat: GIPA u/c  23.17/ 20.59 noDiff c  84.01 plan  18.64 LA  19.04 local  84.01 greedy  96.56 RBR  85.61 | herd GIPA u/c 2.40/0.80 noDiff    n/a plan 1.07 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|affine     N=320 lat: GIPA u/c  83.80/ 83.80 noDiff c  83.80 plan  19.92 LA  19.76 local  83.80 greedy 127.35 RBR 117.36 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.06 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|ps         N= 80 lat: GIPA u/c  15.26/ 15.26 noDiff c  29.75 plan  14.82 LA  15.77 local  84.33 greedy  30.82 RBR  27.97 | herd GIPA u/c 1.06/1.05 noDiff 2.32 plan 1.05 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|ps         N=160 lat: GIPA u/c  18.68/ 18.68 noDiff c  83.46 plan  17.69 LA  18.35 local  83.98 greedy  57.24 RBR  50.54 | herd GIPA u/c 0.81/0.81 noDiff 2.35 plan 1.07 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|ps         N=240 lat: GIPA u/c  24.93/ 22.38 noDiff c  84.01 plan  19.42 LA  19.36 local  84.01 greedy  83.79 RBR  74.50 | herd GIPA u/c 2.40/0.80 noDiff    n/a plan 1.06 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|A|ps         N=320 lat: GIPA u/c  83.80/ 83.80 noDiff c  83.80 plan  20.83 LA  20.27 local  83.80 greedy 110.10 RBR 101.90 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan 1.05 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|B|affine     N= 80 lat: GIPA u/c  17.03/ 20.12 noDiff c  34.87 plan  19.12 LA  18.37 local 354.81 greedy  34.97 RBR  31.51 | herd GIPA u/c 0.96/1.48 noDiff 2.40 plan 0.79 | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|affine     N=160 lat: GIPA u/c  20.68/ 20.68 noDiff c  37.81 plan    n/a LA  28.16 local 353.19 greedy  65.76 RBR  57.81 | herd GIPA u/c 0.97/0.97 noDiff 2.40 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|affine     N=240 lat: GIPA u/c  35.79/ 24.43 noDiff c 353.29 plan    n/a LA  39.75 local 353.32 greedy  96.56 RBR  84.12 | herd GIPA u/c 2.40/0.80 noDiff 1.60 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|affine     N=320 lat: GIPA u/c 352.38/352.38 noDiff c 352.38 plan    n/a LA 115.28 local 352.38 greedy 127.35 RBR 117.36 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|ps         N= 80 lat: GIPA u/c  17.17/ 17.18 noDiff c  29.75 plan  16.57 LA  16.91 local 354.81 greedy  30.82 RBR  27.97 | herd GIPA u/c 1.05/1.04 noDiff 2.32 plan 1.03 | miss S GIPA u/c   0.0/  0.0%
+1. fast1|B|ps         N=160 lat: GIPA u/c  22.12/ 22.12 noDiff c  43.60 plan    n/a LA  26.91 local 353.19 greedy  57.24 RBR  50.54 | herd GIPA u/c 0.97/0.97 noDiff 2.39 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|ps         N=240 lat: GIPA u/c  37.54/ 26.23 noDiff c 353.29 plan    n/a LA  69.43 local 353.32 greedy  83.79 RBR  73.22 | herd GIPA u/c 2.40/0.80 noDiff 1.60 plan    n/a | miss S GIPA u/c 100.0/100.0%
+1. fast1|B|ps         N=320 lat: GIPA u/c 352.38/352.38 noDiff c 352.38 plan    n/a LA 213.06 local 352.38 greedy 110.10 RBR 101.90 | herd GIPA u/c    n/a/   n/a noDiff    n/a plan    n/a | miss S GIPA u/c 100.0/100.0%
+wrote /home/claude/gipa_revision/results/carry_blind/res_asym.json
+== 11:41:42 python /home/claude/gipa_revision/experiments/exp_la.py --out /home/claude/gipa_revision/results/carry_blind/res_la.json
+1. update-rule self-check: passed
+2. tuning grid: 576 settings x 10 tuning seeds
+   A|affine|25      lri: binary a=0.1 | lrep: binary a=0.1 | pursuit: snorm a=0.1 | best: pursuit snorm a=0.1
+   A|affine|500     lri: binary a=0.01 | lrep: binary a=0.05 | pursuit: binary a=0.01 | best: lri binary a=0.01
+   A|ps|25          lri: binary a=0.1 | lrep: binary a=0.1 | pursuit: binary a=0.05 | best: lri binary a=0.1
+   A|ps|500         lri: binary a=0.01 | lrep: binary a=0.01 | pursuit: binary a=0.01 | best: lri binary a=0.01
+   B|affine|25      lri: snorm a=0.01 | lrep: snorm a=0.01 | pursuit: snorm a=0.01 | best: lri snorm a=0.01
+   B|affine|500     lri: snorm a=0.01 | lrep: snorm a=0.01 | pursuit: snorm a=0.01 | best: lrep snorm a=0.01
+   B|ps|25          lri: binary a=0.01 | lrep: binary a=0.01 | pursuit: snorm a=0.01 | best: lri binary a=0.01
+   B|ps|500         lri: snorm a=0.01 | lrep: snorm a=0.01 | pursuit: snorm a=0.01 | best: lrep snorm a=0.01
+3. A|affine|25      N= 80  best LA  15.60 (miss S/B   2.0/ 0.0%)  GIPA  15.17 (  0.0%)  plan  15.17  local  84.33  LA-GIPA +0.43 [+0.36, +0.51]
+3. A|affine|25      N=160  best LA  19.91 (miss S/B   2.2/ 0.1%)  GIPA  18.57 (  0.0%)  plan  17.89  local  83.98  LA-GIPA +1.34 [+1.29, +1.38]
+3. A|affine|25      N=240  best LA  23.20 (miss S/B   1.7/ 8.0%)  GIPA  84.01 (  0.0%)  plan  19.55  local  84.01  LA-GIPA -60.81 [-61.57, -60.10]
+3. A|affine|25      N=320  best LA  26.80 (miss S/B   1.1/19.3%)  GIPA  83.80 (  0.0%)  plan  20.92  local  83.80  LA-GIPA -57.00 [-57.67, -56.34]
+3. A|affine|500     N= 80  best LA  15.38 (miss S/B   1.1/ 0.0%)  GIPA  15.17 (  0.0%)  plan  15.17  local  84.33  LA-GIPA +0.20 [+0.18, +0.23]
+3. A|affine|500     N=160  best LA  18.24 (miss S/B   1.6/ 0.0%)  GIPA  18.57 (  0.0%)  plan  17.89  local  83.98  LA-GIPA -0.33 [-0.40, -0.27]
+3. A|affine|500     N=240  best LA  19.38 (miss S/B   1.5/ 0.2%)  GIPA  84.01 (  0.0%)  plan  19.55  local  84.01  LA-GIPA -64.63 [-65.43, -63.88]
+3. A|affine|500     N=320  best LA  20.26 (miss S/B   1.5/ 0.9%)  GIPA  83.80 (  0.0%)  plan  20.92  local  83.80  LA-GIPA -63.54 [-64.24, -62.86]
+3. A|ps|25          N= 80  best LA  16.97 (miss S/B   0.1/ 0.0%)  GIPA  16.91 (  0.5%)  plan  15.91  local  84.33  LA-GIPA +0.06 [+0.03, +0.10]
+3. A|ps|25          N=160  best LA  19.03 (miss S/B   0.7/ 0.2%)  GIPA  19.89 (  0.0%)  plan  18.61  local  83.98  LA-GIPA -0.86 [-0.96, -0.75]
+3. A|ps|25          N=240  best LA  20.24 (miss S/B   1.3/ 0.9%)  GIPA  84.01 (  0.0%)  plan  20.39  local  84.01  LA-GIPA -63.77 [-64.56, -63.03]
+3. A|ps|25          N=320  best LA  21.18 (miss S/B   2.9/ 2.0%)  GIPA  83.80 (  0.0%)  plan  21.90  local  83.80  LA-GIPA -62.62 [-63.30, -61.95]
+3. A|ps|500         N= 80  best LA  16.76 (miss S/B   0.2/ 0.0%)  GIPA  16.91 (  0.5%)  plan  15.91  local  84.33  LA-GIPA -0.16 [-0.19, -0.12]
+3. A|ps|500         N=160  best LA  18.79 (miss S/B   0.3/ 0.0%)  GIPA  19.89 (  0.0%)  plan  18.61  local  83.98  LA-GIPA -1.10 [-1.21, -1.00]
+3. A|ps|500         N=240  best LA  19.91 (miss S/B   0.3/ 0.5%)  GIPA  84.01 (  0.0%)  plan  20.39  local  84.01  LA-GIPA -64.10 [-64.88, -63.35]
+3. A|ps|500         N=320  best LA  20.87 (miss S/B   0.3/ 1.8%)  GIPA  83.80 (  0.0%)  plan  21.90  local  83.80  LA-GIPA -62.93 [-63.61, -62.26]
+3. B|affine|25      N= 80  best LA  20.75 (miss S/B  92.7/ 1.3%)  GIPA  17.96 (100.0%)  plan    nan  local 354.81  LA-GIPA +2.79 [+2.69, +2.88]
+3. B|affine|25      N=160  best LA  30.81 (miss S/B 100.0/ 2.1%)  GIPA  22.25 (100.0%)  plan    nan  local 353.19  LA-GIPA +8.56 [+8.32, +8.82]
+3. B|affine|25      N=240  best LA  40.40 (miss S/B 100.0/62.3%)  GIPA 353.32 (100.0%)  plan    nan  local 353.32  LA-GIPA -312.93 [-317.34, -308.73]
+3. B|affine|25      N=320  best LA  50.12 (miss S/B 100.0/75.5%)  GIPA 352.38 (100.0%)  plan    nan  local 352.38  LA-GIPA -302.25 [-306.26, -298.34]
+3. B|affine|500     N= 80  best LA  20.67 (miss S/B  97.4/ 0.1%)  GIPA  17.96 (100.0%)  plan    nan  local 354.81  LA-GIPA +2.71 [+2.60, +2.82]
+3. B|affine|500     N=160  best LA  30.93 (miss S/B 100.0/ 2.1%)  GIPA  22.25 (100.0%)  plan    nan  local 353.19  LA-GIPA +8.68 [+8.44, +8.92]
+3. B|affine|500     N=240  best LA  38.07 (miss S/B 100.0/39.7%)  GIPA 353.32 (100.0%)  plan    nan  local 353.32  LA-GIPA -315.25 [-319.65, -311.06]
+3. B|affine|500     N=320  best LA  45.68 (miss S/B 100.0/68.3%)  GIPA 352.38 (100.0%)  plan    nan  local 352.38  LA-GIPA -306.69 [-310.72, -302.76]
+3. B|ps|25          N= 80  best LA  18.90 (miss S/B   2.0/ 1.5%)  GIPA  18.81 (  2.2%)  plan  18.73  local 354.81  LA-GIPA +0.09 [+0.07, +0.10]
+3. B|ps|25          N=160  best LA  26.72 (miss S/B  99.1/ 2.6%)  GIPA  23.91 (100.0%)  plan    nan  local 353.19  LA-GIPA +2.80 [+2.70, +2.91]
+3. B|ps|25          N=240  best LA  33.52 (miss S/B 100.0/39.0%)  GIPA 353.32 (100.0%)  plan    nan  local 353.32  LA-GIPA -319.81 [-323.97, -315.84]
+3. B|ps|25          N=320  best LA  40.50 (miss S/B 100.0/72.0%)  GIPA 352.38 (100.0%)  plan    nan  local 352.38  LA-GIPA -311.88 [-315.58, -308.26]
+3. B|ps|500         N= 80  best LA  18.71 (miss S/B   7.8/ 0.1%)  GIPA  18.81 (  2.2%)  plan  18.73  local 354.81  LA-GIPA -0.10 [-0.14, -0.07]
+3. B|ps|500         N=160  best LA  27.20 (miss S/B  99.3/ 1.9%)  GIPA  23.91 (100.0%)  plan    nan  local 353.19  LA-GIPA +3.29 [+3.18, +3.39]
+3. B|ps|500         N=240  best LA  32.79 (miss S/B 100.0/28.5%)  GIPA 353.32 (100.0%)  plan    nan  local 353.32  LA-GIPA -320.53 [-324.70, -316.55]
+3. B|ps|500         N=320  best LA  38.40 (miss S/B 100.0/66.5%)  GIPA 352.38 (100.0%)  plan    nan  local 352.38  LA-GIPA -313.98 [-317.73, -310.32]
+   prior-inclusive mask, A affine warm 500, N=80: lat 15.32, off 0.619
+   prior-inclusive mask, A affine warm 500, N=160: lat 18.29, off 0.454
+   prior-inclusive mask, A affine warm 500, N=240: lat 747.29, off 0.000
+   prior-inclusive mask, A affine warm 500, N=320: lat 745.24, off 0.000
+4. la_lri      N=80: trans 17.56/16.3% steady 15.43/0.7% rec 363 | N=240: trans 29.96/26.8% steady 19.45/0.8% rec 387 | N=80: trans 15.79/0.0% steady 15.19/0.0% rec 103
+4. la_lrep     N=80: trans 16.86/10.5% steady 15.57/0.0% rec 93 | N=240: trans 26.35/15.2% steady 19.48/0.1% rec 96 | N=80: trans 15.54/0.0% steady 15.59/0.0% rec 172
+4. la_pursuit  N=80: trans 17.32/14.3% steady 15.69/0.2% rec 302 | N=240: trans 28.65/23.5% steady 19.51/0.4% rec 318 | N=80: trans 15.85/0.1% steady 15.79/0.0% rec 199
+4. gipa_fresh  N=80: trans 15.17/0.0% steady 15.17/0.0% rec 0 | N=240: trans 52.72/56.0% steady 646.18/69.8% rec None | N=80: trans 113.04/15.5% steady 15.17/0.0% rec 71
+4. gipa_stale  N=80: trans 15.17/0.0% steady 15.17/0.0% rec 0 | N=240: trans 23.84/0.3% steady 23.89/0.4% rec 0 | N=80: trans 15.17/0.0% steady 15.17/0.0% rec 0
+4. plan_fresh  N=80: trans 15.16/0.0% steady 15.17/0.0% rec 0 | N=240: trans 19.41/0.9% steady 19.58/1.3% rec 3 | N=80: trans 15.19/0.0% steady 15.17/0.0% rec 0
+4. plan_stale  N=80: trans 15.16/0.0% steady 15.17/0.0% rec 0 | N=240: trans 22.97/0.1% steady 23.02/0.1% rec 0 | N=80: trans 15.18/0.0% steady 15.17/0.0% rec 0
+4. local       N=80: trans 52.78/56.1% steady 648.84/70.1% rec None | N=240: trans 286.34/60.5% steady 879.81/69.8% rec None | N=80: trans 1455.28/70.1% steady 2051.34/70.1% rec None
+wrote /home/claude/gipa_revision/results/carry_blind/res_la.json
+== 11:44:58 python -W ignore /home/claude/gipa_revision/experiments/exp_hetero.py --out /home/claude/gipa_revision/results/carry_blind/res_hetero.json
+0. homogeneous check against E2: max |diff| 1.65 ms
+2. tuned (lambda, beta) for gipa_plan: homog N80:0.0/0.4 N160:0.0/0.4 N240:0.0/0.4 N320:0.0/0.4; cov2 N80:0.0/0.4 N160:0.0/0.4 N240:0.0/0.4 N320:0.0/0.4; het25 N80:0.0/4.0 N160:0.0/1.0 N240:0.0/1.0 N320:0.1/1.0; het50 N80:0.0/4.0 N160:0.0/1.0 N240:0.0/0.4 N320:0.0/0.4; het50cov2 N80:0.0/4.0 N160:0.0/1.0 N240:0.0/0.4 N320:0.0/0.4; het50cov2p20 N80:0.0/4.0 N160:0.0/2.0 N240:0.0/1.0 N320:0.0/0.4
